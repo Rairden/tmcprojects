@@ -25,6 +25,9 @@ public class Team {
     }
 
     public void addPlayer(Player player) {
+        if (size() == 2 && (team.size() == 1)) {
+            return;
+        }
         if (size() < MAXTEAMSIZE && (team.size()) <= size()) {
             team.add(player);
             teamSize++;

@@ -12,9 +12,7 @@ public class Main {
         barcelona.setMaxSize(1);
         barcelona.addPlayer(brian);
         barcelona.addPlayer(pekka);
-
-        // works similarly as the above
-        barcelona.addPlayer(new Player("Mikael", 1));
+        barcelona.addPlayer(new Player("Mikael", 1));   // works similarly as the above
 
         System.out.println("Total goals: " + barcelona.goals());
         barcelona.printPlayers();
