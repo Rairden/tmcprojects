@@ -12,11 +12,11 @@ public class Player {
         this.playerGoals = playerGoals;
     }
 
-    public String getPlayerName() {
+    public String getName() {
         return playerName;
     }
 
-    public int getPlayerGoals() {
+    public int goals() {
         int goals = 0;
         goals += playerGoals;
         return playerGoals;

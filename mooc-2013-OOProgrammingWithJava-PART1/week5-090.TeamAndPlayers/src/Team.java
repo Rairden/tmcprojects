@@ -1,13 +1,11 @@
 import java.util.ArrayList;
 
-// TEST
-
 public class Team {
     private String teamName;
     private ArrayList<Player> team;
-    private final int MAXTEAMSIZE = 16;
-    private int teamSize;
-    private int goals;
+    private final int MAXTEAMSIZE = 16;     // team size limit
+    private int teamSize;                   // set max team size
+
 
     public Team() {
         this.teamName = teamName;
@@ -22,12 +20,12 @@ public class Team {
         return teamName;
     }
 
-    public int getTeamSize() {
+    public int size() {
         return teamSize;
     }
 
     public void addPlayer(Player player) {
-        if (team.size() <= MAXTEAMSIZE) {
+        if (size() < MAXTEAMSIZE && (team.size()) <= size()) {
             team.add(player);
             teamSize++;
         }
@@ -41,16 +39,16 @@ public class Team {
         }
     }
 
-    public void setMaxSize(int teamSize) {
-        this.teamSize = (teamSize >= MAXTEAMSIZE) ? MAXTEAMSIZE : teamSize;
+    public void setMaxSize(int setSize) {
+        this.teamSize = (setSize >= MAXTEAMSIZE) ? MAXTEAMSIZE : setSize;
     }
 
-    public int teamGoals() {
-
+    public int goals() {
+        int goals = 0;
         int i = 0;
         while (i < team.size()) {
             Player player = team.get(i);
-            goals += player.getPlayerGoals();
+            goals += player.goals();
             i++;
         }
         return goals;
