@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tmc-junit-runner23">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-003.Spruce/lib/testrunner/tmc-junit-runner.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

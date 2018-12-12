@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-008.Adder/lib/edu-test-utils-0.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-008.Adder/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-008.Adder/lib/junit-4.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-000.Sandbox/week1-000.Sandbox.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-000.Sandbox/week1-000.Sandbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/week1-001.Name.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/week1-001.Name.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-002.HelloWorld/week1-002.HelloWorld.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-002.HelloWorld/week1-002.HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-003.Spruce/week1-003.Spruce.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-003.Spruce/week1-003.Spruce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-004.ChangingVariables/week1-004.ChangingVariables.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-004.ChangingVariables/week1-004.ChangingVariables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-005.SecondsOfTheYear/week1-005.SecondsOfTheYear.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-005.SecondsOfTheYear/week1-005.SecondsOfTheYear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-006.Addition/week1-006.Addition.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-006.Addition/week1-006.Addition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-007.Multiplication/week1-007.Multiplication.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-007.Multiplication/week1-007.Multiplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-008.Adder/week1-008.Adder.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-008.Adder/week1-008.Adder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-009.Divider/week1-009.Divider.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-009.Divider/week1-009.Divider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-010.CircleCircumference/week1-010.CircleCircumference.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-010.CircleCircumference/week1-010.CircleCircumference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-011.BiggerNumber/week1-011.BiggerNumber.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-011.BiggerNumber/week1-011.BiggerNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-012.SumOfTheAges/week1-012.SumOfTheAges.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-012.SumOfTheAges/week1-012.SumOfTheAges.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-013.NhlStatisticsPart1/week1-013.NhlStatisticsPart1.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-013.NhlStatisticsPart1/week1-013.NhlStatisticsPart1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-014.PositiveValue/week1-014.PositiveValue.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-014.PositiveValue/week1-014.PositiveValue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-015.AgeOfMajority/week1-015.AgeOfMajority.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-015.AgeOfMajority/week1-015.AgeOfMajority.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-016.EvenOrOdd/week1-016.EvenOrOdd.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-016.EvenOrOdd/week1-016.EvenOrOdd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-017.GreaterNumber/week1-017.GreaterNumber.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-017.GreaterNumber/week1-017.GreaterNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-018.GradesAndPoints/week1-018.GradesAndPoints.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-018.GradesAndPoints/week1-018.GradesAndPoints.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-019.AgeCheck/week1-019.AgeCheck.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-019.AgeCheck/week1-019.AgeCheck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-020.Usernames/week1-020.Usernames.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-020.Usernames/week1-020.Usernames.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-021.LeapYear/week1-021.LeapYear.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-021.LeapYear/week1-021.LeapYear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-022.Password/week1-022.Password.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-022.Password/week1-022.Password.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-023.Temperatures/week1-023.Temperatures.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-023.Temperatures/week1-023.Temperatures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-024.NhlStatisticsPart2/week1-024.NhlStatisticsPart2.iml" filepath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week1-024.NhlStatisticsPart2/week1-024.NhlStatisticsPart2.iml" />
+    </modules>
+  </component>
+</project>

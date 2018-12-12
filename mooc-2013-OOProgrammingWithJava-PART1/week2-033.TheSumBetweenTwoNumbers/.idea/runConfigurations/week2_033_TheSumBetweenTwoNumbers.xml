@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="week2-033.TheSumBetweenTwoNumbers" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="TheSumBetweenTwoNumbers" />
+    <module name="week2-033.TheSumBetweenTwoNumbers" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
