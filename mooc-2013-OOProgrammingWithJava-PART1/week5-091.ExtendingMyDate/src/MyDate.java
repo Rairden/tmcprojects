@@ -6,13 +6,36 @@ public class MyDate {
     private int year;
 
     public MyDate(int day, int month, int year) {
-        this.day = day;
-        this.month = month;
-        this.year = year;
+        this.day    = day;
+        this.month  = month;
+        this.year   = year;
     }
 
-    public String toString() {
-        return this.day + "." + this.month + "." + this.year;
+    public void advance() {
+        this.day++;
+    }
+
+    public void advance(int numberOfDays) {
+        for (int i = 0; i < numberOfDays; i++) {
+
+                // advance year
+            if (this.day == 30 && this.month == 12) {
+                this.day    = 1;
+                this.month  = 1;
+                this.year++;
+                continue;
+            }   // advance month
+            if (this.day == 30 && this.month < 12) {
+                this.day = 1;
+                this.month++;
+                continue;
+            }   // advance day
+            if (this.day < 30) {
+                advance();
+            }
+
+        }
+
     }
 
     public boolean earlier(MyDate compared) {
@@ -30,6 +53,10 @@ public class MyDate {
         }
 
         return false;
+    }
+
+    public String toString() {
+        return this.day + "." + this.month + "." + this.year;
     }
 
 }

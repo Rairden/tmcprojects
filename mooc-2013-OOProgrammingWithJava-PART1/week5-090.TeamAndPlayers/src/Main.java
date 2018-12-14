@@ -6,7 +6,7 @@ public class Main {
 
         Team barcelona = new Team("FC Barcelona");
 
-        Player brian = new Player("Brian");
+        Player brian = new Player("Brian", 20);
         Player pekka = new Player("Pekka", 39);
 
         barcelona.setMaxSize(1);

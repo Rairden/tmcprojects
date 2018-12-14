@@ -7,7 +7,7 @@ public class MoreThanOnce {
      * If the number appears on the list more than once the method returns true and otherwise false.
      *
      * Type a number: 2
-     * 2  appears more than once
+     * 2 appears more than once
      *
      * Type a number: 3
      * 3 does not appear more than once.
