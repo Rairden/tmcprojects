@@ -23,46 +23,32 @@ public class MyDate {
                 && this.day < compared.day) {
             return true;
         }
+        // if two dates are equivalent, return false.
         return false;
     }
 
-    /*
-     * In assignment 92 method differneceInYears was added to MyDate
-     * Copy the method here since it eases this assignment considerably.
-     */
+    // copy exercise #92 differenceInYears() I made.
     public int differenceInYears(MyDate compareDate) {
-        // If years are equal, then you cannot have 1 full year.  Missing one day.
+        // If years are equal, then you cannot have 1 full year.  Missing one day (364).
         if (this.year == compareDate.year) { return 0; }
 
         // If this year > other year
         if (!this.earlier(compareDate)) {
-                // HH   (high-high, high-low, etc for MM/DD)
-            if (this.month >= compareDate.month && this.day > compareDate.day
-            || (this.month == compareDate.month && this.day == compareDate.day)) {
+            if (this.month >= compareDate.month && this.day >= compareDate.day) {
                 return this.year - compareDate.year;
-            }   // HL
-            if (this.month >= compareDate.month && this.day < compareDate.day) {
-                return (this.year - compareDate.year) - 1;
-            }   // LH
-            if (this.month < compareDate.month && this.day > compareDate.day) {
-                return (this.year - compareDate.year) - 1;
+            } else {
+                return this.year - compareDate.year - 1;
             }
         }
         // If this year < other year
         if (this.earlier(compareDate)) {
-                // HH   (high-high, high-low, etc for MM/DD)
-            if (compareDate.month >= this.month && compareDate.day > this.day
-            || (compareDate.month == this.month && compareDate.day == this.day)) {
+            if (compareDate.month >= this.month && compareDate.day >= this.day) {
                 return compareDate.year - this.year;
-            }   // HL
-            if (compareDate.month >= this.month && compareDate.day < this.day) {
-                return (compareDate.year - this.year) - 1;
-            }   // LH
-            if (compareDate.month < this.month && compareDate.day > this.day) {
-                return (compareDate.year - this.year) - 1;
+            } else {
+                return compareDate.year - this.year - 1;
             }
         }
-        return 0;
+        return -1;
     }
 
     public String toString() {
