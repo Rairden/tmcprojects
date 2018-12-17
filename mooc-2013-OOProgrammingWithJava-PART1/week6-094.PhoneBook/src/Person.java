@@ -1,8 +1,8 @@
 
 public class Person {
 
-    public String name;
-    public String number;
+    private String name;
+    private String number;
 
     public Person() {
         this.name   = "";
@@ -18,18 +18,16 @@ public class Person {
         this.number = newNumber;
     }
 
-    
-
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getNumber() {
-        return number;
+        return this.number;
     }
 
     @Override
     public String toString() {
-        return name + "  " + number + ": ";
+        return this.getName() + " number: " + this.getNumber();
     }
 }
