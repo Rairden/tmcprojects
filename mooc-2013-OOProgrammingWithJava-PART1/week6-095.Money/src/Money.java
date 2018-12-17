@@ -37,8 +37,7 @@ public class Money {
         } else {
             if (this.euros >= decremented.euros && this.cents >= decremented.cents) {
                 return new Money(this.euros - decremented.euros, this.cents - decremented.cents);
-                // this.cents < decremented.cents
-            } else {
+            } else /* this.cents < decremented.cents */ {
                 return new Money(this.euros - decremented.euros - 1, 100 - decremented.cents + this.cents);
             }
         }
