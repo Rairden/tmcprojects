@@ -5,7 +5,7 @@ public class NightSky {
     private double  density;
     private int     width;
     private int     height;
-    private int     starsPrinted;
+    private int     starsInLastPrint;
 
     public NightSky(double density) {
         this.density = density;
@@ -26,35 +26,34 @@ public class NightSky {
     }
 
     public void print() {
+        starsInLastPrint = 0;
         for (int k = 0; k < this.height; k++) {
             printLine();
         }
     }
 
     public void printLine() {
-            int i = 0;
-            while (i < this.width) {
-                Random rand = new Random();
-                // if density = 1, then 100% chance to print star
-                if (this.density == 1) {
-                    System.out.print("*");
-                    i++;
-                }
+        for (int i = 0; i < this.width; i++) {
+            Random rand = new Random();
+            // if density = 1, then 100% chance to print star
+            if (this.density == 1) {
+                System.out.print("*");
+                starsInLastPrint++;
+            } else {
                 // nextDouble() returns 0-1.  Let density affect output.
                 if (rand.nextDouble() <= density) {
                     System.out.print("*");
-                    i++;
-                    starsPrinted++;
+                    starsInLastPrint++;
                 } else {
                     System.out.print(" ");
-                    i++;
                 }
             }
-            System.out.println();
+        }
+        System.out.println();
     }
 
     public int starsInLastPrint() {
-        return starsPrinted;
+        return starsInLastPrint;
     }
 
 }
