@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 
 public class Main {
+
+    public static void printHash() {
+        System.out.println("########################################################################");
+    }
+
     public static void main(String[] args) {
 
         Book cheese = new Book("Cheese Problems Solved", "Woodhead Publishing", 2007);
@@ -9,8 +14,9 @@ public class Main {
         System.out.println(cheese.year());
 
         System.out.println(cheese);
-        System.out.println("########################################################################");
-        // 100.2 ###################################################################################
+
+        printHash();
+        // 101.2 ###################################################################################
         Library Library = new Library();
 
         Book cheese2 = new Book("Cheese Problems Solved", "Woodhead Publishing", 2007);
@@ -22,9 +28,10 @@ public class Main {
         Library.addBook(new Book("Battle Axes", "Tom A. Hawk", 1851));
 
         Library.printBooks();
-        System.out.println("########################################################################");
-        // 100.3 ###################################################################################
-        Library Library2 =new Library();
+
+        printHash();
+        // 101.3 ###################################################################################
+        Library Library2 = new Library();
 
         Library2.addBook(new Book("Cheese Problems Solved", "Woodhead Publishing", 2007));
         Library2.addBook(new Book("The Stinky Cheese Man and Other Fairly Stupid Tales", "Penguin Group", 1992));
@@ -46,5 +53,18 @@ public class Main {
             System.out.println(book);
         }
 
+        printHash();
+        // 101.4 ###################################################################################
+
+        for (Book book : Library2.searchByTitle("CHEESE")) {
+            System.out.println(book);
+        }
+
+        System.out.println("---");
+        for (Book book : Library2.searchByPublisher("PENGUIN  ")) {
+            System.out.println(book);
+        }
+
     }
+
 }
