@@ -3,52 +3,46 @@ import java.util.Scanner;
 
 public class Grades {
 
-    ArrayList<Integer> scores = new ArrayList<>();
+    public ArrayList<Integer> scores = new ArrayList<>();
 
     private int grades;
+    private int zero;
+    private int one;
+    private int two;
+    private int three;
+    private int four;
+    private int five;
+
 
     public ArrayList<Integer> addScores(Scanner scan) {
-        ArrayList<Integer> scores = new ArrayList<>();
-
-        while (scan.hasNextInt()) {
-            if (scan.nextInt() == -1) {
+        while (true) {
+            int next = scan.nextInt();
+            if (next == -1) {
                 break;
             }
-            scores.add(scan.nextInt());
+            scores.add(next);
         }
         return scores;
     }
 
-    public ArrayList<Integer> calcGrades(Scanner scan) {
-        ArrayList<Integer> scores = new ArrayList<>();
-        int a = scan.nextInt();
-
-        if (a >= 0 && a <= 29) {
-            scores.add(scan.nextInt());
-        } else if (a <= 34) {
-
-        } else if (a <= 39) {
-
-        } else if (a <= 44) {
-
-        } else if (a <= 49) {
-
-        } else if (a >= 50 && a <= 60) {
-
-        } else {
-            System.out.println("input proper grade");
+    public ArrayList<Integer> calcGrades(ArrayList<Integer> scores) {
+        for (int x = 0; x < scores.size(); x++) {
+            if (scores.get(x) >= 0 && scores.get(x) <= 29) {
+                this.zero++;
+            } else if (scores.get(x) <= 34) {       // Points  Grade
+                this.one++;                         // 0–29	   failed
+            } else if (scores.get(x) <= 39) {       // 30–34   1
+                this.two++;                         // 35–39   2
+            } else if (scores.get(x) <= 44) {       // 40–44   3
+                this.three++;                       // 45–49   4
+            } else if (scores.get(x) <= 49) {       // 50–60   5
+                this.four++;
+            } else if (scores.get(x) >= 50 && scores.get(x) <= 60) {
+                this.five++;
+            } else { /* bogus grade */ }
         }
-
         return scores;
     }
-
-//    Points	Grade
-//        0–29	failed
-//        30–34	1
-//        35–39	2
-//        40–44	3
-//        45–49	4
-//        50–60	5
 
 
 }
