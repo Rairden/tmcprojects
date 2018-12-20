@@ -5,14 +5,12 @@ public class Grades {
 
     public ArrayList<Integer> scores = new ArrayList<>();
 
-    private int grades;
     private int zero;
     private int one;
     private int two;
     private int three;
     private int four;
     private int five;
-
 
     public ArrayList<Integer> addScores(Scanner scan) {
         while (true) {
@@ -23,6 +21,22 @@ public class Grades {
             scores.add(next);
         }
         return scores;
+    }
+
+    public void printStars(int cnt) {
+        while (cnt >= 1) {
+            System.out.print("*");
+            cnt--;
+        }
+        System.out.println();
+    }
+
+    public double acceptancePercentage(Grades scores) {
+        double allGrades =
+                scores.getZero() + scores.getOne() + scores.getTwo() +
+                scores.getThree() + scores.getFour() + scores.getFive();
+
+        return 100 * ((allGrades - scores.getZero()) / allGrades);
     }
 
     public ArrayList<Integer> calcGrades(ArrayList<Integer> scores) {
@@ -44,5 +58,27 @@ public class Grades {
         return scores;
     }
 
+    public int getZero() {
+        return zero;
+    }
 
+    public int getOne() {
+        return one;
+    }
+
+    public int getTwo() {
+        return two;
+    }
+
+    public int getThree() {
+        return three;
+    }
+
+    public int getFour() {
+        return four;
+    }
+
+    public int getFive() {
+        return five;
+    }
 }
