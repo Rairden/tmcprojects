@@ -8,12 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-<<<<<<< HEAD
-    <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="tmc-junit-runner" level="project" />
-=======
     <orderEntry type="library" name="tmc-junit-runner" level="project" />
     <orderEntry type="library" name="lib" level="project" />
->>>>>>> a585ed484ed648a16ac252c3d12b5b59c74dc309
   </component>
 </module>
