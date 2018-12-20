@@ -4,8 +4,11 @@
 
 # Log file
 *.log
-build_errors.txt
-build_log.txt
 
 # Generated files
 out/
+
+# IntelliJ files
+build_errors.txt
+build_log.txt
+workspace.xml
