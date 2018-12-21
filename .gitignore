@@ -8,6 +8,12 @@
 # Generated files
 out/
 
-# IntelliJ files
+# IntelliJ files.  You can safely ignore workspace.xml and tasks.xml
 build_errors.txt
 build_log.txt
+#workspace.xml
+#tasks.xml
+
+# List you can ignore
+# https://www.jetbrains.com/help/idea/configuring-project-and-ide-settings.html
+# https://github.com/github/gitignore
