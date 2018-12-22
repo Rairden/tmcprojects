@@ -1,0 +1,181 @@
+In this assignment we'll make an AI, which guesses the number the player is thinking about.
+The AI assumes that the number is between _lowerLimit_..._upperLimit_. The start of
+the game provides these limits to the method as parameters that makes the game happen. The AI asks
+the player questions in the format "Is your number greater than X?" and deduce the
+correct answer from the answers the player gives.
+
+The AI keeps track of the search area with the help of the variables lowerLimit and upperLimit.
+The AI always asks if the player's number is greater than the average of these two numbers, and
+based on the answers the search area gets halved each time. In the end the lowerLimit and
+upperLimit are the same and the number the user is thinking of has been revealed.
+
+In the following example the user chooses the number 44:
+
+<pre>
+Think of a number between 1...100.
+I promise you that I can guess the number you are thinking of with 7 questions.
+
+Next I'll present you a series of questions. Answer them honestly.
+
+Is your number greater than 50? (y/n)
+
+<font color="red">n</font>
+Is your number greater than 25? (y/n)
+
+<font color="red">y</font>
+Is your number greater than 38? (y/n)
+
+<font color="red">y</font>
+Is your number greater than 44? (y/n)
+
+<font color="red">n</font>
+Is your number greater than 41? (y/n)
+
+<font color="red">y</font>
+Is your number greater than 43? (y/n)
+
+<font color="red">y</font>
+The number you're thinking of is 44.
+
+</pre>
+
+In the above example the possible value range is first 1...100. When the user tells the program
+that the number is not greater than 50 the possible range is 1...50. When the user says that the
+number is greater than 25, the range is 26...50. The deduction proceeds in the same fashion until
+the number 44 is reached.
+
+In accordance to the principles of halving, or binary search, the possible search area is halved
+after each question in which case the number of required questions is small. Even between the
+numbers 1...100000 it shouldn't take more than 20 questions.
+
+The program skeleton of the class `GuessingGame` that implements this is the
+following:
+
+<pre class="sh_java sh_sourceCode">
+public class GuessingGame{
+
+    privateScanner reader;
+
+    publicGuessingGame() {
+        this.reader = new Scanner(System.in);
+    }
+
+    public void play(int lowerLimit, int upperLimit) {
+        instructions(upperLimit, lowerlimit);
+
+        // write the game logic here
+    }
+
+    // implement here the methods isGreaterThan and average
+
+    public void instructions(int lowerLimit, int upperLimit) {
+        int maxQuestions = howManyTimesHalvable(upperLimit - lowerLimit);
+
+        System.out.println("Think of a number between " + lowerLimit + "..." + upperLimit + ".");
+
+        System.out.println("I promise you that I can guess the number you are thinking of with " + maxQuestions + " questions.");
+        System.out.println("");
+        System.out.println("Next I'll present you with a series of questions. Answer them honestly.");
+        System.out.println("");
+    }
+
+    // a helper method:
+    public static int howManyTimesHalvable(int number) {
+        // we create a base two logarithm  of the given value
+        // Below we swap the base number to base two logarithms!
+        return (int) (Math.log(number) / Math.log(2)) + 1;
+    }
+}
+</pre>
+
+The game is started the in following manner:
+
+<pre class="sh_java sh_sourceCode">
+GuessingGame game = new GuessingGame();
+
+// we play two rounds
+game.play(1,10);  // value to be guessed now within range 1-10
+game.play(10,99);  // value to be guessed now within range 10-99
+</pre>
+
+We'll implement this assignment in steps.
+
+#### Exercise 105.1: Is greater than
+
+Implement the method `public boolean isGreaterThan(int value)`, which
+presents the user with a question:
+
+<pre>
+"Is your number greater than _given value_? (y/n)"
+
+</pre>
+
+The method returns the value `true` if the user replies "y", otherwise
+`false`.
+
+Test your method
+
+<pre class="sh_java sh_sourceCode">
+GuessingGame game = new GuessingGame();
+
+System.out.println(game.isGreaterThan(32));
+</pre>
+
+<pre>
+Is your number greater than 32? (y/n)
+
+<font color="red">y</font>
+true
+
+</pre>
+
+#### Exercise 105.2: Average
+
+Implement the method `public int average(int firstNumber, int secondNumber)`, which
+calculates the average of the given values. Notice that Java rounds floating numbers down automatically,
+in our case this is perfectly fine.
+
+<pre class="sh_java sh_sourceCode">
+GuessingGame game = new GuessingGame();
+System.out.println(game.average(3, 4));
+</pre>
+
+<pre>
+3
+
+</pre>
+
+<pre class="sh_java sh_sourceCode">
+GuessingGame game = new GuessingGame();
+System.out.println(game.average(6, 12));
+</pre>
+
+<pre>
+9
+
+</pre>
+
+#### Exercise 105.3: Guessing logic
+
+Write the actual guessing logic in the method `play` of the class
+`GuessingGame`. You'll need at least one loop and a query in which you ask the user
+if their number is greater than the average of the lowerLimit and upperLimit. Change the upperLimit
+or lowerLimit depending on the user's reply.
+
+Keep doing the loop until lowerLimit and upperLimit are the same! You can also test the game
+with smaller lower- and upperLimit values:
+
+<pre>
+Think of a number between 1...4.
+I promise you that I can guess the number you are thinking of with 2 questions.
+
+Next I'll present you with a series of questions. Answer them honestly.
+
+Is your number greater than 2? (y/n)
+
+<font color="red">k</font>
+Is your number greater than 3? (y/n)
+
+<font color="red">k</font>
+The number you're thinking of is 4.
+</pre>
