@@ -2,11 +2,17 @@ import java.util.Scanner;
 
 public class Calculator {
 
-    public Scanner scan;
+    private Reader reader;
+    private int calculationsCount;
 
-    public void start() {while(true) {
+    public Calculator() {
+        this.reader = new Reader();
+    }
+
+    public void start() {
+        while(true) {
         System.out.print("command: ");
-        String command = scan.readString();
+        String command = reader.readString();
         if (command.equals("end")) {
             break;
         }
@@ -23,19 +29,37 @@ public class Calculator {
         statistics();
     }
 
-    public void sum() {
+    private void sum() {
+        System.out.println("value1:\n");
+        int operand1 = reader.readInteger();
+        System.out.println("value2:\n");
+        int operand2 = reader.readInteger();
 
+        System.out.println("sum of the values " + (operand1 + operand2));
+        calculationsCount++;
     }
 
-    public void difference() {
+    private void difference() {
+        System.out.println("value1:\n");
+        int operand1 = reader.readInteger();
+        System.out.println("value2:\n");
+        int operand2 = reader.readInteger();
 
+        System.out.println("difference of the values " + (operand1 - operand2));
+        calculationsCount++;
     }
 
-    public void product() {
+    private void product() {
+        System.out.println("value1:\n");
+        int operand1 = reader.readInteger();
+        System.out.println("value2:\n");
+        int operand2 = reader.readInteger();
 
+        System.out.println("product of the values " + (operand1 * operand2));
+        calculationsCount++;
     }
 
     private void statistics() {
-
+        System.out.println("Calculations done " + calculationsCount);
     }
 }
