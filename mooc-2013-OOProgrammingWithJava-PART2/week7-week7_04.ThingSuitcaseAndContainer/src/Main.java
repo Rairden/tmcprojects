@@ -55,8 +55,36 @@ public class Main {
         printLine();    // -------------------------------------
 
         container.printThings();
+        System.out.println();
+        printLine();    // -------------------------------------
 
+        Container container2 = new Container(1000);
+        addSuitcasesFullOfBricks(container2);
+        System.out.println(container2);
+        System.out.println("yoooo");
 
+    }
+
+    public static void addSuitcasesFullOfBricks(Container container) {
+        // adding 100 suitcases with one brick in each
+        int m = 4;
+        Suitcase suitcaseOfBricks = new Suitcase(100);
+        Thing brick = new Thing("Brick", m);
+        suitcaseOfBricks.addThing(brick);
+        int i = 0;
+        while (i < 100) {
+            container.addSuitcase(new Suitcase(100));
+            i++;
+        }
+
+        m++;
+
+        for (Suitcase x : container.container) {
+            if (container.totalContainerWeight() <= container.maximumMass) {
+                suitcaseOfBricks.addThing(new Thing("Brick", m));
+                m++;
+            }
+        }
 
 
     }
