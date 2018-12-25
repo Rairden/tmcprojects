@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Container {
 
+
     public ArrayList<Suitcase> container = new ArrayList<>();
     private int maximumMass;
 
@@ -24,10 +25,8 @@ public class Container {
     }
 
     public void printThings() {
-        int i = 0;
         for (Suitcase x : container) {
-            System.out.println(x.things.get(i).getName() + " (" + x.things.get(i).getWeight() + " kg)");
-            i++;
+            x.printThings();
         }
     }
 
