@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Suitcase {
 
-    public ArrayList<Thing> things = new ArrayList<>();
+    private ArrayList<Thing> things = new ArrayList<Thing>();
     private int maximumWeight;
 
     public Suitcase(int maximumWeight) {

@@ -55,38 +55,23 @@ public class Main {
         printLine();    // -------------------------------------
 
         container.printThings();
-        System.out.println();
         printLine();    // -------------------------------------
 
         Container container2 = new Container(1000);
         addSuitcasesFullOfBricks(container2);
         System.out.println(container2);
-        System.out.println("yoooo");
 
     }
 
     public static void addSuitcasesFullOfBricks(Container container) {
         // adding 100 suitcases with one brick in each
-        int m = 4;
-        Suitcase suitcaseOfBricks = new Suitcase(100);
-        Thing brick = new Thing("Brick", m);
-        suitcaseOfBricks.addThing(brick);
-        int i = 0;
-        while (i < 100) {
-            container.addSuitcase(new Suitcase(100));
-            i++;
+        for (int i = 1; i <= 100; i++) {
+            Thing t = new Thing("Brick", i);
+            Suitcase s = new Suitcase(100);
+
+            s.addThing(t);
+            container.addSuitcase(s);
         }
-
-        m++;
-
-        for (Suitcase x : container.container) {
-            if (container.totalContainerWeight() <= container.maximumMass) {
-                suitcaseOfBricks.addThing(new Thing("Brick", m));
-                m++;
-            }
-        }
-
-
     }
 
     static void printLine() {
@@ -94,3 +79,31 @@ public class Main {
     }
 
 }
+
+/*
+        Book name: Happiness in Three Steps
+        Book weight: 2
+        Book: Happiness in Three Steps (2 kg)
+        Mobile: Nokia 3210 (1 kg)
+        --------------------------------------------
+        empty 	 (0 kg)
+        1 thing  (2 kg)
+        2 things (3 kg)
+        2 things (3 kg)
+        --------------------------------------------
+        Your suitcase contains the following things:
+        Happiness in Three Steps (2 kg)
+        Nokia 3210 (1 kg)
+        Brick (4 kg)
+        Total weight: 7 kg
+        --------------------------------------------
+        The heaviest thing: Brick (4 kg)
+        --------------------------------------------
+        2 suitcases (7 kg)
+        --------------------------------------------
+        Happiness in Three Steps (2 kg)
+        Nokia 3210 (1 kg)
+        Brick (4 kg)
+        --------------------------------------------
+        44 suitcases (990 kg)
+*/

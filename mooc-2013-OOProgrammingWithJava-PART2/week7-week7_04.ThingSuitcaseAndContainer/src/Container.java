@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class Container {
 
-    public ArrayList<Suitcase> container = new ArrayList<>();
-    public int maximumMass;
+    private ArrayList<Suitcase> container = new ArrayList<Suitcase>();
+    private int maximumMass;
 
     public Container(int maximumMass) {
         this.maximumMass = maximumMass;
