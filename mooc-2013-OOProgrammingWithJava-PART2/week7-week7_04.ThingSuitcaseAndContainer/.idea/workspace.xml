@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="767f937b-44d0-4264-be9d-084071ced1da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Suitcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Suitcase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +37,12 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/Main.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="546">
-                      <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+                    <state relative-caret-position="520">
+                      <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+                      <folding>
+                        <element signature="e#809#810#0" expanded="true" />
+                        <element signature="e#888#889#0" expanded="true" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -60,8 +65,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Thing.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret lean-forward="true" />
+                <state relative-caret-position="364">
+                  <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -69,13 +74,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Suitcase.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+                <state relative-caret-position="364">
+                  <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
                   <folding>
                     <element signature="e#301#302#0" expanded="true" />
                     <element signature="e#351#352#0" expanded="true" />
-                    <element signature="e#729#730#0" expanded="true" />
-                    <element signature="e#766#767#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -99,9 +102,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/readme.md" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Thing.java" />
         <option value="$PROJECT_DIR$/src/Suitcase.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -140,7 +143,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545711359890" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545714283179" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -292,28 +295,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Thing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="364">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Suitcase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="364">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#301#302#0" expanded="true" />
             <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="520">
+          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -32,8 +32,12 @@ public class Main {
         suitcase2.addThing(brick);
 
         System.out.println("Your suitcase contains the following things:");
-        suitcase.printThings();
+        suitcase2.printThings();
         System.out.println("Total weight: " + suitcase2.totalWeight() + " kg");
+        printLine();    // -------------------------------------
+
+        Thing heaviest = suitcase2.heaviestThing();
+        System.out.println("The heaviest thing: " + heaviest);
         printLine();    // -------------------------------------
 
 
