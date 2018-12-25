@@ -40,6 +40,23 @@ public class Main {
         System.out.println("The heaviest thing: " + heaviest);
         printLine();    // -------------------------------------
 
+        Suitcase tomsCase = new Suitcase(10);
+        tomsCase.addThing(book);
+        tomsCase.addThing(mobile);
+
+        Suitcase georgesCase = new Suitcase(10);
+        georgesCase.addThing(brick);
+
+        Container container = new Container(1000);
+        container.addSuitcase(tomsCase);
+        container.addSuitcase(georgesCase);
+
+        System.out.println(container);
+        printLine();    // -------------------------------------
+
+        container.printThings();
+
+
 
 
     }
