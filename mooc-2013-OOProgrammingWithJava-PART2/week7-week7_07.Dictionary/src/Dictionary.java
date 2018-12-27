@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Dictionary {
 
-    public HashMap<String, String> hashMap;
+    private HashMap<String, String> hashMap;
 
     public Dictionary() {
         this.hashMap = new HashMap<String, String>();
@@ -21,9 +21,13 @@ public class Dictionary {
         return hashMap.size();
     }
 
+    public HashMap<String, String> getHashMap() {
+        return hashMap;
+    }
+
     public ArrayList<String> translationList() {
-        ArrayList<String> origList      = new ArrayList<>();
-        ArrayList<String> copyList  = new ArrayList<>();
+        ArrayList<String> origList  = new ArrayList<String>();
+        ArrayList<String> copyList  = new ArrayList<String>();
 
         origList.addAll(hashMap.keySet());
 
@@ -32,9 +36,6 @@ public class Dictionary {
         }
         return copyList;
     }
-
-
-
 
 
 }

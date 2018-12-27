@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
@@ -30,12 +29,18 @@ public class Main {
         }
         printLine();    // -------------------------------------
 
+        Scanner scan    = new Scanner(System.in);
+        Dictionary dict = new Dictionary();
+
+        TextUserInterface ui = new TextUserInterface(scan, dict);
+
+        ui.start();
 
 
+    }
 
-
-
-        System.out.println("yoooo");
+    public enum cmd {
+        quit, add, translate;
     }
 
     static void printLine() {
