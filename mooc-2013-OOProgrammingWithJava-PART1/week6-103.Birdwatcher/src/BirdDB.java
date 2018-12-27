@@ -59,9 +59,5 @@ public class BirdDB {
         }
     }
 
-<<<<<<< HEAD
-}
-=======
 
 }
->>>>>>> ad70d8e0d6d9d640b2dfb7b5680523aaa317444b
