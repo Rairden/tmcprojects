@@ -5,8 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         Airplane plane   = new Airplane();
+        Flight flight    = new Flight(plane);
         Scanner scan     = new Scanner(System.in);
-        UserInterface ui = new UserInterface(scan, plane);
+        UserInterface ui = new UserInterface(scan, plane, flight);
 
         ui.start();
 

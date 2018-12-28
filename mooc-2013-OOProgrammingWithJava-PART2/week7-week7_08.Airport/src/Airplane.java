@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class Airplane {
 
-    private HashMap<String, Integer> planeToCapacity;
+    public HashMap<String, Integer> planeToCapacity;
 
     Airplane() {
         this.planeToCapacity = new HashMap<String, Integer>();

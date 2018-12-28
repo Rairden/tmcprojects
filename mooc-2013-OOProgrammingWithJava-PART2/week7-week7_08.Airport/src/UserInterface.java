@@ -4,16 +4,20 @@ public class UserInterface {
 
     private Scanner scan;
     private Airplane plane;
+    private Flight flight;
 
-    public UserInterface(Scanner scan, Airplane plane) {
-        this.scan = scan;
-        this.plane = plane;
+    public UserInterface(Scanner scan, Airplane plane, Flight flight) {
+        this.scan   = scan;
+        this.plane  = plane;
+        this.flight = flight;
     }
 
     public void start() {
-        panel();
+        System.out.println("Airport panel");
+        System.out.println("--------------------\n");
 
         while (true) {
+            panel();
             String cmd = scan.nextLine();
             if (cmd.equals("x")) { return; }
 
@@ -36,8 +40,6 @@ public class UserInterface {
     }
 
     public void panel() {
-        System.out.println("Airport panel");
-        System.out.println("--------------------\n");
         System.out.print(  "Choose operation:\n" +
                            "[1] Add airplane\n" +
                            "[2] Add flight\n" +
@@ -50,26 +52,25 @@ public class UserInterface {
         String planeID = scan.nextLine();
 
         System.out.print("Give plane capacity: ");
-        int capacity = scan.nextInt();
+        int capacity = Integer.parseInt(scan.nextLine());
 
         plane.add(planeID, capacity);
     }
 
     public void addFlight() {
+        Flight flight = new Flight(plane);
+        System.out.print("Give planeID: ");
+        String planeID = scan.nextLine();
+
+        System.out.print("Give departure airport code: ");
+        String deptCode = scan.nextLine();
+
+        System.out.print("Give destination airport code: ");
+        String destCode = scan.nextLine();
+
+
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
