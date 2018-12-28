@@ -16,6 +16,7 @@ public class UserInterface {
         while (true) {
             String cmd = scan.nextLine();
             if (cmd.equals("x")) { return; }
+
             int command = Integer.parseInt(cmd);
 
             switch (command) {

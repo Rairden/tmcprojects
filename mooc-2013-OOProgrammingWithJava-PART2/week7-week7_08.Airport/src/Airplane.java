@@ -3,11 +3,9 @@ import java.util.HashMap;
 public class Airplane {
 
     private HashMap<String, Integer> planeToCapacity;
-    //private Scanner scan;
 
     Airplane() {
         this.planeToCapacity = new HashMap<String, Integer>();
-        //this.scan            = new Scanner(System.in);
     }
 
     public int translate(String planeID) {
