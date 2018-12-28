@@ -39,9 +39,6 @@ public class Main {
 
     }
 
-    public enum cmd {
-        quit, add, translate;
-    }
 
     static void printLine() {
         System.out.println("--------------------------------------------------");
