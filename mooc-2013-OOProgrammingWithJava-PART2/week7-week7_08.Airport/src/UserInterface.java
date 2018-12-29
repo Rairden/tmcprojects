@@ -1,15 +1,15 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserInterface {
 
     private Scanner scan;
     private Airplane plane;
-    private Flight flight;
+    ArrayList<Flight> list = new ArrayList<Flight>();
 
-    public UserInterface(Scanner scan, Airplane plane, Flight flight) {
+    public UserInterface(Scanner scan, Airplane plane) {
         this.scan   = scan;
         this.plane  = plane;
-        this.flight = flight;
     }
 
     public void start() {
@@ -19,8 +19,10 @@ public class UserInterface {
         while (true) {
             panel();
             String cmd = scan.nextLine();
-            if (cmd.equals("x")) { return; }
 
+            if (cmd.equals("x")) {
+                flightService();
+            }
             int command = Integer.parseInt(cmd);
 
             switch (command) {
@@ -30,21 +32,56 @@ public class UserInterface {
                 case 2:
                     addFlight();
                     break;
-                case 3:
-                    return;
+                default:
+                    break;
             }
-
         }
+    }
 
+    public void flightService() {
+        System.out.println( "Flight service\n" +
+                            "------------\n");
 
+        while (true) {
+            flightServicePanel();
+            String cmd = scan.nextLine();
+
+            if (cmd.equals("x")) {
+                return;
+            }
+            int command = Integer.parseInt(cmd);
+
+            switch (command) {
+                case 1:
+                    // do stuff
+                    break;
+                case 2:
+                    // do stuff
+                    break;
+                case 3:
+                    // do stuff
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    public void flightServicePanel() {
+        System.out.print(   "Choose operation:\n" +
+                            "[1] Print planes\n" +
+                            "[2] Print flights\n" +
+                            "[3] Print plane info\n" +
+                            "[x] Quit\n" +
+                            "> ");
     }
 
     public void panel() {
-        System.out.print(  "Choose operation:\n" +
-                           "[1] Add airplane\n" +
-                           "[2] Add flight\n" +
-                           "[x] Exit\n" +
-                           "> ");
+        System.out.print(   "Choose operation:\n" +
+                            "[1] Add airplane\n" +
+                            "[2] Add flight\n" +
+                            "[x] Exit\n" +
+                            "> ");
     }
 
     public void addAirplane() {
@@ -58,7 +95,6 @@ public class UserInterface {
     }
 
     public void addFlight() {
-        Flight flight = new Flight(plane);
         System.out.print("Give planeID: ");
         String planeID = scan.nextLine();
 
@@ -68,7 +104,9 @@ public class UserInterface {
         System.out.print("Give destination airport code: ");
         String destCode = scan.nextLine();
 
-
+        Flight flight = new Flight(plane);
+        flight.addNewFlight(plane, deptCode, destCode);
+        list.add(flight);
 
     }
 
