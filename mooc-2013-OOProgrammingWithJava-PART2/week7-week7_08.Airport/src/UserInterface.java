@@ -55,13 +55,13 @@ public class UserInterface {
 
             switch (command) {
                 case 1:
-                    printPlanes();
+                    plane.printPlanes();
                     break;
                 case 2:
                     flight.printFlights();
                     break;
                 case 3:
-                    printPlaneInfo();
+                    plane.printPlaneInfo(scan);
                     break;
                 default:
                     break;
@@ -109,18 +109,4 @@ public class UserInterface {
         flight.addNewFlight(planeID, deptCode, destCode);
     }
 
-    public void printPlanes() {
-        for (String key : plane.planeToCapacity.keySet()) {
-            System.out.println(key + " (" + plane.translate(key) + " ppl)");
-        }
-    }
-
-    public void printPlaneInfo() {
-        System.out.print("Give plane ID: ");
-        String planeID = scan.nextLine();
-
-        if (plane.planeToCapacity.containsKey(planeID)) {
-            System.out.println(planeID + " (" + plane.planeToCapacity.get(planeID) + " ppl)\n");
-        }
-    }
 }

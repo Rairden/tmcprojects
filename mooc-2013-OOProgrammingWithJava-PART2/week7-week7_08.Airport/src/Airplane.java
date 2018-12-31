@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Airplane {
 
@@ -18,6 +19,21 @@ public class Airplane {
 
     public HashMap<String, Integer> getHashMap() {
         return planeToCapacity;
+    }
+
+    public void printPlanes() {
+        for (String key : planeToCapacity.keySet()) {
+            System.out.println(key + " (" + translate(key) + " ppl)");
+        }
+    }
+
+    public void printPlaneInfo(Scanner scan) {
+        System.out.print("Give plane ID: ");
+        String planeID = scan.nextLine();
+
+        if (planeToCapacity.containsKey(planeID)) {
+            System.out.println(planeID + " (" + planeToCapacity.get(planeID) + " ppl)\n");
+        }
     }
 
 }

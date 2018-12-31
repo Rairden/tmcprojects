@@ -29,12 +29,11 @@ public class Flight {
 
         keySet.addAll(plane.getHashMap().keySet());
 
-        for (String s : keySet) {
-            for (Flight x : list) {
-                if (x.planeID.equals(s)) {
-                    int cap = plane.translate(x.planeID);
-                        System.out.println(x.planeID + " (" + cap + " ppl) "
-                        + "(" + x.departure + "-" + x.destination + ")");
+        for (String str : keySet) {
+            for (Flight f : list) {
+                if (f.planeID.equals(str)) {
+                        System.out.println(f.planeID + " (" + plane.translate(f.planeID)
+                        + " ppl) " + "(" + f.departure + "-" + f.destination + ")");
                 }
             }
         }
