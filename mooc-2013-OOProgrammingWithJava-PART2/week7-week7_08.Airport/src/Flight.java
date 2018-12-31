@@ -32,8 +32,8 @@ public class Flight {
         for (String str : keySet) {
             for (Flight f : list) {
                 if (f.planeID.equals(str)) {
-                        System.out.println(f.planeID + " (" + plane.translate(f.planeID)
-                        + " ppl) " + "(" + f.departure + "-" + f.destination + ")");
+                    System.out.println(f.planeID + " (" + plane.translate(f.planeID)
+                    + " ppl) " + "(" + f.departure + "-" + f.destination + ")");
                 }
             }
         }
