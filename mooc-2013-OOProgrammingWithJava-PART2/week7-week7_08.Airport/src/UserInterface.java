@@ -20,7 +20,7 @@ public class UserInterface {
             panel();
             String cmd = scan.nextLine();
 
-            if (cmd.equals("x")) {
+            if (cmd.equals("x") || cmd.equals("")) {
                 flightService();
                 return;
             }
@@ -40,6 +40,7 @@ public class UserInterface {
     }
 
     public void flightService() {
+        System.out.println();
         System.out.println( "Flight service\n" +
                             "------------\n");
 
@@ -47,7 +48,7 @@ public class UserInterface {
             flightServicePanel();
             String cmd = scan.nextLine();
 
-            if (cmd.equals("x")) {
+            if (cmd.equals("x") || cmd.equals("")) {
                 return;
             }
             int command = Integer.parseInt(cmd);
@@ -86,7 +87,7 @@ public class UserInterface {
     }
 
     public void addAirplane() {
-        System.out.print("Give planeID: ");
+        System.out.print("Give plane ID: ");
         String planeID = scan.nextLine();
 
         System.out.print("Give plane capacity: ");
@@ -96,7 +97,7 @@ public class UserInterface {
     }
 
     public void addFlight() {
-        System.out.print("Give planeID: ");
+        System.out.print("Give plane ID: ");
         String planeID = scan.nextLine();
 
         System.out.print("Give departure airport code: ");
@@ -119,8 +120,7 @@ public class UserInterface {
         String planeID = scan.nextLine();
 
         if (plane.planeToCapacity.containsKey(planeID)) {
-            System.out.println(planeID + " (" + plane.planeToCapacity.get(planeID)
-            + " ppl)");
+            System.out.println(planeID + " (" + plane.planeToCapacity.get(planeID) + " ppl)\n");
         }
     }
 }

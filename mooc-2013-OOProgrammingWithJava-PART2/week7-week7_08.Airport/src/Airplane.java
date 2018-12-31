@@ -16,10 +16,6 @@ public class Airplane {
         planeToCapacity.put(planeID, capacity);
     }
 
-    public int sizeOfHashMap() {
-        return planeToCapacity.size();
-    }
-
     public HashMap<String, Integer> getHashMap() {
         return planeToCapacity;
     }

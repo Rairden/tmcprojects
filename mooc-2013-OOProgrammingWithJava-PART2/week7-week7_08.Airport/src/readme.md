@@ -67,7 +67,7 @@ Choose operation:
 > <font color="red">1</font>
 G-OWAC (101 ppl)
 HA-LOL (42 ppl)
-Choose action:
+Choose operation:
 [1] Print planes
 [2] Print flights
 [3] Print plane info

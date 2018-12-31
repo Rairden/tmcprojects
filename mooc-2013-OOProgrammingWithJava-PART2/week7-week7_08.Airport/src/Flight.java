@@ -38,5 +38,6 @@ public class Flight {
                 }
             }
         }
+        System.out.println();
     }
 }
