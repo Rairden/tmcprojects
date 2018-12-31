@@ -1,15 +1,15 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserInterface {
 
-    private Scanner scan;
+    private Scanner  scan;
     private Airplane plane;
-    ArrayList<Flight> list = new ArrayList<Flight>();
+    private Flight   flight;
 
-    public UserInterface(Scanner scan, Airplane plane) {
+    public UserInterface(Scanner scan, Airplane plane, Flight flight) {
         this.scan   = scan;
         this.plane  = plane;
+        this.flight = flight;
     }
 
     public void start() {
@@ -22,6 +22,7 @@ public class UserInterface {
 
             if (cmd.equals("x")) {
                 flightService();
+                return;
             }
             int command = Integer.parseInt(cmd);
 
@@ -53,13 +54,13 @@ public class UserInterface {
 
             switch (command) {
                 case 1:
-                    // do stuff
+                    printPlanes();
                     break;
                 case 2:
-                    // do stuff
+                    flight.printFlights();
                     break;
                 case 3:
-                    // do stuff
+                    printPlaneInfo();
                     break;
                 default:
                     break;
@@ -104,13 +105,22 @@ public class UserInterface {
         System.out.print("Give destination airport code: ");
         String destCode = scan.nextLine();
 
-        Flight flight = new Flight(plane);
-        flight.addNewFlight(plane, deptCode, destCode);
-        list.add(flight);
-
+        flight.addNewFlight(planeID, deptCode, destCode);
     }
 
+    public void printPlanes() {
+        for (String key : plane.planeToCapacity.keySet()) {
+            System.out.println(key + " (" + plane.translate(key) + " ppl)");
+        }
+    }
 
+    public void printPlaneInfo() {
+        System.out.print("Give plane ID: ");
+        String planeID = scan.nextLine();
 
-
+        if (plane.planeToCapacity.containsKey(planeID)) {
+            System.out.println(planeID + " (" + plane.planeToCapacity.get(planeID)
+            + " ppl)");
+        }
+    }
 }

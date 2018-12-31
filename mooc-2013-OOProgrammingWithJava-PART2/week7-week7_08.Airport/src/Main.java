@@ -8,20 +8,18 @@ public class Main {
                 "1\n" + "G-OWAC\n" + "101\n" +
                 "2\n" + "HA-LOL\n" + "HEL\n" + "BAL\n" +
                 "2\n" + "G-OWAC\n" + "JFK\n" + "BAL\n" +
-                "2\n" + "HA-LOL\n" + "BAL\n" + "HEL\n";
-                //"x\n" +
-                //"1\n" + "2\n" + "3\n" + "G-OWAC\n" + "x\n";
+                "2\n" + "HA-LOL\n" + "BAL\n" + "HEL\n" +
+                "x\n" +
+                "1\n" + "2\n" + "3\n" + "G-OWAC\n" + "x\n";
 
         Airplane plane   = new Airplane();
-        Scanner scan     = new Scanner(userinputs);
-        UserInterface ui = new UserInterface(scan, plane);
+        Flight flight    = new Flight(plane);
+        Scanner scan     = new Scanner(System.in);
+        UserInterface ui = new UserInterface(scan, plane, flight);
 
         ui.start();
 
-
-
     }
-
 
 }
 

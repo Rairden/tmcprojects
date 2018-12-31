@@ -1,32 +1,42 @@
+import java.util.ArrayList;
 
 public class Flight {
 
     public Airplane plane;
-    public String departure;
-    public String destination;
+    public String   planeID;
+    public String   departure;
+    public String   destination;
+    public ArrayList<Flight> list = new ArrayList<Flight>();
+
+    public Flight() {}
 
     public Flight(Airplane plane) {
         this.plane = plane;
     }
 
-    public void addNewFlight(Airplane plane, String dept, String dest) {
-        this.plane       = plane;
-        this.departure   = dept;
-        this.destination = dest;
+    public Flight(String planeID, String departure, String destination) {
+        this.planeID = planeID;
+        this.departure = departure;
+        this.destination = destination;
     }
 
-    public Airplane getPlane() {
-        return plane;
+    public void addNewFlight(String planeID, String dept, String dest) {
+        list.add(new Flight(planeID, dept, dest));
     }
 
-    public String getDeparture() {
-        return departure;
+    public void printFlights() {
+        ArrayList<String> keySet = new ArrayList<String>();
+
+        keySet.addAll(plane.getHashMap().keySet());
+
+        for (String s : keySet) {
+            for (Flight x : list) {
+                if (x.planeID.equals(s)) {
+                    int cap = plane.translate(x.planeID);
+                        System.out.println(x.planeID + " (" + cap + " ppl) "
+                        + "(" + x.departure + "-" + x.destination + ")");
+                }
+            }
+        }
     }
-
-    public String getDestination() {
-        return destination;
-    }
-
-
-
 }

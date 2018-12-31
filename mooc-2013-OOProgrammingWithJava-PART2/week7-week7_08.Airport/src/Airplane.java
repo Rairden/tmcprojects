@@ -4,7 +4,7 @@ public class Airplane {
 
     public HashMap<String, Integer> planeToCapacity;
 
-    Airplane() {
+    public Airplane() {
         this.planeToCapacity = new HashMap<String, Integer>();
     }
 
@@ -23,7 +23,5 @@ public class Airplane {
     public HashMap<String, Integer> getHashMap() {
         return planeToCapacity;
     }
-
-
 
 }
