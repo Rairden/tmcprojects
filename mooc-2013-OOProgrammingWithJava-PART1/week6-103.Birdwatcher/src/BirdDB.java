@@ -11,15 +11,14 @@ public class BirdDB {
 
         System.out.print("Latin Name: ");
         String latinBird  = scan.nextLine();
-        System.out.println();
+        //System.out.println();
         birdList.add(new Bird(bird, latinBird));
     }
 
     // asks what was observed?
     public void observation(Scanner scan) {
-        System.out.print("What was observed?: ");
+        System.out.print("What was observed? ");
         String bird = scan.nextLine();
-        System.out.println();
 
         boolean found = false;
 

@@ -12,7 +12,7 @@ public class Main {
         while (key != "Quit") {
             Scanner scan = new Scanner(System.in);
 
-            System.out.println("?\n");
+            System.out.print("? ");
             key = scan.nextLine();
 
             switch (key) {

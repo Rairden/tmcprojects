@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a69b13a-d61d-45d1-b07d-be69651d7ec1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,16 +12,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6199203">
+    <splitter split-orientation="horizontal" split-proportion="0.69203186">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.3215434">
+        <splitter split-orientation="horizontal" split-proportion="0.43614638">
           <split-first>
             <leaf>
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/Main.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="713">
-                      <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+                    <state relative-caret-position="529">
+                      <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
                     </state>
                   </provider>
                 </entry>
@@ -29,14 +29,14 @@
             </leaf>
           </split-first>
           <split-second>
-            <splitter split-orientation="vertical" split-proportion="0.45132744">
+            <splitter split-orientation="vertical" split-proportion="0.52286136">
               <split-first>
                 <leaf>
                   <file pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/src/Airplane.java">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="299">
-                          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+                        <state relative-caret-position="94">
+                          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
                           <folding>
                             <element signature="imports" expanded="true" />
                           </folding>
@@ -51,11 +51,11 @@
                   <file pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/src/Flight.java">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="150">
-                          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                        <state relative-caret-position="115">
+                          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
                           <folding>
                             <element signature="e#221#229#0" expanded="true" />
-                            <element signature="e#730#738#0" expanded="true" />
+                            <element signature="e#736#744#0" expanded="true" />
                           </folding>
                         </state>
                       </provider>
@@ -72,8 +72,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1863">
-                  <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+                <state relative-caret-position="540">
+                  <caret line="87" selection-start-line="87" selection-end-line="87" />
                 </state>
               </provider>
             </entry>
@@ -103,9 +103,9 @@
       <list>
         <option value="$PROJECT_DIR$/nbproject/project.properties" />
         <option value="$PROJECT_DIR$/src/readme.md" />
+        <option value="$PROJECT_DIR$/src/UserInterface.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Airplane.java" />
-        <option value="$PROJECT_DIR$/src/UserInterface.java" />
         <option value="$PROJECT_DIR$/src/Flight.java" />
       </list>
     </option>
@@ -123,6 +123,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,17 +146,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546254175204" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546317789585" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -172,6 +172,9 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="week7-week7_08.Airport" />
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="visualVMId" value="14084336321994" />
+      </RunnerSettings>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -204,16 +207,18 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.5024077" side_tool="true" weight="0.123904385" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4975923" weight="0.10717131" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4975923" weight="0.10796813" />
       <window_info id="Structure" order="6" sideWeight="0.5024077" side_tool="true" weight="0.123904385" />
+      <window_info anchor="bottom" id="Run with VisualVM" weight="0.32872504" />
+      <window_info anchor="bottom" id="Debug with VisualVM" weight="0.32872504" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32872504" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3298639" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32949308" />
       <window_info anchor="bottom" auto_hide="true" id="TMC Test Results" order="3" weight="0.49615976" />
       <window_info anchor="bottom" auto_hide="true" id="Messages" order="4" weight="0.32718894" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32949308" />
-      <window_info anchor="bottom" auto_hide="true" x="2560" y="31" width="1920" height="1127" id="Debug" order="7" type="WINDOWED" visible="true" weight="0.36731744" />
+      <window_info anchor="bottom" auto_hide="true" x="2560" y="31" width="1920" height="1127" id="Debug" order="7" type="WINDOWED" weight="0.36731744" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32985553" />
@@ -226,7 +231,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="right" auto_hide="true" x="439" y="113" width="819" height="1246" id="Run" order="9" weight="0.2804781" />
+      <window_info anchor="right" auto_hide="true" x="439" y="113" width="819" height="1246" id="Run" order="9" weight="0.2800797" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32988048" />
       <window_info anchor="right" id="Maven" order="11" />
     </layout>
@@ -340,37 +345,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="540">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Airplane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+        <state relative-caret-position="94">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+        <state relative-caret-position="529">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Flight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="115">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
             <element signature="e#221#229#0" expanded="true" />
-            <element signature="e#730#738#0" expanded="true" />
+            <element signature="e#736#744#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -378,6 +383,30 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -401,6 +430,19 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>week7-week7_08.Airport</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
@@ -415,6 +457,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

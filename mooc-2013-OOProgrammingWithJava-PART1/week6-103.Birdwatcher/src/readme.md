@@ -23,58 +23,26 @@ The program should also handle the invalid inputs (see `Turing` below).
 The following is an example how the program is supposed to work:
 
 <pre>
-? 
-
-<font color="red">Add</font>
-Name: 
-
-<font color="red">Raven</font>
-Latin Name: 
-
-<font color="red">Corvus Corvus</font>
-? 
-
-<font color="red">Add</font>
-Name: 
-
-<font color="red">Seagull</font>
-Latin Name: 
-
-<font color="red">Dorkus Dorkus</font>
-? 
-
-<font color="red">Observation</font>
-What was observed:? 
-
-<font color="red">Seagull</font>
-? 
-
-<font color="red">Observation</font>
-What was observed:? 
-
-<font color="red">Turing</font>
+? <font color="red">Add</font>
+Name: <font color="red">Raven</font>
+Latin Name: <font color="red">Corvus Corvus</font>
+? <font color="red">Add</font>
+Name: <font color="red">Seagull</font>
+Latin Name: <font color="red">Dorkus Dorkus</font>
+? <font color="red">Observation</font>
+What was observed? <font color="red">Seagull</font>
+? <font color="red">Observation</font>
+What was observed? <font color="red">Turing</font>
 Is not a bird!
-? 
-
-<font color="red">Observation</font>
-What was observed:? 
-
-<font color="red">Seagull</font>
-? 
-
-<font color="red">Statistics</font>
+? <font color="red">Observation</font>
+What was observed? <font color="red">Seagull</font>
+? <font color="red">Statistics</font>
 Seagull (Dorkus Dorkus): 2 observations
 Raven (Corvus Corvus): 0 observations
-? 
-
-<font color="red">Show</font>
-What? 
-
-<font color="red">Seagull</font>
+? <font color="red">Show</font>
+What? <font color="red">Seagull</font>
 Seagull (Dorkus Dorkus): 2 observations
-? 
-
-<font color="red">Quit</font>
+? <font color="red">Quit</font>
 </pre>
 
 **Note** you may structure your program freely, it is only required that the output
