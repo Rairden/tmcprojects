@@ -8,8 +8,6 @@ public class Flight {
     public String   destination;
     public ArrayList<Flight> list = new ArrayList<Flight>();
 
-    public Flight() {}
-
     public Flight(Airplane plane) {
         this.plane = plane;
     }
