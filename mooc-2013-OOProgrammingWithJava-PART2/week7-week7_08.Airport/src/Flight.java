@@ -15,8 +15,8 @@ public class Flight {
     }
 
     public Flight(String planeID, String departure, String destination) {
-        this.planeID = planeID;
-        this.departure = departure;
+        this.planeID     = planeID;
+        this.departure   = departure;
         this.destination = destination;
     }
 
