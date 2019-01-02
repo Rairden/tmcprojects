@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -29,10 +28,23 @@ public class Main {
         Map<RegistrationPlate, String> owners = new HashMap<RegistrationPlate, String>();
         owners.put(reg1, "Arto");
         owners.put(reg3, "Jürgen");
+        owners.put(reg3, "Chad");
 
         System.out.println("owners:");
         System.out.println(owners.get(new RegistrationPlate("FI", "ABC-123")));
         System.out.println(owners.get(new RegistrationPlate("D", "B WQ-431")));
         // if the hashCode hasn't been overwritten, the owners are not found
+
+        System.out.println("----------------------------------------");
+
+        VehicleRegister vehicleRegister = new VehicleRegister();
+        System.out.println(vehicleRegister.get(reg1));
+
+        vehicleRegister.db.put(reg1, "Arto");
+        vehicleRegister.db.put(reg1, "TEST");
+        vehicleRegister.db.put(reg3, "Jürgen");
+        vehicleRegister.db.put(reg3, "Chad");
+
+
     }
 }
