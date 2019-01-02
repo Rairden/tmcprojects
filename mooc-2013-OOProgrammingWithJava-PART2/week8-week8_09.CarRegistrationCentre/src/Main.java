@@ -28,7 +28,7 @@ public class Main {
         Map<RegistrationPlate, String> owners = new HashMap<RegistrationPlate, String>();
         owners.put(reg1, "Arto");
         owners.put(reg3, "Jürgen");
-        owners.put(reg3, "Chad");
+        owners.put(reg3, "chad");
 
         System.out.println("owners:");
         System.out.println(owners.get(new RegistrationPlate("FI", "ABC-123")));
@@ -40,10 +40,11 @@ public class Main {
         VehicleRegister vehicleRegister = new VehicleRegister();
         System.out.println(vehicleRegister.get(reg1));
 
-        vehicleRegister.db.put(reg1, "Arto");
-        vehicleRegister.db.put(reg1, "TEST");
-        vehicleRegister.db.put(reg3, "Jürgen");
-        vehicleRegister.db.put(reg3, "Chad");
+        vehicleRegister.add(reg1, "Arto");
+        vehicleRegister.add(reg1, "TEST");
+        vehicleRegister.add(reg3, "erik");
+        vehicleRegister.add(reg3, "chad");
+        vehicleRegister.delete(reg3);
 
 
     }
