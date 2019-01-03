@@ -2,22 +2,14 @@ import java.util.Objects;
 
 public class RegistrationPlate {
     // don't change the code which is already given to you
-
     // ATTENTION: the object variable types are final, meaning that their value cannot be changed!
+
     private final String country;
     private final String regCode;
 
     public RegistrationPlate(String country, String regCode) {
         this.country = country;
         this.regCode = regCode;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public String getRegCode() {
-        return regCode;
     }
 
     @Override

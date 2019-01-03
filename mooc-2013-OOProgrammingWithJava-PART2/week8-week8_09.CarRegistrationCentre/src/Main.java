@@ -7,10 +7,11 @@ public class Main {
 
     public static void main(String[] args) {
         // below is the same example program as in the assignment
-
+        
         RegistrationPlate reg1 = new RegistrationPlate("FI", "ABC-123");
-        RegistrationPlate reg2 = new RegistrationPlate("FI", "UXE-465");
-        RegistrationPlate reg3 = new RegistrationPlate("D", "B WQ-431");
+        RegistrationPlate reg2 = new RegistrationPlate("FI", "ABC-123");
+        RegistrationPlate reg3 = new RegistrationPlate("FI", "UXE-465");
+        RegistrationPlate reg4 = new RegistrationPlate("D", "B WQ-431");
 
         List<RegistrationPlate> finnish = new ArrayList<RegistrationPlate>();
         finnish.add(reg1);
@@ -28,7 +29,8 @@ public class Main {
         Map<RegistrationPlate, String> owners = new HashMap<RegistrationPlate, String>();
         owners.put(reg1, "Arto");
         owners.put(reg3, "Jürgen");
-        owners.put(reg3, "chad");
+        owners.put(reg4, "chad");
+        owners.put(reg4, "chad2");
 
         System.out.println("owners:");
         System.out.println(owners.get(new RegistrationPlate("FI", "ABC-123")));
@@ -40,11 +42,14 @@ public class Main {
         VehicleRegister vehicleRegister = new VehicleRegister();
         System.out.println(vehicleRegister.get(reg1));
 
-        vehicleRegister.add(reg1, "Arto");
-        vehicleRegister.add(reg1, "TEST");
-        vehicleRegister.add(reg3, "erik");
-        vehicleRegister.add(reg3, "chad");
-        vehicleRegister.delete(reg3);
+        vehicleRegister.add(reg1, "Arto1");
+        vehicleRegister.add(reg1, "test1");
+        vehicleRegister.add(reg3, "erik3");
+        vehicleRegister.add(reg3, "chad3");
+        vehicleRegister.add(reg4, "erik4");
+     // vehicleRegister.delete(reg3);
+
+        vehicleRegister.printOwners();
 
 
     }

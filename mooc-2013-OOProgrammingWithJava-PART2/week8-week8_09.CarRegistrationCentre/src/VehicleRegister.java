@@ -1,4 +1,7 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class VehicleRegister {
 
@@ -9,7 +12,7 @@ public class VehicleRegister {
     }
 
     public String get(RegistrationPlate plate) {
-        if (this.db.containsValue(plate)) {
+        if (db.containsKey(plate)) {
             return db.get(plate);
         } else {
             return null;
@@ -17,8 +20,8 @@ public class VehicleRegister {
     }
 
     public boolean add(RegistrationPlate plate, String owner) {
-        if (!this.db.containsKey(plate)) {
-            this.db.putIfAbsent(plate, owner);
+        if (!db.containsKey(plate)) {
+            db.put(plate, owner);
             return true;
         } else {
             return false;
@@ -27,10 +30,10 @@ public class VehicleRegister {
 
     // delete the info connected to the plate
     public boolean delete(RegistrationPlate plate) {
-        if (this.db.containsKey(plate)) {
-            if (this.db.containsValue(db.get(plate))) {
-                this.db.remove(plate, db.get(plate));
-                this.db.putIfAbsent(plate, null);
+        if (db.containsKey(plate)) {
+            if (db.containsValue(db.get(plate))) {
+                db.remove(plate, db.get(plate));
+                db.putIfAbsent(plate, null);
             }
             return true;
         } else {
@@ -38,8 +41,31 @@ public class VehicleRegister {
         }
     }
 
+    public void printRegistrationPlates() {
+        for (RegistrationPlate plate : db.keySet()) {
+            System.out.println(plate);
+        }
+    }
 
+    public void printOwners() {
+        Set<String> ownerSet = new HashSet<String>(db.values());
 
+        for (String owner : ownerSet) {
+            System.out.println(owner);
+        }
+    }
+
+    // this works, but isn't as good.
+    public void printOwners2() {
+        ArrayList<String> temp = new ArrayList<String>();
+
+        for (String owner : db.values()) {
+            if (!temp.contains(owner)) {
+                temp.add(owner);
+                System.out.println(owner);
+            }
+        }
+    }
 
 
 }
