@@ -22,5 +22,13 @@ public class ShoppingBasket {
         return total;
     }
 
+    public void print() {
+        for (Purchase p : basketMap.values()) {
+            System.out.println(p.toString());
+        }
+    }
+
+
+
 
 }
