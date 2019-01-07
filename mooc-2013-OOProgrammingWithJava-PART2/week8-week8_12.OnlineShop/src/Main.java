@@ -66,8 +66,24 @@ public class Main {
 
         printLine();    // -------------------------------------
 
+        ShoppingBasket basket2 = new ShoppingBasket();
+        basket2.add("milk", 3);
+        basket2.print();
+        System.out.println("basket price: " + basket2.price() +"\n");
 
+        basket2.add("buttermilk", 2);
+        basket2.print();
+        System.out.println("basket price: " + basket2.price() +"\n");
 
+        basket2.add("milk", 3);
+        basket2.print();
+        System.out.println("basket price: " + basket2.price() +"\n");
+
+        basket2.add("milk", 3);
+        basket2.print();
+        System.out.println("basket price: " + basket2.price() +"\n");
+
+        printLine();    // -------------------------------------
 
     }
 

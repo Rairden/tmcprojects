@@ -15,6 +15,10 @@ public class Purchase {
         amount++;
     }
 
+    public int getAmount() {
+        return amount;
+    }
+
     public int price() {
         return amount * unitPrice;
     }

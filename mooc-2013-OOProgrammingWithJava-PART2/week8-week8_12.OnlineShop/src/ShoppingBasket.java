@@ -10,8 +10,16 @@ public class ShoppingBasket {
     }
 
     public void add(String product, int price) {
-        Purchase purchase = new Purchase(product, 1, price);
-        basketMap.putIfAbsent(product, purchase);
+
+        if (basketMap.containsKey(product)) {
+            int amount = basketMap.get(product).getAmount();
+            Purchase purchase = new Purchase(product, amount, price);
+            purchase.increaseAmount();
+            basketMap.put(product, purchase);
+        } else {
+            Purchase purchase = new Purchase(product, 1, price);
+            basketMap.put(product, purchase);
+        }
     }
 
     public int price() {
@@ -27,8 +35,5 @@ public class ShoppingBasket {
             System.out.println(p.toString());
         }
     }
-
-
-
 
 }
