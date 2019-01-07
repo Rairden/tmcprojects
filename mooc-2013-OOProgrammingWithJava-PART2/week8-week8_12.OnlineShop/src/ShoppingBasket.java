@@ -5,7 +5,7 @@ public class ShoppingBasket {
 
     private Map<String, Purchase> basketMap;
 
-    ShoppingBasket() {
+    public ShoppingBasket() {
         this.basketMap = new HashMap<>();
     }
 

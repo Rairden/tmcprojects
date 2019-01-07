@@ -11,6 +11,7 @@ out/
 # IntelliJ files.  You can safely ignore workspace.xml and tasks.xml
 build_errors.txt
 build_log.txt
+.idea/dictionaries
 #workspace.xml
 #tasks.xml
 

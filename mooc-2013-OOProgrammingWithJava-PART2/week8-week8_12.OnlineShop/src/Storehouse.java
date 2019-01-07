@@ -12,6 +12,10 @@ public class Storehouse {
         this.stockMap = new HashMap<>();
     }
 
+    public Map<String, Integer> getPriceMap() {
+        return priceMap;
+    }
+
     public Set<String> products() {
         Set<String> set;
         set = priceMap.keySet();
@@ -39,5 +43,5 @@ public class Storehouse {
             return false;
         }
     }
-    
+
 }

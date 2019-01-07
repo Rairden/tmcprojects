@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Main {
 
@@ -85,10 +86,95 @@ public class Main {
 
         printLine();    // -------------------------------------
 
-    }
+        Storehouse store4 = new Storehouse();
+        store4.addProduct("coffee", 5, 10);
+        store4.addProduct("milk", 3, 3);
+        store4.addProduct("milkbutter", 2, 55);
+        store4.addProduct("bread", 7, 8);
 
+        String input = "milk\n" + "milk\n" + "milk\n" + "milk\n" + "bread\n" + "\n";
+
+        Shop shop = new Shop(store4, new Scanner(System.in));
+        shop.manage("Pekka");
+
+
+    }
 
     private static void printLine() {
         System.out.println("--------------------------------------------");
     }
+
 }
+
+/*
+prices:
+milk:  3
+coffee:  5
+sugar: -99
+--------------------------------------------
+stocks:
+coffee:  1
+sugar: 0
+we take a coffee true
+we take a coffee false
+we take sugar false
+stocks:
+coffee:  0
+sugar: 0
+--------------------------------------------
+products:
+yogurt
+coffee
+milk
+buttermilk
+--------------------------------------------
+the total price of a purchase containing four milks is 8
+milk: 4
+milk: 5
+--------------------------------------------
+basket price: 10
+basket price: 909
+--------------------------------------------
+computer: 1
+milk: 1
+buttermilk: 1
+cheese: 1
+--------------------------------------------
+milk: 1
+basket price: 3
+
+milk: 1
+buttermilk: 1
+basket price: 5
+
+milk: 2
+buttermilk: 1
+basket price: 8
+
+milk: 3
+buttermilk: 1
+basket price: 11
+
+--------------------------------------------
+Welcome to our shop Pekka
+below is our sale offer:
+bread
+coffee
+milk
+milkbutter
+what do you want to buy (press enter to pay): milk
+what do you want to buy (press enter to pay): milk
+what do you want to buy (press enter to pay): milk
+what do you want to buy (press enter to pay): milk
+what do you want to buy (press enter to pay): coffee
+what do you want to buy (press enter to pay): coffee
+what do you want to buy (press enter to pay): bread
+what do you want to buy (press enter to pay):
+your purchases are:
+bread: 1
+coffee: 2
+milk: 3
+basket price: 26
+
+Process finished with exit code 0
+*/
