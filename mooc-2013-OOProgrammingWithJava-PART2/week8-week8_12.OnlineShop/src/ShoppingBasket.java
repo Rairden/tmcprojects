@@ -10,8 +10,8 @@ public class ShoppingBasket {
     }
 
     public void add(String product, int price) {
-        Purchase purchcase = new Purchase(product, 1, price);
-        basketMap.putIfAbsent(product, purchcase);
+        Purchase purchase = new Purchase(product, 1, price);
+        basketMap.putIfAbsent(product, purchase);
     }
 
     public int price() {
