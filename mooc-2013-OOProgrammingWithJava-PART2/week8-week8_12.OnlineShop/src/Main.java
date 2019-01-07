@@ -15,21 +15,41 @@ public class Main {
         printLine();    // -------------------------------------
 
         Storehouse store2 = new Storehouse();
-        store.addProduct("coffee", 5, 1);
+        store2.addProduct("coffee", 5, 1);
 
         System.out.println("stocks:");
-        System.out.println("coffee:  " + store.stock("coffee"));
-        System.out.println("sugar: " + store.stock("sugar"));
+        System.out.println("coffee:  " + store2.stock("coffee"));
+        System.out.println("sugar: " + store2.stock("sugar"));
 
-        System.out.println("we take a coffee " + store.take("coffee"));
-        System.out.println("we take a coffee " + store.take("coffee"));
-        System.out.println("we take sugar " + store.take("sugar"));
+        System.out.println("we take a coffee " + store2.take("coffee"));
+        System.out.println("we take a coffee " + store2.take("coffee"));
+        System.out.println("we take sugar " + store2.take("sugar"));
 
         System.out.println("stocks:");
-        System.out.println("coffee:  " + store.stock("coffee"));
-        System.out.println("sugar: " + store.stock("sugar"));
+        System.out.println("coffee:  " + store2.stock("coffee"));
+        System.out.println("sugar: " + store2.stock("sugar"));
 
-        
+        printLine();    // -------------------------------------
+
+        Storehouse store3 = new Storehouse();
+        store3.addProduct("milk", 3, 10);
+        store3.addProduct("coffee", 5, 6);
+        store3.addProduct("buttermilk", 2, 20);
+        store3.addProduct("yogurt", 2, 20);
+
+        System.out.println("products:");
+        for (String product : store3.products()) {
+            System.out.println(product);
+        }
+
+        printLine();    // -------------------------------------
+
+        Purchase purchase = new Purchase("milk", 4, 2);
+        System.out.println( "the total price of a purchase containing four milks is " + purchase.price() );
+        System.out.println( purchase );
+        purchase.increaseAmount();
+        System.out.println( purchase );
+
 
     }
 
