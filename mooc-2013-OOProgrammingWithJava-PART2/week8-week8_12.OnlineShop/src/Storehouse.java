@@ -8,8 +8,8 @@ public class Storehouse {
     private Map<String, Integer> stockMap;
 
     public Storehouse() {
-        this.priceMap = new HashMap<String, Integer>();
-        this.stockMap = new HashMap<String, Integer>();
+        this.priceMap = new HashMap<>();
+        this.stockMap = new HashMap<>();
     }
 
     public Set<String> products() {
@@ -41,5 +41,5 @@ public class Storehouse {
     }
 
 
-    
+
 }
