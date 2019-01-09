@@ -17,12 +17,12 @@ Now, instead of writing the number 1, we can use the constant `Card.DIAMONDS` in
 
 <pre class="sh_java sh_sourceCode">
 Card first = new Card(2, Card.DIAMONDS);
-  Card second = new Card(14, Card.CLUBS);
-  Card third = new Card(12, Card.HEARTS);
+Card second = new Card(14, Card.CLUBS);
+Card third = new Card(12, Card.HEARTS);
 
-  System.out.println(first);
-  System.out.println(second);
-  System.out.println(third);
+System.out.println(first);
+System.out.println(second);
+System.out.println(third);
 </pre>
 
 Prints:
@@ -52,10 +52,10 @@ Next, let's create the class `Hand` which represents the player hand set of card
 <pre class="sh_java sh_sourceCode">
 Hand hand = new Hand();
 
-  hand.add( new Card(2, Card.SPADES) );
-  hand.add( new Card(14, Card.CLUBS) );
-  hand.add( new Card(12, Card.HEARTS) );
-  hand.add( new Card(2, Card.CLUBS) );
+  hand.add(new Card(2, Card.SPADES) );
+  hand.add(new Card(14, Card.CLUBS) );
+  hand.add(new Card(12, Card.HEARTS) );
+  hand.add(new Card(2, Card.CLUBS) );
 
   hand.print();
 </pre>
@@ -79,14 +79,13 @@ Create the method `public void sort()` for your hand, which sorts the cards in t
 <pre class="sh_java sh_sourceCode">
 Hand hand = new Hand();
 
-  hand.add( new Card(2, Card.SPADES) );
-  hand.add( new Card(14, Card.CLUBS) );
-  hand.add( new Card(12, Card.HEARTS) );
-  hand.add( new Card(2, Card.CLUBS) );
+hand.add(new Card(2,  Card.SPADES));
+hand.add(new Card(14, Card.CLUBS));
+hand.add(new Card(12, Card.HEARTS));
+hand.add(new Card(2,  Card.CLUBS));
 
-  hand.sort();
-
-  hand.print();
+hand.sort();
+hand.print();
 </pre>
 
 Prints:
@@ -108,16 +107,16 @@ Below, you find an example of a program where we compare hands:
 <pre class="sh_java sh_sourceCode">
 Hand hand1 = new Hand();
 
-  hand1.add(newCard(2, Card.SPADES) );
-  hand1.add( new Card(14, Card.CLUBS) );
-  hand1.add( new Card(12, Card.HEARTS) );
-  hand1.add( new Card(2, Card.CLUBS) );
+  hand1.add(new Card(2,  Card.SPADES));
+  hand1.add(new Card(14, Card.CLUBS));
+  hand1.add(new Card(12, Card.HEARTS));
+  hand1.add(new Card(2,  Card.CLUBS));
 
   Hand hand2 = new Hand();
 
-  hand2.add( new Card(11, Card.DIAMONDS) );
-  hand2.add( new Card(11, Card.CLUBS) );
-  hand2.add( new Card(11, Card.HEARTS) );
+  hand2.add(new Card(11, Card.DIAMONDS));
+  hand2.add(new Card(11, Card.CLUBS));
+  hand2.add(new Card(11, Card.HEARTS));
 
   int comparison = hand1.compareTo(hand2);
 
@@ -153,9 +152,9 @@ The idea is creating a specific comparison class for each sorting order; for ins
 <pre class="sh_java sh_sourceCode">
 import java.util.Comparator;
 
-public class SortAgainstSuit implements Comparator<Card> {
+public class SortAgainstSuit implements Comparator&lt;Card&gt; {
     public int compare(Card card1, Card card2) {
-        return card1.getSuit()-card2.getSuit();
+        return card1.getSuit() - card2.getSuit();
     }
 }
 </pre>
@@ -165,16 +164,16 @@ Sorting against suit works in the same way as the card method `compareTo` though
 Sorting is still possible through the Collections' sort method. The method now receives as second parameter an object of the class that determines the sorting order:
 
 <pre class="sh_java sh_sourceCode">
-ArrayList<Card> cards =new ArrayList<Card>();
+ArrayList<Card> cards = new ArrayList<Card>();
 
-  cards.add( new Card(3, Card.CLUBS) );
-  cards.add( new Card(2, Card.DIAMONDS) );
-  cards.add( new Card(14, Card.CLUBS) );
-  cards.add( new Card(12, Card.HEARTS) );
-  cards.add( new Card(2, Card.CLUBS) );
+  cards.add(new Card(3,  Card.CLUBS));
+  cards.add(new Card(2,  Card.DIAMONDS));
+  cards.add(new Card(14, Card.CLUBS));
+  cards.add(new Card(12, Card.HEARTS));
+  cards.add(new Card(2,  Card.CLUBS));
 
   SortAgainstSuit suitSorter = new SortAgainstSuit();
-  Collections.sort(cards, suitSorter );
+  Collections.sort(cards, suitSorter);
 
   for (Card c : cards) {
     System.out.println( c );
@@ -195,7 +194,7 @@ A of Clubs
 The sorting object can also be created directly together with the sort call:
 
 <pre class="sh_java sh_sourceCode">
-  Collections.sort(cards, new SortAgainstSuit() );
+  Collections.sort(cards, new SortAgainstSuit());
 </pre>
 
 Further information about comparator classes in [here.](http://leepoint.net/notes-java/data/collections/comparators.html)
@@ -209,15 +208,14 @@ Add the method `public void sortAgainstSuit()` to the class `Hand`; when the met
 <pre class="sh_java sh_sourceCode">
 Hand hand = new Hand();
 
-  hand.add( new Card(12, Card.HEARTS) );
-  hand.add( new Card(4, Card.CLUBS) );
-  hand.add( new Card(2, Card.DIAMONDS) );
-  hand.add( new Card(14, Card.CLUBS) );
-  hand.add( new Card(7, Card.HEARTS) );
-  hand.add( new Card(2, Card.CLUBS) );
+  hand.add(new Card(12, Card.HEARTS));
+  hand.add(new Card(4,  Card.CLUBS));
+  hand.add(new Card(2,  Card.DIAMONDS));
+  hand.add(new Card(14, Card.CLUBS));
+  hand.add(new Card(7,  Card.HEARTS));
+  hand.add(new Card(2,  Card.CLUBS));
 
   hand.sortAgainstSuit();
-
   hand.print();
 </pre>
 

@@ -33,7 +33,13 @@ public class Card implements Comparable<Card> {
 
     @Override
     public int compareTo(Card o) {
-        return this.value - o.value;
+        int i = this.value - o.value;
+
+        if (i != 0) {
+            return i;
+        }
+
+        return this.suit - o.suit;
     }
 
     @Override

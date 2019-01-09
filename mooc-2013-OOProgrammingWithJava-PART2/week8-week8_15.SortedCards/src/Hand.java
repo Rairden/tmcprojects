@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Hand implements Comparable<Hand>{
+public class Hand implements Comparable<Hand> {
 
     private ArrayList<Card> cards;
 
@@ -9,30 +9,26 @@ public class Hand implements Comparable<Hand>{
         this.cards = new ArrayList<Card>();
     }
 
-    public void sort() {
-        Collections.sort(cards);
-        /** in sorted order, clubs highest.
-         * 2 of Spades
-         * 2 of Clubs
-         * Q of Hearts
-         * A of Clubs
-         */
-    }
+    public void sort() {            /* in sorted order, Ace of clubs highest */
+        Collections.sort(cards);    // 2 of Spades
+    }                               // 2 of Clubs
+                                    // Q of Hearts
+                                    // A of Clubs
 
-    void add(Card card) {
+    public void add(Card card) {
         cards.add(card);
     }
 
-    void print() {
-        for (Card card1 : cards) {
-            System.out.println(card1.toString());
+    public void print() {
+        for (Card c : cards) {
+            System.out.println(c.toString());
         }
     }
 
     @Override
     public int compareTo(Hand o) {
-        int thisTotal, otherTotal;
-        thisTotal = otherTotal = 0;
+        int thisTotal  = 0;
+        int otherTotal = 0;
 
         for (Card card : this.cards) {
             thisTotal += card.getValue();
@@ -43,5 +39,9 @@ public class Hand implements Comparable<Hand>{
         }
 
         return thisTotal - otherTotal;
+    }
+
+    public void sortAgainstSuit() {
+        Collections.sort(cards, new SortAgainstSuitAndValue());
     }
 }
