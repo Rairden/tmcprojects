@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e537bb35-d96f-453e-b70b-a85d416d843c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week7-week7_04.ThingSuitcaseAndContainer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week7-week7_04.ThingSuitcaseAndContainer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Jump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jump.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface.java" afterDir="false" />
     </list>
@@ -20,8 +20,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="849">
-                  <caret line="33" column="69" lean-forward="true" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
+                <state relative-caret-position="679">
+                  <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -36,8 +36,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Jump.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+                <state relative-caret-position="680">
+                  <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -80,6 +83,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -97,7 +101,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,7 +158,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.5024077" side_tool="true" weight="0.123904385" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4975923" weight="0.10754414" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4975923" weight="0.107421875" />
       <window_info id="Structure" order="6" sideWeight="0.5024077" side_tool="true" weight="0.123904385" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32985553" />
@@ -177,7 +180,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="right" auto_hide="true" x="439" y="113" width="819" height="1246" id="Run" order="9" weight="0.26693228" />
+      <window_info anchor="right" auto_hide="true" x="439" y="113" width="819" height="1246" id="Run" order="9" weight="0.3265625" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32988048" />
       <window_info anchor="right" id="Maven" order="11" />
     </layout>
@@ -207,22 +210,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="408">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Jump.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="680">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="33" column="69" lean-forward="true" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
+        <state relative-caret-position="679">
+          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

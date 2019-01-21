@@ -9,7 +9,7 @@ public class UserInterface {
 
     public UserInterface(Scanner scan) {
         this.scan = new Scanner(System.in);
-        this.jumpMap = new HashMap<>();
+        this.jumpMap = new HashMap<String, Jump>();
     }
 
     public void start() {
@@ -23,13 +23,13 @@ public class UserInterface {
             if (name.equals("")) {
                 break;
             }
-            Jump jump = new Jump();
-            jumpMap.putIfAbsent(name, jump);
+            jumpMap.putIfAbsent(name, null);
 
         }
         System.out.println();
         System.out.println("The tournament begins!\n");
 
+        int round = 1;
         while (true) {
             System.out.print("Write \"jump\" to jump; otherwise you quit: ");
             String command = scan.nextLine();
@@ -38,15 +38,17 @@ public class UserInterface {
                 break;
             }
 
-            int round = 1;
             if (command.equals("jump")) {
+
                 System.out.println();
                 System.out.println("Round " + round + "\n");
                 System.out.println("Jumping order:");
+                round++;
 
                 for (String s : jumpMap.keySet()) {
-                    System.out.println("  " + s.indexOf(s) + ". " + s + "(" + jumpMap.);
+                    System.out.println("  " + s.indexOf(s) + ". " + s + " (");
                 }
+
 
             }
 
