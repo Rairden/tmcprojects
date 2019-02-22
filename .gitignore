@@ -12,7 +12,8 @@ out/
 build_errors.txt
 build_log.txt
 .idea/dictionaries
-.idea/workspace.xml
+workspace.xml
+*.plantuml
 #tasks.xml
 
 # List you can ignore
