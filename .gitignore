@@ -12,7 +12,7 @@ out/
 build_errors.txt
 build_log.txt
 .idea/dictionaries
-#workspace.xml
+workspace.xml
 #tasks.xml
 
 # List you can ignore
