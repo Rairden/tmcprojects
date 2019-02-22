@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="002bcf26-f728-4ef8-9350-eabc49f3d15f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../week8-week8_12.OnlineShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week8-week8_12.OnlineShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mooc-2013-OOProgrammingWithJava-PART1/week6-100.NightSky/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mooc-2013-OOProgrammingWithJava-PART1/week6-100.NightSky/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mooc-2013-OOProgrammingWithJava-PART1/week6-103.Birdwatcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mooc-2013-OOProgrammingWithJava-PART1/week6-103.Birdwatcher/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week7-week7_07.Dictionary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week7-week7_07.Dictionary/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week8-week8_09.CarRegistrationCentre/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week8-week8_09.CarRegistrationCentre/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week8-week8_10.NationalService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week8-week8_10.NationalService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week8-week8_14.StudentsSortedByName/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week8-week8_14.StudentsSortedByName/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,14 +18,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.50278884">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="676">
-                  <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+                <state relative-caret-position="330">
+                  <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -34,10 +40,15 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Person.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="416">
-                  <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+                <state relative-caret-position="22">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/week8-week8_13.RichFirstPoorLast.plantuml">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -67,9 +78,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="week8-week8_13.RichFirstPoorLast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="week8-week8_13.RichFirstPoorLast" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -119,7 +140,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
+    <frame x="0" y="0" width="2560" height="1380" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -136,10 +157,11 @@
       <window_info anchor="bottom" auto_hide="true" id="Messages" order="4" weight="0.32985553" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" auto_hide="true" x="2560" y="31" width="1920" height="1119" id="Debug" order="7" type="WINDOWED" weight="0.27126807" />
+      <window_info anchor="bottom" x="428" y="917" width="1920" height="459" id="Debug" order="7" weight="0.29549113" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32985553" />
+      <window_info anchor="right" id="PlantUML" weight="0.32988048" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="TMC Project List" order="1" weight="0.32988048" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -155,20 +177,23 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/week8-week8_13.RichFirstPoorLast.plantuml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
