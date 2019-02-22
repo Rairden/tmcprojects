@@ -5,6 +5,9 @@ public class Jump {
     private ArrayList<Integer> distance;
     private ArrayList<Integer> votes;
     private int points;
+
+    // in each jump obj, there should be a list of jumps
+    // ...and a NEW list of votes each time.
     //private Random randDist;
     //private Random randVotes;
 

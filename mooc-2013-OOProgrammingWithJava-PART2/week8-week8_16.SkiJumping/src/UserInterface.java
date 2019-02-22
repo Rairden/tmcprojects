@@ -39,14 +39,17 @@ public class UserInterface {
             }
 
             if (command.equals("jump")) {
+                // todo: make a jump command
 
                 System.out.println();
                 System.out.println("Round " + round + "\n");
                 System.out.println("Jumping order:");
                 round++;
 
+                int index = 1;
                 for (String s : jumpMap.keySet()) {
-                    System.out.println("  " + s.indexOf(s) + ". " + s + " (");
+                    System.out.println("  " + index +  ". " + s + " (" + 0 + " points)");
+                    index++;
                 }
 
 
