@@ -4,15 +4,6 @@ title __UI's Class Diagram__\n
 
   package  {
     package mooc.ui {
-      class mooc.logic.Main {
-          {static} + main()
-      }
-    }
-  }
-  
-
-  package  {
-    package mooc.ui {
       class TextUserInterface {
           + TextUserInterface()
           + update()
@@ -31,8 +22,6 @@ title __UI's Class Diagram__\n
   
 
   TextUserInterface -up-|> UserInterface
-  TextUserInterface o-- TextUserInterface : textUI
-  TextUserInterface o-- UserInterface : ui
 
 
 right footer
