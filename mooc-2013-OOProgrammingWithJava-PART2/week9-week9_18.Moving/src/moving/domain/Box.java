@@ -14,7 +14,7 @@ public class Box implements Thing {
     }
 
     public boolean addThing(Thing thing) {
-        if (thing.getVolume() + getVolume() < maximumCapacity) {
+        if (thing.getVolume() + getVolume() <= maximumCapacity) {
             list.add(thing);
             return true;
         }
