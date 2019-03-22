@@ -1,0 +1,33 @@
+package application;
+
+public class ConstantSensor implements Sensor {
+
+    private int param;
+
+    public ConstantSensor() {
+    }
+
+    public ConstantSensor(int param) {
+        this.param = param;
+    }
+
+    @Override
+    public boolean isOn() {
+        return false;
+    }
+
+    @Override
+    public void on() {
+
+    }
+
+    @Override
+    public void off() {
+
+    }
+
+    @Override
+    public int measure() {
+        return 0;
+    }
+}
