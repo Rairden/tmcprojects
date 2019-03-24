@@ -6,11 +6,12 @@ import java.util.List;
 public class AverageSensor implements Sensor {
 
     private ArrayList<Sensor> sensors;
-    private boolean state;
+    private List<Integer> readings;
+
 
     public AverageSensor() {
-        this.sensors    = new ArrayList<Sensor>();
-        this.state      = false;
+        sensors    = new ArrayList<Sensor>();
+        readings   = new ArrayList<Integer>();
     }
 
     public void addSensor(Sensor additional) {
@@ -18,18 +19,10 @@ public class AverageSensor implements Sensor {
     }
 
     /**
-     *
      * @return a list of the reading results of all the measurements executed through your AverageSensor
      */
     public List<Integer> readings() {
-        List<Integer> list = new ArrayList<Integer>();
-
-        for (Sensor sensor : sensors) {
-            if (state) {
-                list.add(sensor.measure());
-            }
-        }
-        return list;
+        return readings;
     }
 
     @Override
@@ -42,19 +35,14 @@ public class AverageSensor implements Sensor {
             }
             // all the sensors are on
             if (i == sensors.size()) {
-                state = true;
                 return true;
             }
         }
-        state = false;
         return false;
     }
 
     @Override
     public void on() {
-        // turn on the AverageSensor
-        state = true;
-
         // When the average sensor is switched on, all its sensors have to be switched on if they were not on already.
         for (Sensor sensor : sensors) {
             if (!sensor.isOn()) {
@@ -65,9 +53,6 @@ public class AverageSensor implements Sensor {
 
     @Override
     public void off() {
-        // turn off the AverageSensor
-        state = false;
-
         // When the average sensor is closed, at least one of its sensors has to be switched off.
         // It's also possible that all its sensors are switched off.
 
@@ -83,7 +68,6 @@ public class AverageSensor implements Sensor {
                     return;
                 }
             }
-
         }
     }
 
@@ -95,19 +79,23 @@ public class AverageSensor implements Sensor {
     @Override
     public int measure() throws IllegalStateException {
 
-        if (!state) {
-            throw new IllegalStateException("average sensor is off");
-        }
-
         if (sensors.isEmpty()) {
             throw new IllegalStateException("have not added any sensors");
+        }
+
+        if (!isOn()) {
+            throw new IllegalStateException("average sensor is off");
         }
 
         int sum = 0;
         for (Sensor sensor : sensors) {
             sum += sensor.measure();
         }
-        return sum / sensors.size();
+
+        int avg = sum / sensors.size();
+        readings.add(avg);
+
+        return avg;
     }
 
 }

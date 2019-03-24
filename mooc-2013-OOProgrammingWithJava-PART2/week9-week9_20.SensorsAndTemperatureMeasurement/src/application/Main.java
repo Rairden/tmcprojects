@@ -51,6 +51,16 @@ public class Main {
         KansasCity.addSensor(new ConstantSensor(30));
         KansasCity.off();
         System.out.println("the temperature in KansasCity area is " + KansasCity.readings() + " degrees");
+        printLine();
+
+        AverageSensor Orlando = new AverageSensor();
+        //Orlando.measure();    // Orland is empty, will throw exception
+        Orlando.addSensor(ten);
+        Orlando.addSensor(minusFive);
+        Orlando.measure();
+        System.out.println("readings: " + Orlando.readings());
+        System.out.println("the temperature in Orlando area is " + Orlando.readings() + " degrees");
+
 
     }
 
