@@ -6,7 +6,7 @@ title __APPLICATION's Class Diagram__\n
     package application {
       class AverageSensor {
           - sensors : ArrayList<Sensor>
-          - state : boolean
+          - readings : List<Integer>
           + AverageSensor()
           + addSensor()
           + readings()
