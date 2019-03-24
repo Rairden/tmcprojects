@@ -95,21 +95,22 @@ the temperature in Helsinki area is -10 degrees
 Add the method `public List<Integer> readings()` to your AverageSensor; it returns a list of the reading results of all the measurements executed through your AverageSensor. Below is an example of how the method works: 
 
 <pre class="sh_java sh_sourceCode">
-public static void main(String[] args) {Sensor therm1 = new Thermometer();
-    Sensor therm2 = new Thermometer();
-    Sensor therm3 = new Thermometer();
+public static void main(String[] args) {
+    Sensor therm4 = new Thermometer();
+    Sensor therm5 = new Thermometer();
+    Sensor therm6 = new Thermometer();
 
-    AverageSensor helsinkiArea = new AverageSensor();
-    helsinkiArea.addSensor(therm1);
-    helsinkiArea.addSensor(therm2);
-    helsinkiArea.addSensor(therm3);
+    AverageSensor KansasCity = new AverageSensor();
+    KansasCity.addSensor(therm4);
+    KansasCity.addSensor(therm5);
+    KansasCity.addSensor(therm6);
 
-    helsinkiArea.on();
-    System.out.println("the temperature in Helsinki area is " + helsinkiArea.measure() + " degrees");
-    System.out.println("the temperature in Helsinki area is " + helsinkiArea.measure() + " degrees");
-    System.out.println("the temperature in Helsinki area is " + helsinkiArea.measure() + " degrees");
+    KansasCity.on();
+    System.out.println("the temperature in KansasCity area is " + KansasCity.measure() + " degrees");
+    System.out.println("the temperature in KansasCity area is " + KansasCity.measure() + " degrees");
+    System.out.println("the temperature in KansasCity area is " + KansasCity.measure() + " degrees");
 
-    System.out.println("readings: "+helsinkiArea.readings());
+    System.out.println("readings: " + KansasCity.readings());
 }
 </pre>
 

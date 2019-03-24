@@ -31,6 +31,26 @@ public class Main {
         System.out.println("the temperature in Helsinki area is " + helsinkiArea.measure() + " degrees");
         printLine();
 
+        Sensor therm4 = new Thermometer();
+        Sensor therm5 = new Thermometer();
+        Sensor therm6 = new Thermometer();
+
+        AverageSensor KansasCity = new AverageSensor();
+        KansasCity.addSensor(therm4);
+        KansasCity.addSensor(therm5);
+        KansasCity.addSensor(therm6);
+
+        KansasCity.on();
+        System.out.println("the temperature in KansasCity area is " + KansasCity.measure() + " degrees");
+        System.out.println("the temperature in KansasCity area is " + KansasCity.measure() + " degrees");
+        System.out.println("the temperature in KansasCity area is " + KansasCity.measure() + " degrees");
+
+        System.out.println("readings: " + KansasCity.readings());
+        printLine();
+
+        KansasCity.addSensor(new ConstantSensor(30));
+        KansasCity.off();
+        System.out.println("the temperature in KansasCity area is " + KansasCity.readings() + " degrees");
 
     }
 

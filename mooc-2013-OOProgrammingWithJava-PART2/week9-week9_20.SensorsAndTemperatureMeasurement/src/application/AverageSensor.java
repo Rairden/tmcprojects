@@ -1,6 +1,7 @@
 package application;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AverageSensor implements Sensor {
 
@@ -14,6 +15,15 @@ public class AverageSensor implements Sensor {
 
     public void addSensor(Sensor additional) {
         sensors.add(additional);
+    }
+
+    public List<Integer> readings() {
+        List<Integer> list = new ArrayList<Integer>();
+
+        for (Sensor sensor : sensors) {
+            list.add(sensor.measure());
+        }
+        return list;
     }
 
     @Override
@@ -83,7 +93,7 @@ public class AverageSensor implements Sensor {
             throw new IllegalStateException("average sensor is off");
         }
 
-        if (sensors.size() == 0) {
+        if (sensors.isEmpty()) {
             throw new IllegalStateException("have not added any sensors");
         }
 
