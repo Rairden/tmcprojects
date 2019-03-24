@@ -13,5 +13,13 @@ public class Main {
         System.out.println(ten.isOn());
         ten.off();
         System.out.println(ten.isOn());
+        printLine();
+
+
+
+    }
+
+    private static void printLine() {
+        System.out.println("--------------------------------------------");
     }
 }
