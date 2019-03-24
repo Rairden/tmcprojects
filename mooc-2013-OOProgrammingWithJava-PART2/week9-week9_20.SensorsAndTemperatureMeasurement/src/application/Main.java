@@ -15,6 +15,21 @@ public class Main {
         System.out.println(ten.isOn());
         printLine();
 
+        Sensor therm1 = new Thermometer();
+        therm1.on();
+        System.out.println("the temperature in Kumpula is " + therm1.measure() + " degrees");
+
+        Sensor therm2 = new Thermometer();
+        Sensor therm3 = new Thermometer();
+
+        AverageSensor helsinkiArea = new AverageSensor();
+        helsinkiArea.addSensor(therm1);
+        helsinkiArea.addSensor(therm2);
+        helsinkiArea.addSensor(therm3);
+
+        helsinkiArea.on();
+        System.out.println("the temperature in Helsinki area is " + helsinkiArea.measure() + " degrees");
+        printLine();
 
 
     }

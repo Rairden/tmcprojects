@@ -4,32 +4,31 @@ import java.util.Random;
 
 public class Thermometer implements Sensor {
 
-    private int temperature;
-    private boolean thermometer;
+    private boolean state;
 
     public Thermometer() {
-        this.thermometer = false;
+        state = false;
     }
 
     @Override
     public boolean isOn() {
-        return this.thermometer;
+        return state;
     }
 
     @Override
     public void on() {
-        this.thermometer = true;
+        state = true;
     }
 
     @Override
     public void off() {
-        this.thermometer = false;
+        state = false;
     }
 
     @Override
     public int measure() throws IllegalArgumentException {
-        if (thermometer) {
-            // if thermometer on, generate random # -30 to 30.
+        if (state) {
+            // if state on, generate random # -30 to 30.
             return randomNumberRange();
         } else {
             throw new IllegalStateException("Thermometer is off");
