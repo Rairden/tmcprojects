@@ -61,6 +61,25 @@ public class Main {
         System.out.println("readings: " + Orlando.readings());
         System.out.println("the temperature in Orlando area is " + Orlando.readings() + " degrees");
 
+        /**
+         * 10
+         * -5
+         * true
+         * true
+         * --------------------------------------------
+         * the temperature in Kumpula is -4 degrees
+         * the temperature in Helsinki area is -14 degrees
+         * --------------------------------------------
+         * the temperature in KansasCity area is 3 degrees
+         * the temperature in KansasCity area is -12 degrees
+         * the temperature in KansasCity area is 0 degrees
+         * readings: [3, -12, 0]
+         * --------------------------------------------
+         * the temperature in KansasCity area is [3, -12, 0] degrees
+         * --------------------------------------------
+         * readings: [2]
+         * the temperature in Orlando area is [2] degrees
+         */
 
     }
 
