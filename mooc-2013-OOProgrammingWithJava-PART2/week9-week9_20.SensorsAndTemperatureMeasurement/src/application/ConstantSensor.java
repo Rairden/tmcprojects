@@ -28,6 +28,6 @@ public class ConstantSensor implements Sensor {
 
     @Override
     public int measure() {
-        return this.param;
+        return param;
     }
 }

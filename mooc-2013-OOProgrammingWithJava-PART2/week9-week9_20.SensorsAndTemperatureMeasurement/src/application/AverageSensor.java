@@ -1,7 +1,6 @@
 package application;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class AverageSensor implements Sensor {
 
@@ -20,9 +19,18 @@ public class AverageSensor implements Sensor {
     @Override
     public boolean isOn() {
         // The average sensor is on when all its sensors are on.
+        int i = 0;
         for (Sensor sensor : sensors) {
-
+            if (sensor.isOn()) {
+                i++;
+            }
+            // all the sensors are on
+            if (i == sensors.size()) {
+                state = true;
+                return true;
+            }
         }
+        state = false;
         return false;
     }
 
@@ -63,10 +71,27 @@ public class AverageSensor implements Sensor {
         }
     }
 
+    /**
+     * If the measure method is called when the average sensor is off,
+     * or if the average sensor was not added any sensor, the method throws an IllegalStateException.
+     * @return the average value of all sensors
+     */
     @Override
-    public int measure() {
+    public int measure() throws IllegalStateException {
 
-        return 0;
+        if (!state) {
+            throw new IllegalStateException("average sensor is off");
+        }
+
+        if (sensors.size() == 0) {
+            throw new IllegalStateException("have not added any sensors");
+        }
+
+        int sum = 0;
+        for (Sensor sensor : sensors) {
+            sum += sensor.measure();
+        }
+        return sum / sensors.size();
     }
 
 }

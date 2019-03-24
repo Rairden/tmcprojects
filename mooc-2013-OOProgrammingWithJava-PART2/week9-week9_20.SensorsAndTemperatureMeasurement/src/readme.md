@@ -25,12 +25,12 @@ public static void main(String[] args) {
   ConstantSensor ten = new ConstantSensor(10);
   ConstantSensor minusFive = new ConstantSensor(-5);
 
-  System.out.println( ten.measure() );
-  System.out.println( minusFive.measure() );
+  System.out.println(ten.measure());
+  System.out.println(minusFive.measure());
 
-  System.out.println( ten.isOn() );
+  System.out.println(ten.isOn());
   ten.off();
-  System.out.println( ten.isOn() );
+  System.out.println(ten.isOn());
 }
 </pre>
 
@@ -64,20 +64,20 @@ Below, you find an example of a sensor program (note that both the Thermometer a
 
 <pre class="sh_java sh_sourceCode">
 public static void main(String[] args) {
-    Sensor kumpula = new Thermometer();
-    kumpula.on();
-    System.out.println("the temperature in Kumpula is "+kumpula.measure() + " degrees");
+    Sensor therm1 = new Thermometer();
+    therm1.on();
+    System.out.println("the temperature in Kumpula is " + therm1.measure() + " degrees");
 
-    Sensor kaisaniemi = new Thermometer();
-    Sensor helsinkiVantaa = new Thermometer();
+    Sensor therm2 = new Thermometer();
+    Sensor therm3 = new Thermometer();
 
     AverageSensor helsinkiArea = new AverageSensor();
-    helsinkiArea.addSensor(kumpula);
-    helsinkiArea.addSensor(kaisaniemi);
-    helsinkiArea.addSensor(helsinkiVantaa);
+    helsinkiArea.addSensor(therm1);
+    helsinkiArea.addSensor(therm2);
+    helsinkiArea.addSensor(therm3);
 
     helsinkiArea.on();
-    System.out.println("the temperature in Helsinki area is "+helsinkiArea.measure() + " degrees");
+    System.out.println("the temperature in Helsinki area is " + helsinkiArea.measure() + " degrees");
 }
 </pre>
 
@@ -95,19 +95,19 @@ the temperature in Helsinki area is -10 degrees
 Add the method `public List<Integer> readings()` to your AverageSensor; it returns a list of the reading results of all the measurements executed through your AverageSensor. Below is an example of how the method works: 
 
 <pre class="sh_java sh_sourceCode">
-public staticvoidmain(String[] args) {Sensor kumpula = new Thermometer();
-    Sensor kaisaniemi = new Thermometer();
-    Sensor helsinkiVantaa = new Thermometer();
+public static void main(String[] args) {Sensor therm1 = new Thermometer();
+    Sensor therm2 = new Thermometer();
+    Sensor therm3 = new Thermometer();
 
     AverageSensor helsinkiArea = new AverageSensor();
-    helsinkiArea.addSensor(kumpula);
-    helsinkiArea.addSensor(kaisaniemi);
-    helsinkiArea.addSensor(helsinkiVantaa);
+    helsinkiArea.addSensor(therm1);
+    helsinkiArea.addSensor(therm2);
+    helsinkiArea.addSensor(therm3);
 
     helsinkiArea.on();
-    System.out.println("the temperature in Helsinki area is "+helsinkiArea.measure() + " degrees");
-    System.out.println("the temperature in Helsinki area is "+helsinkiArea.measure() + " degrees");
-    System.out.println("the temperature in Helsinki area is "+helsinkiArea.measure() + " degrees");
+    System.out.println("the temperature in Helsinki area is " + helsinkiArea.measure() + " degrees");
+    System.out.println("the temperature in Helsinki area is " + helsinkiArea.measure() + " degrees");
+    System.out.println("the temperature in Helsinki area is " + helsinkiArea.measure() + " degrees");
 
     System.out.println("readings: "+helsinkiArea.readings());
 }

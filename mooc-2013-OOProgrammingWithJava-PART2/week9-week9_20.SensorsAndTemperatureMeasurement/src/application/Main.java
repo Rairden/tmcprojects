@@ -4,7 +4,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        ConstantSensor ten = new ConstantSensor(10);
+        ConstantSensor ten       = new ConstantSensor(10);
         ConstantSensor minusFive = new ConstantSensor(-5);
 
         System.out.println(ten.measure());
