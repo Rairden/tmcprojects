@@ -26,7 +26,7 @@ public class Thermometer implements Sensor {
     }
 
     @Override
-    public int measure() throws IllegalArgumentException {
+    public int measure() throws IllegalStateException {
         if (state) {
             // if state ON, generate random number from -30 to 30.
             return randomNumberRange();

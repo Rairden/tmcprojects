@@ -17,11 +17,17 @@ public class AverageSensor implements Sensor {
         sensors.add(additional);
     }
 
+    /**
+     *
+     * @return a list of the reading results of all the measurements executed through your AverageSensor
+     */
     public List<Integer> readings() {
         List<Integer> list = new ArrayList<Integer>();
 
         for (Sensor sensor : sensors) {
-            list.add(sensor.measure());
+            if (state) {
+                list.add(sensor.measure());
+            }
         }
         return list;
     }
@@ -84,7 +90,7 @@ public class AverageSensor implements Sensor {
     /**
      * If the measure method is called when the average sensor is off,
      * or if the average sensor was not added any sensor, the method throws an IllegalStateException.
-     * @return the average value of all sensors
+     * @return sum - the average value of all sensors
      */
     @Override
     public int measure() throws IllegalStateException {
