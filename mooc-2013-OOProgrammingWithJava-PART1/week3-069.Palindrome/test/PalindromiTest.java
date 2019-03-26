@@ -1,3 +1,4 @@
+import main.Palindromi;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import fi.helsinki.cs.tmc.edutestutils.Points;

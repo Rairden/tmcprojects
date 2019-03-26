@@ -1,3 +1,5 @@
+package main;
+
 import java.util.Scanner;
 
 public class Palindromi {
@@ -25,17 +27,18 @@ public class Palindromi {
 
     /**
      * @param text a string to reverse
-     * @return Returns T/F if the string is same forward/backwards
+     * @return TRUE if the string reads the same forward and backward
      */
     public static boolean palindrome(String text) {
         return text.equals(reverse(text));
     }
 
     public static void main(String[] args) {
+
         Scanner reader = new Scanner(System.in);
-        
         System.out.print("Type a text: ");
-        String text = reader.nextLine();    
+        String text = reader.nextLine();
+
         if (palindrome(text)) {
             System.out.println("The text is a palindrome!");
         } else {
