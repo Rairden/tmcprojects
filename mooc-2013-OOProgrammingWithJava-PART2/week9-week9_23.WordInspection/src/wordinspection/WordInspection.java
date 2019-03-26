@@ -83,7 +83,7 @@ public class WordInspection {
 
     /**
      * @return A list of all the words of the file which contain all Finnish vowels (aeiouyäö).
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException if file not found
      */
     public List<String> wordsWhichContainAllVowels() throws FileNotFoundException {
         Scanner reader = new Scanner(file);

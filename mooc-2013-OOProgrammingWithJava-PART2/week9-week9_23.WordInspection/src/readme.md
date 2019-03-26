@@ -18,7 +18,7 @@ Create the method `public List<String> wordsContainingZ()`, which returns all th
 
 Create the method `public List<String> wordsEndingInL()`, which returns all the Finnish words of the file which end in l; such words are, for instance, kannel and sammal.
 
-_Attention! If you read the file various different times in your program, you notice that your code contains a lot of copy-paste, so far. It would be useful to think whether it would be possible to read the file in an different place, maybe inside the constructor or as a method, which the constructor calls. In such case, the methods could use a list which was read before and then create a new list which suits their search criteria. In week 12, we will come back again with an ortodox way to eliminate copy-paste._
+_Attention! If you read the file various different times in your program, you notice that your code contains a lot of copy-paste, so far. It would be useful to think whether it would be possible to read the file in an different place, maybe inside the constructor or as a method, which the constructor calls. In such case, the methods could use a list which was read before and then create a new list which suits their search criteria. In week 12, we will come back again with an orthodox way to eliminate copy-paste._
 
 #### Exercise 23.4: Palindromes
 
