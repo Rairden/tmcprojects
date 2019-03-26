@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import main.Palindromi;
+import static main.Palindromi.palindrome;
+//import static wordinspection.Palindromi.palindrome;
 
 public class WordInspection {
 
@@ -74,7 +75,7 @@ public class WordInspection {
         while (reader.hasNext()) {
             String nextWord = reader.next();
 
-            if (Palindromi.palindrome(nextWord)) {
+            if (palindrome(nextWord)) {
                 list.add(nextWord);
             }
         }

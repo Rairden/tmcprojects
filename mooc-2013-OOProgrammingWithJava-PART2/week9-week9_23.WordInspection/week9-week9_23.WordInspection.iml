@@ -10,7 +10,16 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="tmc-junit-runner" level="project" />
     <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="module" module-name="week3-069.Palindrome" />
     <orderEntry type="module" module-name="week9-week9_22.FileAnalysis" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/palindrome.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="week3-069.Palindrome" />
   </component>
 </module>

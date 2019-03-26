@@ -16,8 +16,6 @@ public class Palindromi {
      * @return a string that has been reversed.
      */
     public static String reverse(String text) {
-        // write your code here
-        // note that method does now print anything, it RETURNS the reversed string
         String str = "";
         for (int i = text.length(); i > 0; i--) {
             str += text.charAt(i - 1);
