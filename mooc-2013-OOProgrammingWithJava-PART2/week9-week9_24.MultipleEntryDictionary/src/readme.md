@@ -11,7 +11,8 @@ As for the ExampleAccounting above, it's good to store the translations into a `
 The interface code:
 
 <pre class="sh_java sh_sourceCode">
-package dictionary;import java.util.Set;
+package dictionary;
+import java.util.Set;
 
 public interface MultipleEntryDictionary {
     void add(String word, String translation);
