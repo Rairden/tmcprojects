@@ -25,7 +25,16 @@ public class PersonalMultipleEntryDictionary implements MultipleEntryDictionary 
 
     @Override
     public Set<String> translate(String word) {
-        return null;
+        Set<String> temp = new HashSet<String>();
+
+        if (dictionary.containsKey(word)) {
+            for (Set<String> value : dictionary.values()) {
+                if (dictionary.get(word).containsAll(value)) {
+                    temp.add(value.toString());
+                }
+            }
+        }
+        return temp;
     }
 
     @Override
