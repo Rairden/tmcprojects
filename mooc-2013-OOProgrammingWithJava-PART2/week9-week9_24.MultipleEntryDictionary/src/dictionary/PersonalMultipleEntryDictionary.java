@@ -31,6 +31,6 @@ public class PersonalMultipleEntryDictionary implements MultipleEntryDictionary 
 
     @Override
     public void remove(String word) {
-
+        dictionary.remove(word);
     }
 }
