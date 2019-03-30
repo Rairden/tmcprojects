@@ -11,8 +11,8 @@ public class Main {
         dict.add("pii", "pi");
 
         System.out.println(dict.translate("kuusi"));
-//        dict.remove("pii");
-//        System.out.println(dict.translate("pii"));
+        dict.remove("pii");
+        System.out.println(dict.translate("pii"));
 
     }
 }
