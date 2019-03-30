@@ -1,9 +1,6 @@
 package dictionary;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class PersonalMultipleEntryDictionary implements MultipleEntryDictionary {
 
@@ -25,7 +22,11 @@ public class PersonalMultipleEntryDictionary implements MultipleEntryDictionary 
 
     @Override
     public Set<String> translate(String word) {
-        return null;
+        if (!dictionary.containsKey(word)) {
+            return null;
+        }
+
+        return dictionary.get(word);
     }
 
     @Override
