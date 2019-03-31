@@ -128,9 +128,7 @@ command: <font color="red">6</font>
 whose information: <font color="red">jukka</font>
 
 command: <font color="red">5</font>
-whose information: 
-
-<font color="red">jukka</font>
+whose information: <font color="red">jukka</font>
   not found
 
 command: <font color="red">x</font>
