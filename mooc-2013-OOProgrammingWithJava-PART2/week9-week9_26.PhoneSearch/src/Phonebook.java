@@ -1,34 +1,47 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
-public class Phonebook implements DuplicateRemover {
+public class Phonebook implements MultipleEntryDictionary {
 
-    private Map<String, Set<String>> phoneBook;
+    private Map<String, Set<Person>> phoneBook;
+    private Scanner scan;
 
-    public Phonebook() {
+    public Phonebook(Scanner scan) {
         this.phoneBook = new HashMap<>();
+        this.scan = scan;
     }
 
+    public void searchPhoneBook() {
+        System.out.print("whose number: ");
+        String name = scan.nextLine();
 
-
-    @Override
-    public void add(String characterString) {
-
-    }
-
-    @Override
-    public int getNumberOfDetectedDuplicates() {
-        return 0;
-    }
-
-    @Override
-    public Set<String> getUniqueCharacterStrings() {
-        return null;
+        if (phoneBook.containsKey(name)) {
+            Set<Person> t = new HashSet<>();
+            t = translate(name);
+        }
     }
 
     @Override
-    public void empty() {
+    public boolean add(String word, Person entry) {
+        if (!phoneBook.containsKey(word)) {
+            phoneBook.put(word, new HashSet<Person>());
+            return true;
+        } else {
+            Set<Person> output = phoneBook.get(word);
+            output.add(entry);
+            return false;
+        }
+    }
+
+    @Override
+    public Set<Person> translate(String word) {
+        if (!phoneBook.containsKey(word)) {
+            return null;
+        }
+        return phoneBook.get(word);
+    }
+
+    @Override
+    public void remove(String word) {
 
     }
 }
