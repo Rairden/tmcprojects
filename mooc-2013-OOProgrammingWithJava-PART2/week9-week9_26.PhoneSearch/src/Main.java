@@ -24,7 +24,7 @@ public class Main {
                 "6\n" + "jukka\n" +     // del personal info
                 "5\n" + "jukka\n";      // shows jukka has no entry
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(input);
         UserInterface ui = new UserInterface(scan);
         ui.start();
 

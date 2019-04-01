@@ -1,5 +1,6 @@
 public class Person {
 
+    private String name;
     private String phoneNumber;
     private String streetAddr;
     private String city;
@@ -7,10 +8,15 @@ public class Person {
     public Person() {
     }
 
-    public Person(String phoneNumber, String streetAddr, String city) {
+    public Person(String name, String phoneNumber, String streetAddr, String city) {
+        this.name        = name;
         this.phoneNumber = phoneNumber;
-        this.streetAddr = streetAddr;
-        this.city = city;
+        this.streetAddr  = streetAddr;
+        this.city        = city;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getPhoneNumber() {
@@ -23,6 +29,10 @@ public class Person {
 
     public String getCity() {
         return city;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setPhoneNumber(String phoneNumber) {

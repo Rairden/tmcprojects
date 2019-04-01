@@ -3,6 +3,7 @@ import java.util.*;
 public class Phonebook implements MultipleEntryDictionary {
 
     private Map<String, Set<Person>> phoneBook;
+    private Person person;
     private Scanner scan;
 
     public Phonebook(Scanner scan) {
@@ -15,21 +16,21 @@ public class Phonebook implements MultipleEntryDictionary {
         String name = scan.nextLine();
 
         if (phoneBook.containsKey(name)) {
-            Set<Person> t = new HashSet<>();
-            t = translate(name);
+            for (Set<Person> value : phoneBook.values()) {
+                System.out.println(value.toString());
+            }
+
         }
     }
 
     @Override
-    public boolean add(String word, Person entry) {
+    public void add(String word, Person entry) {
         if (!phoneBook.containsKey(word)) {
             phoneBook.put(word, new HashSet<Person>());
-            return true;
-        } else {
+        }
             Set<Person> output = phoneBook.get(word);
             output.add(entry);
-            return false;
-        }
+
     }
 
     @Override
@@ -43,5 +44,13 @@ public class Phonebook implements MultipleEntryDictionary {
     @Override
     public void remove(String word) {
 
+    }
+
+    @Override
+    public String toString() {
+        return "Phonebook{" +
+                "phoneBook=" + phoneBook +
+                ", person=" + person.getPhoneNumber() +
+                '}';
     }
 }
