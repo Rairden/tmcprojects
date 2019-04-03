@@ -17,7 +17,9 @@ public class Phonebook implements MultipleEntryDictionary {
 
         if (phoneBook.containsKey(name)) {
             for (Set<Person> value : phoneBook.values()) {
-                System.out.println(value.toString());
+                for (Person person1 : value) {
+                    person1.getPhoneNumber();
+                }
             }
 
         }
@@ -46,11 +48,5 @@ public class Phonebook implements MultipleEntryDictionary {
 
     }
 
-    @Override
-    public String toString() {
-        return "Phonebook{" +
-                "phoneBook=" + phoneBook +
-                ", person=" + person.getPhoneNumber() +
-                '}';
-    }
+
 }
