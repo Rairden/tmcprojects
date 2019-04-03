@@ -17,10 +17,21 @@ public class Phonebook implements MultipleEntryDictionary {
 
         if (phoneBook.containsKey(name)) {
             for (Set<Person> value : phoneBook.values()) {
-                for (Person person1 : value) {
-                    person1.getPhoneNumber();
+                for (Person p : value) {
+                    System.out.print(" ");
+                    System.out.println((p.getPhoneNumber()));
                 }
             }
+        } else {
+            System.out.println("  not found");
+        }
+    }
+
+    public void addAddress() {
+        System.out.print("whose address: ");
+        String name = scan.nextLine();
+
+        if (phoneBook.containsKey(name)) {
 
         }
     }

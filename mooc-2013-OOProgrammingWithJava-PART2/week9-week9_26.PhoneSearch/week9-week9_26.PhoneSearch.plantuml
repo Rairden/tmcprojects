@@ -3,12 +3,6 @@
 title __WEEK9-WEEK9_26.PHONESEARCH's Class Diagram__\n
 
   package  {
-    interface DuplicateRemover {
-    }
-  }
-  
-
-  package  {
     class Main {
     }
   }
@@ -39,6 +33,7 @@ title __WEEK9-WEEK9_26.PHONESEARCH's Class Diagram__\n
   
 
   Phonebook -up-|> MultipleEntryDictionary
+  Phonebook o-- Person : person
   UserInterface o-- Phonebook : phoneBook
 
 

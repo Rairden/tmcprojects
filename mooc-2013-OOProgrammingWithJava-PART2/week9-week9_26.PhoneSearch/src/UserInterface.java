@@ -11,9 +11,10 @@ public class UserInterface {
     }
 
     public void start() {
+        menu();
 
         while (true) {
-            menu();
+            System.out.print("command: ");
             String cmd = scan.nextLine();
 
             int command = Integer.parseInt(cmd);
@@ -21,15 +22,16 @@ public class UserInterface {
             switch (command) {
                 case 1:
                     addPerson();
+                    System.out.println();
                     break;
                 case 2:
                     phoneBook.searchPhoneBook();
+                    System.out.println();
                     break;
                 case 3:
-                    //
                     break;
                 case 4:
-                    //
+                    phoneBook.addAddress();
                     break;
                 case 5:
                     //
@@ -60,8 +62,7 @@ public class UserInterface {
                 " 5 search for personal information\n" +
                 " 6 delete personal information\n" +
                 " 7 filtered listing\n" +
-                " x quit\n\n" +
-                "command: ");
+                " x quit\n\n");
     }
 
     public void addPerson() {

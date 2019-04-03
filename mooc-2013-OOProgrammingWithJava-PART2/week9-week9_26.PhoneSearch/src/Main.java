@@ -28,7 +28,7 @@ public class Main {
                 "2\n" + "jukka\n" +
                 "2\n" + "pekka\n" +
                 "1\n" + "pekka\n" + "09-222333\n" +
-                "4\n" + "pekka\n" + "ida ekmanintie\n" + "helsinki\n" +  // add addr
+                "4\n" + //"pekka\n" + "ida ekmanintie\n" + "helsinki\n" +  // add addr
                 "2\n" + "pekka\n" +     // found 2 entries
                 "3\n" + "02-444123\n" + // not found
                 "3\n" + "09-222333\n" + // found pekka
@@ -42,7 +42,7 @@ public class Main {
                 "6\n" + "jukka\n" +     // del personal info
                 "5\n" + "jukka\n";      // shows jukka has no entry
 
-        Scanner scan = new Scanner(input2);
+        Scanner scan = new Scanner(System.in);
         UserInterface ui = new UserInterface(scan);
         ui.start();
 
