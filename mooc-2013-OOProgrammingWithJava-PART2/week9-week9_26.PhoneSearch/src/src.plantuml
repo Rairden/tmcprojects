@@ -43,7 +43,9 @@ title __SRC's Class Diagram__\n
         - phoneBook : Map<String, Set<Person>>
         - scan : Scanner
         + Phonebook()
-        + searchPhoneBook()
+        + addPerson()
+        + searchByName()
+        + searchByNumber()
         + addAddress()
         + add()
         + translate()
@@ -58,13 +60,11 @@ title __SRC's Class Diagram__\n
         + UserInterface()
         + start()
         {static} + menu()
-        + addPerson()
     }
   }
   
 
   Phonebook -up-|> MultipleEntryDictionary
-  Phonebook o-- Person : person
   UserInterface o-- Phonebook : phoneBook
 
 

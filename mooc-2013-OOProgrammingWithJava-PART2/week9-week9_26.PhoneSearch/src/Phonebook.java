@@ -3,7 +3,6 @@ import java.util.*;
 public class Phonebook implements MultipleEntryDictionary {
 
     private Map<String, Set<Person>> phoneBook;
-    private Person person;
     private Scanner scan;
 
     public Phonebook(Scanner scan) {
@@ -11,7 +10,21 @@ public class Phonebook implements MultipleEntryDictionary {
         this.scan = scan;
     }
 
-    public void searchPhoneBook() {
+    public void addPerson() {
+        System.out.print("whose number: ");
+        String name = scan.nextLine();
+
+        Person person = new Person();
+
+        System.out.print("number: ");
+        String number = scan.nextLine();
+
+        person.setPhoneNumber(number);
+        add(name, person);
+    }
+
+    // prints list of phone #'s
+    public void searchByName() {
         System.out.print("whose number: ");
         String name = scan.nextLine();
 
@@ -27,6 +40,29 @@ public class Phonebook implements MultipleEntryDictionary {
         }
     }
 
+    // prints names belonging to phone #
+    public void searchByNumber() {
+        System.out.print("number: ");
+        String number = scan.nextLine();
+        Boolean found = false;
+
+        for (Set<Person> value : phoneBook.values()) {
+            for (Person person : value) {
+                if (person.getPhoneNumber().equals(number)) {
+                    // this was only way I could getKey of person, unfortunately
+                    for (Map.Entry<String, Set<Person>> entry : phoneBook.entrySet()) {
+                        System.out.println(" " + entry.getKey());
+                    }
+                    found = true;
+                }
+            }
+            if (!found) {
+                System.out.println("  not found");
+            }
+        }
+    }
+
+
     public void addAddress() {
         System.out.print("whose address: ");
         String name = scan.nextLine();
@@ -41,8 +77,8 @@ public class Phonebook implements MultipleEntryDictionary {
         if (!phoneBook.containsKey(word)) {
             phoneBook.put(word, new HashSet<Person>());
         }
-            Set<Person> output = phoneBook.get(word);
-            output.add(entry);
+        Set<Person> output = phoneBook.get(word);
+        output.add(entry);
 
     }
 

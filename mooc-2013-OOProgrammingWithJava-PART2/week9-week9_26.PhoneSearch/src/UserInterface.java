@@ -21,14 +21,16 @@ public class UserInterface {
 
             switch (command) {
                 case 1:
-                    addPerson();
+                    phoneBook.addPerson();
                     System.out.println();
                     break;
                 case 2:
-                    phoneBook.searchPhoneBook();
+                    phoneBook.searchByName();
                     System.out.println();
                     break;
                 case 3:
+                    phoneBook.searchByNumber();
+                    System.out.println();
                     break;
                 case 4:
                     phoneBook.addAddress();
@@ -65,18 +67,6 @@ public class UserInterface {
                 " x quit\n\n");
     }
 
-    public void addPerson() {
-        System.out.print("whose number: ");
-        String name = scan.nextLine();
 
-        Person person = new Person();
-
-        System.out.print("number: ");
-        String number = scan.nextLine();
-
-        person.setPhoneNumber(number);
-        phoneBook.add(name, person);
-
-    }
 
 }

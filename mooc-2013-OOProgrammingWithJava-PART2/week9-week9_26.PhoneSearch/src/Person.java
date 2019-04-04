@@ -8,13 +8,6 @@ public class Person {
     public Person() {
     }
 
-    public Person(String name, String phoneNumber, String streetAddr, String city) {
-        this.name        = name;
-        this.phoneNumber = phoneNumber;
-        this.streetAddr  = streetAddr;
-        this.city        = city;
-    }
-
     public String getName() {
         return name;
     }
