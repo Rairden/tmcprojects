@@ -9,7 +9,25 @@ title __WEEK9-WEEK9_26.PHONESEARCH's Class Diagram__\n
   
 
   package  {
+    class Main {
+    }
+  }
+  
+
+  package  {
     interface MultipleEntryDictionary {
+    }
+  }
+  
+
+  package  {
+    interface MultipleEntryDictionary {
+    }
+  }
+  
+
+  package  {
+    class Person {
     }
   }
   
@@ -27,12 +45,26 @@ title __WEEK9-WEEK9_26.PHONESEARCH's Class Diagram__\n
   
 
   package  {
+    class Phonebook {
+    }
+  }
+  
+
+  package  {
+    class UserInterface {
+    }
+  }
+  
+
+  package  {
     class UserInterface {
     }
   }
   
 
   Phonebook -up-|> MultipleEntryDictionary
+  Phonebook -up-|> MultipleEntryDictionary
+  UserInterface o-- Phonebook : phoneBook
   UserInterface o-- Phonebook : phoneBook
 
 
