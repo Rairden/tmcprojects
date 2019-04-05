@@ -75,7 +75,7 @@ public class Phonebook implements MultipleEntryDictionary {
             Set<Person> personSet  = translate(name);
             for (Person person : personSet) {
                 // if no streetAddr exists, add one.
-                if (person.getStreetAddr() == null && person.getCity() == null) {
+                if (person.getStreetAddr().isEmpty() && person.getCity().isEmpty()) {
                     person.setStreetAddr(streetAddr);
                     person.setCity(city);
                     return;
@@ -102,14 +102,14 @@ public class Phonebook implements MultipleEntryDictionary {
         } else {
             Set<Person> personSet  = translate(name);
             for (Person person : personSet) {
-                if (person.getStreetAddr() != null) {
+                if (!person.getStreetAddr().isEmpty()) {
                     System.out.println("  address: " + person.getStreetAddr() + " " + person.getCity());
                 } else {
                     System.out.println("  address unknown");
                 }
             }
             for (Person person : personSet) {
-                if (person.getPhoneNumber() != null) {
+                if (!person.getPhoneNumber().isEmpty()) {
                     System.out.println("  phone numbers: ");
                     System.out.println("   " + person.getPhoneNumber());
                     foundPhoneNumber = true;
@@ -169,14 +169,10 @@ public class Phonebook implements MultipleEntryDictionary {
         // iterate over values. If contains search word, add to list if not already there
         for (Set<Person> personSet : phoneBook.values()) {
             for (Person person : personSet) {
-                try {
-                    if ((person.getStreetAddr().contains(keyword)
-                            || person.getCity().contains(keyword))
-                            && !list.contains(person.name)) {
-                        list.add(person.name);
-                    }
-                } catch (Exception e) {
-                    //e.printStackTrace();
+                if ((person.getStreetAddr().contains(keyword)
+                        || person.getCity().contains(keyword))
+                        && !list.contains(person.name)) {
+                    list.add(person.name);
                 }
             }
         }

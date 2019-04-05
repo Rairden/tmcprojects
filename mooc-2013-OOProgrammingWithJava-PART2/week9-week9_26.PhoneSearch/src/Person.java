@@ -6,10 +6,17 @@ public class Person {
     private String city;
 
     public Person() {
+        this.name        = "";
+        this.phoneNumber = "";
+        this.streetAddr  = "";
+        this.city        = "";
     }
 
     public Person(String name) {
         this.name = name;
+        this.phoneNumber = "";
+        this.streetAddr  = "";
+        this.city        = "";
     }
 
     public String getPhoneNumber() {
