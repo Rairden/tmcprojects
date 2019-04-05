@@ -41,7 +41,8 @@ public class UserInterface {
                     System.out.println();
                     break;
                 case 5:
-                    //
+                    phoneBook.searchInfo();
+                    System.out.println();
                     break;
                 case 6:
                     //

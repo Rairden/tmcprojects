@@ -50,6 +50,7 @@ public class Phonebook implements MultipleEntryDictionary {
                     // this was only way I could getKey of person, unfortunately
                     for (Map.Entry<String, Set<Person>> entry : phoneBook.entrySet()) {
                         System.out.println(" " + entry.getKey());
+                        break;
                     }
                     found = true;
                 }
@@ -84,10 +85,36 @@ public class Phonebook implements MultipleEntryDictionary {
                     return;
                 }
             }
-        } else {  // if key does NOT exist, add Person/key
-            Person person = new Person();
-            add(name, person);
-            person.setStreetAddr(streetAddr);
+        } else {  // if key does NOT exist, create new Key
+            Person person4 = new Person();
+            person4.setStreetAddr(streetAddr);
+            person4.setCity(city);
+            add(name, person4);
+        }
+    }
+
+    public void searchInfo() {
+        System.out.print("whose information: ");
+        String name = scan.nextLine();
+
+        if (!phoneBook.containsKey(name)) {
+            System.out.println("  not found");
+        } else {
+            Set<Person> personSet  = translate(name);
+            for (Person person : personSet) {
+                if (person.getStreetAddr() != null) {
+                    System.out.println("  address: " + person.getStreetAddr() + " " + person.getCity());
+                } else {
+                    System.out.println("  address unknown");
+                }
+            }
+            for (Person person : personSet) {
+                if (person.getPhoneNumber() != null) {
+                    System.out.println("  address: " + person.getPhoneNumber());
+                } else {
+                    System.out.println("  phone number not found");
+                }
+            }
         }
     }
 
@@ -98,7 +125,6 @@ public class Phonebook implements MultipleEntryDictionary {
         }
         Set<Person> output = phoneBook.get(word);
         output.add(entry);
-
     }
 
     @Override
