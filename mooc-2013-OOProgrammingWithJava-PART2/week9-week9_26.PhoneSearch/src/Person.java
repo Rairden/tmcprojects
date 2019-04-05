@@ -1,10 +1,15 @@
 public class Person {
 
+    public String name;
     private String phoneNumber;
     private String streetAddr;
     private String city;
 
     public Person() {
+    }
+
+    public Person(String name) {
+        this.name = name;
     }
 
     public String getPhoneNumber() {

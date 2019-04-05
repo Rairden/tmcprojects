@@ -14,7 +14,7 @@ public class Phonebook implements MultipleEntryDictionary {
         System.out.print("whose number: ");
         String name = scan.nextLine();
 
-        Person person = new Person();
+        Person person = new Person(name);
 
         System.out.print("number: ");
         String number = scan.nextLine();
@@ -44,8 +44,8 @@ public class Phonebook implements MultipleEntryDictionary {
         String number = scan.nextLine();
         Boolean found = false;
 
-        for (Set<Person> value : phoneBook.values()) {
-            for (Person person : value) {
+        for (Set<Person> personSet : phoneBook.values()) {
+            for (Person person : personSet) {
                 if (person.getPhoneNumber().equals(number)) {
                     // this was only way I could getKey of person, unfortunately
                     for (Map.Entry<String, Set<Person>> entry : phoneBook.entrySet()) {
@@ -80,23 +80,21 @@ public class Phonebook implements MultipleEntryDictionary {
                     person.setCity(city);
                     return;
                 } else {  // streetAddr already exists for Person; make new one.
-                    Person person2 = new Person();
+                    Person person2 = new Person(name);
                     person2.setStreetAddr(streetAddr);
                     person2.setCity(city);
                     return;
                 }
             }
         } else {  // if key does NOT exist, create new Key
-            Person person4 = new Person();
+            Person person4 = new Person(name);
             person4.setStreetAddr(streetAddr);
             person4.setCity(city);
             add(name, person4);
         }
     }
 
-    public void searchInfo() {
-        System.out.print("whose information: ");
-        String name = scan.nextLine();
+    public void searchInfo(String name) {
         Boolean foundPhoneNumber = false;
 
         if (!phoneBook.containsKey(name)) {
@@ -153,7 +151,41 @@ public class Phonebook implements MultipleEntryDictionary {
     }
 
     public void filterSearch() {
+        System.out.print("keyword (if empty, all listed): ");
+        String keyword = scan.nextLine();
+        System.out.println();
 
+        List<String> list = new ArrayList<String>();
+        String foundKey = "";
+
+        // iterate over keys. If contains search word, add to list
+        for (String key : phoneBook.keySet()) {
+            if (key.contains(keyword)) {
+                foundKey = key;
+                list.add(foundKey);
+            }
+        }
+
+        // iterate over values. If contains search word, add to list if not already there
+        for (Set<Person> personSet : phoneBook.values()) {
+            for (Person person : personSet) {
+                try {
+                    if ((person.getStreetAddr().contains(keyword)
+                            || person.getCity().contains(keyword))
+                            && !list.contains(person.name)) {
+                        list.add(person.name);
+                    }
+                } catch (Exception e) {
+                    //e.printStackTrace();
+                }
+            }
+        }
+
+        Collections.sort(list);
+        for (String name : list) {
+            System.out.println(" " + name);
+            searchInfo(name);
+            System.out.println();
+        }
     }
-
 }
