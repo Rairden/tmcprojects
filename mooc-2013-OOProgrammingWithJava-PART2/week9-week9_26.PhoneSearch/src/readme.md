@@ -48,7 +48,7 @@ whose number: <font color="red">jukka</font>
 
 command: <font color="red">2</font>
 whose number: <font color="red">pekka</font>
-<font color="red">040-123456</font>
+ <font color="red">040-123456</font>
 
 command: <font color="red">1</font>
 whose number: <font color="red">pekka</font>
@@ -61,16 +61,14 @@ whose number: <font color="red">pekka</font>
 
 command: <font color="red">3</font>
 number: <font color="red">02-444123</font>
- not found
+  not found
 
 command: <font color="red">3</font>
 number: <font color="red">09-222333</font>
  pekka
 
 command: <font color="red">5</font>
-whose information: 
-
-<font color="red">pekka</font>
+whose information: <font color="red">pekka</font>
   address unknown
   phone numbers:
    040-123456
@@ -82,9 +80,7 @@ street: <font color="red">ida ekmanintie</font>
 city: <font color="red">helsinki</font>
 
 command: <font color="red">5</font>
-whose information: 
-
-<font color="red">pekka</font>
+whose information: <font color="red">pekka</font>
   address: ida ekmanintie helsinki
   phone numbers:
    040-123456

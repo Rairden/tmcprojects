@@ -62,13 +62,34 @@ public class Phonebook implements MultipleEntryDictionary {
         }
     }
 
-
     public void addAddress() {
         System.out.print("whose address: ");
         String name = scan.nextLine();
 
-        if (phoneBook.containsKey(name)) {
+        System.out.print("street: ");
+        String streetAddr = scan.nextLine();
 
+        System.out.print("city: ");
+        String city = scan.nextLine();
+
+        if (phoneBook.containsKey(name)) {
+            Set<Person> personSet  = translate(name);
+            for (Person person : personSet) {
+                // if no streetAddr exists, add one.
+                if (person.getStreetAddr() == null || person.getStreetAddr().isEmpty()) {
+                    person.setStreetAddr(streetAddr);
+                    person.setCity(city);
+                    return;
+                } else {  // streetAddr already exists for Person; make new one.
+                    Person person2 = new Person();
+                    person2.setStreetAddr(streetAddr);
+                    return;
+                }
+            }
+        } else {  // if key does NOT exist, add Person/key
+            Person person = new Person();
+            add(name, person);
+            person.setStreetAddr(streetAddr);
         }
     }
 

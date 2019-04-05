@@ -17,6 +17,10 @@ public class UserInterface {
             System.out.print("command: ");
             String cmd = scan.nextLine();
 
+            if (cmd.equals("x") || cmd.equals("")) {
+                return;
+            }
+
             int command = Integer.parseInt(cmd);
 
             switch (command) {
@@ -34,6 +38,7 @@ public class UserInterface {
                     break;
                 case 4:
                     phoneBook.addAddress();
+                    System.out.println();
                     break;
                 case 5:
                     //
@@ -48,10 +53,7 @@ public class UserInterface {
                 default:
                     break;
             }
-
-
         }
-
     }
 
     public static void menu() {
@@ -66,7 +68,5 @@ public class UserInterface {
                 " 7 filtered listing\n" +
                 " x quit\n\n");
     }
-
-
 
 }
