@@ -45,10 +45,12 @@ public class UserInterface {
                     System.out.println();
                     break;
                 case 6:
-                    //
+                    phoneBook.remove();
+                    System.out.println();
                     break;
                 case 7:
-                    //
+                    phoneBook.filterSearch();
+                    System.out.println();
                     break;
 
                 default:

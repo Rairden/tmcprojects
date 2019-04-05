@@ -75,13 +75,14 @@ public class Phonebook implements MultipleEntryDictionary {
             Set<Person> personSet  = translate(name);
             for (Person person : personSet) {
                 // if no streetAddr exists, add one.
-                if (person.getStreetAddr() == null || person.getStreetAddr().isEmpty()) {
+                if (person.getStreetAddr() == null && person.getCity() == null) {
                     person.setStreetAddr(streetAddr);
                     person.setCity(city);
                     return;
                 } else {  // streetAddr already exists for Person; make new one.
                     Person person2 = new Person();
                     person2.setStreetAddr(streetAddr);
+                    person2.setCity(city);
                     return;
                 }
             }
@@ -139,9 +140,20 @@ public class Phonebook implements MultipleEntryDictionary {
     }
 
     @Override
-    public void remove(String word) {
+    public void remove() {
+        System.out.print("whose information: ");
+        String name = scan.nextLine();
 
+        // if the HashMap key exists, delete all <Key, Value> data.
+        if (phoneBook.containsKey(name)) {
+            phoneBook.remove(name);
+        } else {
+            System.out.println("  not found");
+        }
     }
 
+    public void filterSearch() {
+
+    }
 
 }
