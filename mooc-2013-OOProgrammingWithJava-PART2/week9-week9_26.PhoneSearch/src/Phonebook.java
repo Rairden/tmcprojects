@@ -29,11 +29,9 @@ public class Phonebook implements MultipleEntryDictionary {
         String name = scan.nextLine();
 
         if (phoneBook.containsKey(name)) {
-            for (Set<Person> value : phoneBook.values()) {
-                for (Person p : value) {
-                    System.out.print(" ");
-                    System.out.println((p.getPhoneNumber()));
-                }
+            Set<Person> personSet  = translate(name);
+            for (Person person : personSet) {
+                System.out.println(" " + person.getPhoneNumber());
             }
         } else {
             System.out.println("  not found");
