@@ -96,6 +96,7 @@ public class Phonebook implements MultipleEntryDictionary {
     public void searchInfo() {
         System.out.print("whose information: ");
         String name = scan.nextLine();
+        Boolean foundPhoneNumber = false;
 
         if (!phoneBook.containsKey(name)) {
             System.out.println("  not found");
@@ -110,8 +111,10 @@ public class Phonebook implements MultipleEntryDictionary {
             }
             for (Person person : personSet) {
                 if (person.getPhoneNumber() != null) {
-                    System.out.println("  address: " + person.getPhoneNumber());
-                } else {
+                    System.out.println("  phone numbers: ");
+                    System.out.println("   " + person.getPhoneNumber());
+                    foundPhoneNumber = true;
+                } else if (!foundPhoneNumber){
                     System.out.println("  phone number not found");
                 }
             }
