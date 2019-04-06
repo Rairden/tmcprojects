@@ -29,7 +29,9 @@ public class UserInterface {
                     System.out.println();
                     break;
                 case 2:
-                    phoneBook.searchByName();
+                    System.out.print("whose number: ");
+                    String name = scan.nextLine();
+                    phoneBook.searchByName(name);
                     System.out.println();
                     break;
                 case 3:
@@ -42,8 +44,8 @@ public class UserInterface {
                     break;
                 case 5:
                     System.out.print("whose information: ");
-                    String name = scan.nextLine();
-                    phoneBook.searchInfo(name);
+                    String name2 = scan.nextLine();
+                    phoneBook.searchInfo(name2);
                     System.out.println();
                     break;
                 case 6:

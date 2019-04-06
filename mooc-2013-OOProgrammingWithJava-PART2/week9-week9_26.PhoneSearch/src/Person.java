@@ -1,6 +1,6 @@
 public class Person {
 
-    public String name;
+    private String name;
     private String phoneNumber;
     private String streetAddr;
     private String city;
@@ -13,10 +13,12 @@ public class Person {
     }
 
     public Person(String name) {
+        this();
         this.name = name;
-        this.phoneNumber = "";
-        this.streetAddr  = "";
-        this.city        = "";
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getPhoneNumber() {

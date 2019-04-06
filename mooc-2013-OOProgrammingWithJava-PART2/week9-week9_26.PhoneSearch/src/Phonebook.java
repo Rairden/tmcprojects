@@ -23,15 +23,15 @@ public class Phonebook implements MultipleEntryDictionary {
         add(name, person);
     }
 
-    // prints list of phone #'s
-    public void searchByName() {
-        System.out.print("whose number: ");
-        String name = scan.nextLine();
-
+    /**
+     * Prints a list of phone #'s
+     * @param name the Person's name
+     */
+    public void searchByName(String name) {
         if (phoneBook.containsKey(name)) {
             Set<Person> personSet  = translate(name);
             for (Person person : personSet) {
-                System.out.println(" " + person.getPhoneNumber());
+                    System.out.println(" " + person.getPhoneNumber());
             }
         } else {
             System.out.println("  not found");
@@ -42,7 +42,7 @@ public class Phonebook implements MultipleEntryDictionary {
     public void searchByNumber() {
         System.out.print("number: ");
         String number = scan.nextLine();
-        Boolean found = false;
+        boolean found = false;
 
         for (Set<Person> personSet : phoneBook.values()) {
             for (Person person : personSet) {
@@ -95,7 +95,8 @@ public class Phonebook implements MultipleEntryDictionary {
     }
 
     public void searchInfo(String name) {
-        Boolean foundPhoneNumber = false;
+        boolean foundPhoneNumber = false;
+        boolean foundAddress = false;
 
         if (!phoneBook.containsKey(name)) {
             System.out.println("  not found");
@@ -104,18 +105,24 @@ public class Phonebook implements MultipleEntryDictionary {
             for (Person person : personSet) {
                 if (!person.getStreetAddr().isEmpty()) {
                     System.out.println("  address: " + person.getStreetAddr() + " " + person.getCity());
-                } else {
-                    System.out.println("  address unknown");
+                    foundAddress = true;
                 }
             }
+
+            if (!foundAddress) {
+                System.out.println("  address unknown");
+            }
+
             for (Person person : personSet) {
                 if (!person.getPhoneNumber().isEmpty()) {
                     System.out.println("  phone numbers: ");
                     System.out.println("   " + person.getPhoneNumber());
                     foundPhoneNumber = true;
-                } else if (!foundPhoneNumber){
-                    System.out.println("  phone number not found");
                 }
+            }
+
+            if (!foundPhoneNumber) {
+                System.out.println("  phone number not found");
             }
         }
     }
@@ -156,13 +163,11 @@ public class Phonebook implements MultipleEntryDictionary {
         System.out.println();
 
         List<String> list = new ArrayList<String>();
-        String foundKey = "";
 
         // iterate over keys. If contains search word, add to list
         for (String key : phoneBook.keySet()) {
             if (key.contains(keyword)) {
-                foundKey = key;
-                list.add(foundKey);
+                list.add(key);
             }
         }
 
@@ -171,13 +176,20 @@ public class Phonebook implements MultipleEntryDictionary {
             for (Person person : personSet) {
                 if ((person.getStreetAddr().contains(keyword)
                         || person.getCity().contains(keyword))
-                        && !list.contains(person.name)) {
-                    list.add(person.name);
+                        && !list.contains(person.getName())) {
+                    list.add(person.getName());
                 }
             }
         }
 
+        // sort your Person names alphabetically
         Collections.sort(list);
+
+        if (list.size() == 0) {
+            System.out.println(" keyword not found");
+        }
+
+        // you have all the data now (keys). List all addresses first, then all phone #'s
         for (String name : list) {
             System.out.println(" " + name);
             searchInfo(name);
