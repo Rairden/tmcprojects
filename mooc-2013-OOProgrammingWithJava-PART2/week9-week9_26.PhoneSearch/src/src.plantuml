@@ -20,10 +20,13 @@ title __SRC's Class Diagram__\n
 
   package  {
     class Person {
+        - name : String
         - phoneNumber : String
         - streetAddr : String
         - city : String
         + Person()
+        + Person()
+        + getName()
         + getPhoneNumber()
         + getStreetAddr()
         + getCity()
@@ -43,9 +46,11 @@ title __SRC's Class Diagram__\n
         + searchByName()
         + searchByNumber()
         + addAddress()
+        + searchInfo()
         + add()
         + translate()
         + remove()
+        + filterSearch()
     }
   }
   
