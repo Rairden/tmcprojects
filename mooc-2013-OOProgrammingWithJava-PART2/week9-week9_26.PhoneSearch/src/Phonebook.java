@@ -127,36 +127,6 @@ public class Phonebook implements MultipleEntryDictionary {
         }
     }
 
-    @Override
-    public void add(String word, Person entry) {
-        if (!phoneBook.containsKey(word)) {
-            phoneBook.put(word, new HashSet<Person>());
-        }
-        Set<Person> output = phoneBook.get(word);
-        output.add(entry);
-    }
-
-    @Override
-    public Set<Person> translate(String word) {
-        if (!phoneBook.containsKey(word)) {
-            return null;
-        }
-        return phoneBook.get(word);
-    }
-
-    @Override
-    public void remove() {
-        System.out.print("whose information: ");
-        String name = scan.nextLine();
-
-        // if the HashMap key exists, delete all <Key, Value> data.
-        if (phoneBook.containsKey(name)) {
-            phoneBook.remove(name);
-        } else {
-            System.out.println("  not found");
-        }
-    }
-
     public void filterSearch() {
         System.out.print("keyword (if empty, all listed): ");
         String keyword = scan.nextLine();
@@ -195,5 +165,35 @@ public class Phonebook implements MultipleEntryDictionary {
             searchInfo(name);
             System.out.println();
         }
+    }
+
+    @Override
+    public void remove() {
+        System.out.print("whose information: ");
+        String name = scan.nextLine();
+
+        // if the HashMap key exists, delete all <Key, Value> data.
+        if (phoneBook.containsKey(name)) {
+            phoneBook.remove(name);
+        } else {
+            System.out.println("  not found");
+        }
+    }
+
+    @Override
+    public void add(String word, Person entry) {
+        if (!phoneBook.containsKey(word)) {
+            phoneBook.put(word, new HashSet<Person>());
+        }
+        Set<Person> output = phoneBook.get(word);
+        output.add(entry);
+    }
+
+    @Override
+    public Set<Person> translate(String word) {
+        if (!phoneBook.containsKey(word)) {
+            return null;
+        }
+        return phoneBook.get(word);
     }
 }
