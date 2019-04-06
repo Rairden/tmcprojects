@@ -6,7 +6,7 @@ public class Phonebook implements MultipleEntryDictionary {
     private Scanner scan;
 
     public Phonebook(Scanner scan) {
-        this.phoneBook = new HashMap<>();
+        this.phoneBook = new HashMap<String, Set<Person>>();
         this.scan = scan;
     }
 
