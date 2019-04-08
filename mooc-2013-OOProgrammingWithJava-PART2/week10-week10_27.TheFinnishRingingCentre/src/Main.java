@@ -16,8 +16,8 @@ public class Main {
 
         kumpulaCentre.observe(new Bird("Rose Starling", "Sturnus roseus", 2012), "Arabia" );
         kumpulaCentre.observe(new Bird("Rose-Coloured Starling", "Sturnus roseus", 2012), "Vallila");
-        kumpulaCentre.observe(new Bird("European Herring Gull", "Larus argentatus", 2008), "Kumpulanmäki");
         kumpulaCentre.observe(new Bird("Rose Starling", "Sturnus roseus", 2008), "Mannerheimintie");
+        kumpulaCentre.observe(new Bird("European Herring Gull", "Larus argentatus", 2008), "Kumpulanmäki");
 
         kumpulaCentre.observations(new Bird("Rose-Coloured Starling", "Sturnus roseus", 2012));
         System.out.println("--");
@@ -26,8 +26,10 @@ public class Main {
         kumpulaCentre.observations(new Bird("European Herring Gull", "Larus argentatus", 1980));
 
         /*
-         * should print:
-         *
+         * true
+         * false
+         * false
+         * true
          * Sturnus roseus (2012) observations: 2
          * Arabia
          * Vallila

@@ -17,10 +17,11 @@ public class RingingCentre {
      * @param place the location the bird was spotted
      */
     public void observe(Bird bird, String place) {
-        if (!birdListMap.containsKey(bird.hashCode())) {
-            birdListMap.put(bird, new ArrayList<>());
+        if (!birdListMap.containsKey(bird)) {
+            birdListMap.put(bird, new ArrayList<String>());
         }
-        List<String> list = birdListMap.get(bird.hashCode());
+        List<String> list = birdListMap.get(bird);
+        list.add(place);
         birdListMap.put(bird, list);
     }
 
@@ -29,8 +30,15 @@ public class RingingCentre {
      * @param bird
      */
     public void observations(Bird bird) {
+        System.out.print(bird.toString() + " observations: ");
 
+        if (birdListMap.containsKey(bird)) {
+            System.out.println(birdListMap.get(bird).size());
+            for (String place : birdListMap.get(bird)) {
+                System.out.println(place);
+            }
+        } else {
+            System.out.println("0");
+        }
     }
-
-
 }
