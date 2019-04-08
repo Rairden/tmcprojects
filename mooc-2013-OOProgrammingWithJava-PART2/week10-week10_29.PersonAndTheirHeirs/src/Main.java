@@ -2,6 +2,9 @@ import people.Person;
 import people.Student;
 import people.Teacher;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -37,9 +40,19 @@ public class Main {
         System.out.println(ryan);
         printLine();    // ------------------
 
+        List people = new ArrayList();
+        people.add(new Teacher("Pekka Mikkola", "Korsontie Street 1 03100 Vantaa", 1200));
+        people.add(new Student("Olli", "Ida Albergintie Street 1 00400 Helsinki"));
+
+        printDepartment(people);
+
+    }
 
 
-
+    public static void printDepartment(List<Person> people) {
+        for (Person person : people) {
+            System.out.println(person);
+        }
     }
 
     private static void printLine() {
