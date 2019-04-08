@@ -1,5 +1,6 @@
 import people.Person;
 import people.Student;
+import people.Teacher;
 
 public class Main {
 
@@ -18,10 +19,22 @@ public class Main {
         System.out.println("credits "+ olli.credits());
         printLine();    // ------------------
 
-        Student erik = new Student("erik", "Ida Albergintie Street 1 00400 Helsinki");
+        Student erik = new Student("Erik", "Ida Albergintie Street 1 00400 Helsinki");
         System.out.println(erik);
         erik.study();
         System.out.println(erik);
+        printLine();    // ------------------
+
+        Teacher pekka2 = new Teacher("Pekka2 Mikkola", "Korsontie Street 1 03100 Vantaa", 1200);
+        Teacher esko2 = new Teacher("Esko2 Ukkonen", "Mannerheimintie 15 Street 00100 Helsinki", 5400);
+        System.out.println(pekka2);
+        System.out.println(esko2);
+
+        Student ryan = new Student("Ryan", "Ida Albergintie 1 Street 00400 Helsinki");
+        for ( int i=0; i < 25; i++ ) {
+            ryan.study();
+        }
+        System.out.println(ryan);
         printLine();    // ------------------
 
 
