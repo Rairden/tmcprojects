@@ -5,6 +5,9 @@ public class Container {
     private double capacity;
     private double volume;
 
+    public Container() {
+    }
+
     public Container(double capacity) {
         if (capacity > 0.0) {
             this.capacity = capacity;

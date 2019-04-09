@@ -115,9 +115,9 @@ We could directly implement an `ArrayList<Double>` object to track our container
 
 Implement analysis methods for your `ContainerHistory` class:
 
-* **public double maxValue()** reutrns the greatest value in the container history. If the history is empty, the method returns 0.
-* **public double minValue()** reutrns the smallest value in the container history. If the history is empty, the method returns 0.
-* **public double average()** reutrns the average of the values in the container history. If the history is empty, the method returns 0.
+* **public double maxValue()** returns the greatest value in the container history. If the history is empty, the method returns 0.
+* **public double minValue()** returns the smallest value in the container history. If the history is empty, the method returns 0.
+* **public double average()** returns the average of the values in the container history. If the history is empty, the method returns 0.
 
 #### Exercise 30.5: ContainerHistory.java, Phase 3
 

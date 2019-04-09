@@ -23,6 +23,6 @@ public class ProductContainer extends Container {
 
     @Override
     public String toString() {
-        return super.toString();
+        return productName + ": " + super.toString();
     }
 }
