@@ -137,9 +137,7 @@ public class ContainerHistory {
 
     @Override
     public String toString() {
-        return "ContainerHistory{" +
-                "container=" + container +
-                '}';
+        return container.toString();
     }
 
 }
