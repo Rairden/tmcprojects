@@ -130,7 +130,7 @@ You find guidelines to calculate the variance in [Wikipedia](http://en.wikipedia
 
 #### Exercise 30.6: Product Container Recorder, Phase 1
 
-Implement the class `ProductContainerRecorder` which inherits `ProductContainer`. In addition to the old methods, the new version provides services for the container history. The hisotry is handled with a  `ContainerHistory` object.
+Implement the class `ProductContainerRecorder` which inherits `ProductContainer`. In addition to the old methods, the new version provides services for the container history. The history is handled with a  `ContainerHistory` object.
 
 The public constructor and methods:
 
