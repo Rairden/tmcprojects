@@ -11,10 +11,8 @@ public class Container {
         } else {
             this.capacity = 0.0;
         }
-
         volume = 0.0;
     }
-
 
     public double getVolume() {
         return volume;
