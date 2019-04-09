@@ -31,7 +31,7 @@ public class ContainerHistory {
             return 0;
         }
 
-        double max = 0;
+        double max = container.get(0);
         for (Double d : container) {
             if (d > max) {
                 max = d;
@@ -49,13 +49,38 @@ public class ContainerHistory {
             return 0;
         }
 
-        double min = 0;
+        double min = container.get(0);
         for (Double d : container) {
             if (d < min) {
                 min = d;
             }
         }
         return min;
+    }
+
+    /**
+     * @return the absolute value of the single greatest fluctuation in the container history
+     */
+    public double greatestFluctuation() {
+        if (container.isEmpty() || container.size() == 1) {
+            return 0;
+        }
+        double greatestFluc = 0;
+        double difference = 0;
+
+        for (int i = 0; i < container.size(); i++) {
+            if (i == 0) {
+                continue;
+            }
+            difference = container.get(i) - container.get(i-1);
+            Math.abs(difference);
+
+            if (difference > greatestFluc) {
+                greatestFluc = difference;
+            }
+
+        }
+        return greatestFluc;
     }
 
     /**
