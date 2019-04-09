@@ -2,6 +2,9 @@ package containers;
 
 public class ProductContainer extends Container {
 
+    public ProductContainer() {
+    }
+
     private String productName;
 
     public ProductContainer(double capacity) {
