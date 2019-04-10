@@ -73,12 +73,11 @@ public class ContainerHistory {
                 continue;
             }
             difference = container.get(i) - container.get(i-1);
-            Math.abs(difference);
+            difference = Math.abs(difference);
 
             if (difference > greatestFluc) {
                 greatestFluc = difference;
             }
-
         }
         return greatestFluc;
     }
@@ -108,7 +107,7 @@ public class ContainerHistory {
      * @return the average
      */
     public static double average(ArrayList<Double> list) {
-        double avg = (double) sum(list)/list.size();
+        double avg = sum(list)/list.size();
         return avg;
     }
 
@@ -139,5 +138,4 @@ public class ContainerHistory {
     public String toString() {
         return container.toString();
     }
-
 }
