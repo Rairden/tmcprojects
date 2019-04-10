@@ -102,7 +102,7 @@ Sometimes, it can be interesting to know in what way the container situation has
 
 Let's start by designing a useful tool.
 
-We could directly implement an `ArrayList<Double>` object to track our container history in the class _ProductConteiner_; however, now we create a _specific tool_ for this purpose. The tool has to encapsulate an `ArrayList<Double>` object.
+We could directly implement an `ArrayList<Double>` object to track our container history in the class _ProductContainer_; however, now we create a _specific tool_ for this purpose. The tool has to encapsulate an `ArrayList<Double>` object.
 
 `ContainerHistory` public constructor and methods:
 
