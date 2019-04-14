@@ -54,7 +54,7 @@ If we want to produce milk, we also need cows. Cows have got names and udders. U
 `Cow` also implement the following interfaces: `Milkable`, which describes the cow's faculty for being milked, and `Alive`, which represents their faculty for being alive.
 
 <pre class="sh_java sh_sourceCode">
-publicinterface Milkable {
+public interface Milkable {
     public double milk();
 }
 

@@ -6,8 +6,7 @@ public class BulkTank {
     private double volume;
 
     public BulkTank() {
-        this.capacity   = 2000;
-        this.volume     = 0;
+        this(2000);
     }
 
     public BulkTank(double capacity) {
@@ -43,8 +42,7 @@ public class BulkTank {
     }
 
     public double howMuchFreeSpace() {
-
-        return 0;
+        return getCapacity() - getVolume();
     }
 
     public double getVolume() {
@@ -57,7 +55,7 @@ public class BulkTank {
 
     @Override
     public String toString() {
-        return volume + "/" + capacity;
+        return Math.ceil(this.volume) + "/" + Math.ceil(this.capacity);
     }
 
 }
