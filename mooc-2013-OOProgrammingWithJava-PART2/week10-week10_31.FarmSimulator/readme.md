@@ -80,7 +80,7 @@ private static final String[] NAMES = new String[]{
 Implement the class Cow, and test whether it works with the following program body.
 
 <pre class="sh_java sh_sourceCode">
-Cow cow = newCow();
+Cow cow = new Cow();
 System.out.println(cow);
 
 Alive livingCow = cow;
@@ -124,7 +124,7 @@ In modern dairy farms, milking robots handle the milking. The milking robot has 
 * **public MilkingRobot()** creates a new milking robot
 * **BulkTank getBulkTank()** returns the connected bulk tank, or a `null` reference, if the tank hasn't been installed
 * **void setBulkTank(BulkTank tank)** installs the parameter bulk tank to the milking robot
-* **void milk(Milkable milkable)** milks the cow and fills the connected bulk tank; the method returns an `IllegalStateException` is no tank has been fixed 
+* **void milk(Milkable milkable)** milks the cow and fills the connected bulk tank; the method returns an `IllegalStateException` if no tank has been fixed 
 
 Implement the class MilkingRobot, and test it using the following program body. Make sure that the milking robot can milk all the objects which implement the interface Milkable!
 
@@ -142,8 +142,8 @@ Java Result: 1
 </pre>
 
 <pre class="sh_java sh_sourceCode">
-MilkingRobot milkingRobot =new MilkingRobot();
-Cow cow =new Cow();
+MilkingRobot milkingRobot = new MilkingRobot();
+Cow cow = new Cow();
 System.out.println("");
 
 BulkTank tank = new BulkTank();
@@ -254,7 +254,7 @@ Esko is a tough guy!
 </pre>
 
 <pre class="sh_java sh_sourceCode">
-Farm farm =new Farm("Esko", new Barn(new BulkTank()));
+Farm farm = new Farm("Esko", new Barn(new BulkTank()));
 farm.addCow(new Cow());
 farm.addCow(new Cow());
 farm.addCow(new Cow());
@@ -273,7 +273,7 @@ Animals:
 </pre>
 
 <pre class="sh_java sh_sourceCode">
-Farm farm =new Farm("Esko", new Barn(new BulkTank()));
+Farm farm = new Farm("Esko", new Barn(new BulkTank()));
 
 farm.addCow(new Cow());
 farm.addCow(new Cow());
@@ -296,7 +296,7 @@ Animals:
 </pre>
 
 <pre class="sh_java sh_sourceCode">
-Farm farm =new Farm("Esko", new Barn(new BulkTank()));
+Farm farm = new Farm("Esko", new Barn(new BulkTank()));
 MilkingRobot robot = new MilkingRobot();
 farm.installMilkingRobot(robot);
 
