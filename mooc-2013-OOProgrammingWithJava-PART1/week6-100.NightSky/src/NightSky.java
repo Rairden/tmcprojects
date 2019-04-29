@@ -52,6 +52,12 @@ public class NightSky {
         System.out.println();
     }
 
+    public void printNightSky(NightSky sky) {
+        sky.print();
+        System.out.println("Number of stars: " + sky.starsInLastPrint());
+        System.out.println();
+    }
+
     public int starsInLastPrint() {
         return starsInLastPrint;
     }
