@@ -7,6 +7,9 @@ public class Barn {
     private BulkTank tank;
     private MilkingRobot milkingRobot;
 
+    public Barn() {
+    }
+
     public Barn(BulkTank tank) {
         this.tank = tank;
     }
@@ -36,7 +39,7 @@ public class Barn {
             throw new IllegalStateException("No milking robot installed.");
         } else {
             for (Cow cow : cows) {
-                cow.milk();
+                milkingRobot.milk(cow);
             }
         }
     }

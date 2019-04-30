@@ -23,6 +23,7 @@ public class Cow extends BulkTank implements Milkable, Alive {
     }
 
     public Cow(String name) {
+        this();
         this.name = name;
     }
 

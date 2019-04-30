@@ -32,7 +32,7 @@ public class Main {
         milkingCow.milk();
 
         System.out.println(cow2);
-        System.out.println("");
+        System.out.println();
 
         cow2 = new Cow("Ammu");
         System.out.println(cow2);
@@ -49,16 +49,16 @@ public class Main {
 
         MilkingRobot milkingRobot4 = new MilkingRobot();
         Cow cow4 = new Cow();
-        System.out.println("");
+        System.out.println();
 
         BulkTank tank4 = new BulkTank();
         milkingRobot4.setBulkTank(tank4);
         System.out.println("Bulk tank: " + tank4);
 
-        for(int i = 0; i < 2; i++) {
+        for (int i = 0; i < 2; i++) {
             System.out.println(cow4);
             System.out.println("Living..");
-            for(int j = 0; j < 5; j++) {
+            for (int j = 0; j < 5; j++) {
                 cow4.liveHour();
             }
             System.out.println(cow4);
@@ -66,39 +66,57 @@ public class Main {
             System.out.println("Milking...");
             milkingRobot4.milk(cow4);
             System.out.println("Bulk tank: " + tank4);
-            System.out.println("");
-            printLine();    // ------------------
+            System.out.println();
+        }
+        printLine();    // ------------------
 
-            Barn barn = new Barn(new BulkTank());
-            System.out.println("Barn: " + barn);
+        Barn barn = new Barn(new BulkTank());
+        System.out.println("Barn: " + barn);
 
-            MilkingRobot robot = new MilkingRobot();
-            barn.installMilkingRobot(robot);
+        MilkingRobot milkingRobot5 = new MilkingRobot();
+        barn.installMilkingRobot(milkingRobot5);
 
-            Cow ammu = new Cow();
-            ammu.liveHour();
-            ammu.liveHour();
+        Cow ammu = new Cow();
+        ammu.liveHour();
+        ammu.liveHour();
 
-            barn.takeCareOf(ammu);
-            System.out.println("Barn: " + barn);
+        barn.takeCareOf(ammu);
+        System.out.println("Barn: " + barn);
 
-            LinkedList<Cow> cowList = new LinkedList();
-            cowList.add(ammu);
-            cowList.add(new Cow());
+        LinkedList<Cow> cowList = new LinkedList<Cow>();
+        cowList.add(ammu);
+        cowList.add(new Cow());
 
-            for (Cow cow : cowList) {
-                cow.milk();
-            }
-
-            barn.takeCareOf(cowList);
-            System.out.println("Barn: " + barn);
-            printLine();    // ------------------
-
-
-
-
+        for (Cow cow : cowList) {
+            cow.milk();
         }
 
+        barn.takeCareOf(cowList);
+        System.out.println("Barn: " + barn);
+        printLine();    // ------------------
+
+        Farm farm = new Farm("Esko", new Barn(new BulkTank()));
+        System.out.println(farm);
+
+        System.out.println(farm.getOwner() + " is a tough guy!\n");
+
+        Farm farm2 = new Farm("Erik", new Barn(new BulkTank()));
+        farm2.addCow(new Cow());
+        farm2.addCow(new Cow());
+        farm2.addCow(new Cow());
+        System.out.println(farm2);
+        printLine();    // ------------------
+
+        farm2.liveHour();
+        farm2.liveHour();
+        System.out.println(farm2);
+        printLine();    // ------------------
+
+        MilkingRobot milkingRobot6 = new MilkingRobot();
+        farm2.installMilkingRobot(milkingRobot6);
+
+        farm2.manageCows();
+        System.out.println(farm2);
 
     }
 
