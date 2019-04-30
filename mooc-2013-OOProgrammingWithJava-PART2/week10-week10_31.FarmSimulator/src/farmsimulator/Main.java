@@ -1,5 +1,7 @@
 package farmsimulator;
 
+import java.util.LinkedList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -66,6 +68,35 @@ public class Main {
             System.out.println("Bulk tank: " + tank4);
             System.out.println("");
             printLine();    // ------------------
+
+            Barn barn = new Barn(new BulkTank());
+            System.out.println("Barn: " + barn);
+
+            MilkingRobot robot = new MilkingRobot();
+            barn.installMilkingRobot(robot);
+
+            Cow ammu = new Cow();
+            ammu.liveHour();
+            ammu.liveHour();
+
+            barn.takeCareOf(ammu);
+            System.out.println("Barn: " + barn);
+
+            LinkedList<Cow> cowList = new LinkedList();
+            cowList.add(ammu);
+            cowList.add(new Cow());
+
+            for (Cow cow : cowList) {
+                cow.milk();
+            }
+
+            barn.takeCareOf(cowList);
+            System.out.println("Barn: " + barn);
+            printLine();    // ------------------
+
+
+
+
         }
 
 
