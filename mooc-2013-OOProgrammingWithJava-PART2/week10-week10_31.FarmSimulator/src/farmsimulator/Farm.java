@@ -12,7 +12,7 @@ public class Farm extends Barn implements Alive {
     public Farm(String owner, Barn barn) {
         this.owner = owner;
         this.barn = barn;
-        this.cowsInBarn = new ArrayList<>();
+        this.cowsInBarn = new ArrayList<Cow>();
     }
 
     public void installMilkingRobot(MilkingRobot milkingRobot) {
