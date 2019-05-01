@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="948px" height="1155px" contentScriptType="application/ecmascript" contentStyleType="text/css" preserveAspectRatio="none" style="width:948px;height:1155px" version="1.1" viewBox="0 0 948 1155" zoomAndPan="magnify">
+    <defs>
+        <filter id="f1matdu1bu9ovr" width="300%" height="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <text x="317" y="16.708" fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="302">
+            FARMSIMULATOR&apos;s Class Diagram
+        </text>
+        <text x="471" y="37.6611" fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="0"/>
+        <polygon fill="#FFFFFF" points="372,65.9063,504.5,65.9063,511.5,75.9063,902,75.9063,902,1071.9063,372,1071.9063,372,65.9063" filter="url(#f1matdu1bu9ovr)" style="stroke:#000000;stroke-width:1.5"/>
+        <line x1="372" x2="511.5" y1="75.9063" y2="75.9063" style="stroke:#000000;stroke-width:1.5"/>
+<!--cluster farmsimulator-->
+        <polygon fill="#FFFFFF" points="396,89.9063,511,89.9063,518,112.2031,878,112.2031,878,1047.9063,396,1047.9063,396,89.9063" filter="url(#f1matdu1bu9ovr)" style="stroke:#000000;stroke-width:1.5"/>
+        <line x1="396" x2="518" y1="112.2031" y2="112.2031" style="stroke:#000000;stroke-width:1.5"/>
+        <text x="400" y="104.9014" fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="109">
+            farmsimulator
+        </text>
+<!--class Alive-->
+        <rect id="Alive" width="81" height="60.8047" x="530.5" y="163.4063" fill="#FEFECE" filter="url(#f1matdu1bu9ovr)" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="554.95" cy="179.4063" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0"/>
+        <path d="M555.9031,176.1875 L555.9031,182.7031 L557.6219,182.7031 C558.075,182.7031 558.2156,182.7344 558.3875,182.8594 C558.6219,183.0313 558.7313,183.2813 558.7313,183.5625 C558.7313,184.125 558.3719,184.4063 557.6219,184.4063 L552.4813,184.4063 C552.075,184.4063 551.8719,184.3594 551.7156,184.2344 C551.4969,184.0781 551.3563,183.8125 551.3563,183.5625 C551.3563,183.2656 551.5125,182.9844 551.7625,182.8281 C551.9188,182.7188 552.0438,182.7031 552.4813,182.7031 L554.2,182.7031 L554.2,176.1875 L552.4813,176.1875 C552.0594,176.1875 551.8719,176.1563 551.7156,176.0469 C551.4969,175.875 551.3563,175.625 551.3563,175.3438 C551.3563,175.0625 551.5125,174.7656 551.7625,174.6094 C551.9188,174.5156 552.0438,174.5 552.4813,174.5 L557.6219,174.5 C558.075,174.5 558.2156,174.5313 558.3875,174.6406 C558.6219,174.8125 558.7313,175.0781 558.7313,175.3438 C558.7313,175.6406 558.5906,175.9219 558.325,176.0781 C558.2,176.1563 558.0125,176.1875 557.6219,176.1875 Z "/>
+        <text x="571.05" y="183.5605" fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="28">
+            Alive
+        </text>
+        <line x1="531.5" x2="610.5" y1="195.4063" y2="195.4063" style="stroke:#A80036;stroke-width:1.5"/>
+        <line x1="531.5" x2="610.5" y1="203.4063" y2="203.4063" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="541.5" cy="215.3086" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="550.5" y="217.6167" fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="55">
+            liveHour()
+        </text>
+<!--class Barn-->
+        <rect id="Barn" width="138" height="137.6328" x="647" y="124.9063" fill="#FEFECE" filter="url(#f1matdu1bu9ovr)" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="697.25" cy="140.9063" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0"/>
+        <path d="M699.5938,136.5781 L699.7656,136.6563 C699.9844,136.3438 700.1875,136.25 700.4844,136.25 C700.7813,136.25 701.0625,136.3906 701.2188,136.6563 C701.3125,136.8125 701.3281,136.9375 701.3281,137.375 L701.3281,138.7969 C701.3281,139.2188 701.2969,139.4063 701.1875,139.5625 C701.0156,139.7813 700.75,139.9219 700.4844,139.9219 C700.2656,139.9219 700.0313,139.8125 699.8906,139.6719 C699.75,139.5469 699.7188,139.4219 699.6563,139.0156 C699.5625,138.6094 699.3906,138.3906 698.9063,138.1094 C698.4375,137.8594 697.8281,137.7031 697.25,137.7031 C695.5156,137.7031 694.2656,139.0156 694.2656,140.7969 L694.2656,141.8906 C694.2656,143.5938 695.5625,144.6875 697.6094,144.6875 C698.375,144.6875 699.0625,144.5625 699.4844,144.2969 C699.6719,144.2031 699.6719,144.2031 700.125,143.7188 C700.3125,143.5313 700.5156,143.4531 700.7344,143.4531 C701.2031,143.4531 701.5938,143.8438 701.5938,144.2969 C701.5938,144.6875 701.2656,145.1406 700.6875,145.5469 C699.9375,146.0938 698.7813,146.3906 697.5625,146.3906 C694.6719,146.3906 692.5625,144.5 692.5625,141.9219 L692.5625,140.7969 C692.5625,138.0781 694.5625,136 697.1875,136 C698.0625,136 698.6563,136.1406 699.5938,136.5781 Z "/>
+        <text x="717.75" y="145.0605" fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29">
+            Barn
+        </text>
+        <line x1="648" x2="784" y1="156.9063" y2="156.9063" style="stroke:#A80036;stroke-width:1.5"/>
+        <line x1="648" x2="784" y1="164.9063" y2="164.9063" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="658" cy="176.8086" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="667" y="179.1167" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35">
+            Barn()
+        </text>
+        <ellipse cx="658" cy="189.6133" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="667" y="191.9214" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35">
+            Barn()
+        </text>
+        <ellipse cx="658" cy="202.418" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="667" y="204.7261" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77">
+            getBulkTank()
+        </text>
+        <ellipse cx="658" cy="215.2227" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="667" y="217.5308" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112">
+            installMilkingRobot()
+        </text>
+        <ellipse cx="658" cy="228.0273" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="667" y="230.3354" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72">
+            takeCareOf()
+        </text>
+        <ellipse cx="658" cy="240.832" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="667" y="243.1401" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72">
+            takeCareOf()
+        </text>
+        <ellipse cx="658" cy="253.6367" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="667" y="255.9448" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53">
+            toString()
+        </text>
+<!--class BulkTank-->
+        <rect id="BulkTank" width="146" height="176.0469" x="633" y="592.9063" fill="#FEFECE" filter="url(#f1matdu1bu9ovr)" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="674.1" cy="608.9063" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0"/>
+        <path d="M676.4438,604.5781 L676.6156,604.6563 C676.8344,604.3438 677.0375,604.25 677.3344,604.25 C677.6313,604.25 677.9125,604.3906 678.0688,604.6563 C678.1625,604.8125 678.1781,604.9375 678.1781,605.375 L678.1781,606.7969 C678.1781,607.2188 678.1469,607.4063 678.0375,607.5625 C677.8656,607.7813 677.6,607.9219 677.3344,607.9219 C677.1156,607.9219 676.8813,607.8125 676.7406,607.6719 C676.6,607.5469 676.5688,607.4219 676.5063,607.0156 C676.4125,606.6094 676.2406,606.3906 675.7563,606.1094 C675.2875,605.8594 674.6781,605.7031 674.1,605.7031 C672.3656,605.7031 671.1156,607.0156 671.1156,608.7969 L671.1156,609.8906 C671.1156,611.5938 672.4125,612.6875 674.4594,612.6875 C675.225,612.6875 675.9125,612.5625 676.3344,612.2969 C676.5219,612.2031 676.5219,612.2031 676.975,611.7188 C677.1625,611.5313 677.3656,611.4531 677.5844,611.4531 C678.0531,611.4531 678.4438,611.8438 678.4438,612.2969 C678.4438,612.6875 678.1156,613.1406 677.5375,613.5469 C676.7875,614.0938 675.6313,614.3906 674.4125,614.3906 C671.5219,614.3906 669.4125,612.5 669.4125,609.9219 L669.4125,608.7969 C669.4125,606.0781 671.4125,604 674.0375,604 C674.9125,604 675.5063,604.1406 676.4438,604.5781 Z "/>
+        <text x="693.9" y="613.0605" fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56">
+            BulkTank
+        </text>
+        <line x1="634" x2="778" y1="624.9063" y2="624.9063" style="stroke:#A80036;stroke-width:1.5"/>
+        <rect width="6" height="6" x="641" y="633.8086" fill="none" style="stroke:#C82930;stroke-width:1.0"/>
+        <text x="653" y="639.1167" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="96">
+            capacity : double
+        </text>
+        <rect width="6" height="6" x="641" y="646.6133" fill="none" style="stroke:#C82930;stroke-width:1.0"/>
+        <text x="653" y="651.9214" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91">
+            volume : double
+        </text>
+        <line x1="634" x2="778" y1="658.5156" y2="658.5156" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="644" cy="670.418" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="653" y="672.7261" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59">
+            BulkTank()
+        </text>
+        <ellipse cx="644" cy="683.2227" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="653" y="685.5308" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59">
+            BulkTank()
+        </text>
+        <ellipse cx="644" cy="696.0273" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="653" y="698.3354" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70">
+            addToTank()
+        </text>
+        <ellipse cx="644" cy="708.832" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="653" y="711.1401" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82">
+            getFromTank()
+        </text>
+        <ellipse cx="644" cy="721.6367" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="653" y="723.9448" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="120">
+            howMuchFreeSpace()
+        </text>
+        <ellipse cx="644" cy="734.4414" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="653" y="736.7495" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68">
+            getVolume()
+        </text>
+        <ellipse cx="644" cy="747.2461" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="653" y="749.5542" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74">
+            getCapacity()
+        </text>
+        <ellipse cx="644" cy="760.0508" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="653" y="762.3589" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53">
+            toString()
+        </text>
+<!--class Cow-->
+        <rect id="Cow" width="157" height="201.6563" x="451.5" y="829.9063" fill="#FEFECE" filter="url(#f1matdu1bu9ovr)" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="513.25" cy="845.9063" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0"/>
+        <path d="M515.5938,841.5781 L515.7656,841.6563 C515.9844,841.3438 516.1875,841.25 516.4844,841.25 C516.7813,841.25 517.0625,841.3906 517.2188,841.6563 C517.3125,841.8125 517.3281,841.9375 517.3281,842.375 L517.3281,843.7969 C517.3281,844.2188 517.2969,844.4063 517.1875,844.5625 C517.0156,844.7813 516.75,844.9219 516.4844,844.9219 C516.2656,844.9219 516.0313,844.8125 515.8906,844.6719 C515.75,844.5469 515.7188,844.4219 515.6563,844.0156 C515.5625,843.6094 515.3906,843.3906 514.9063,843.1094 C514.4375,842.8594 513.8281,842.7031 513.25,842.7031 C511.5156,842.7031 510.2656,844.0156 510.2656,845.7969 L510.2656,846.8906 C510.2656,848.5938 511.5625,849.6875 513.6094,849.6875 C514.375,849.6875 515.0625,849.5625 515.4844,849.2969 C515.6719,849.2031 515.6719,849.2031 516.125,848.7188 C516.3125,848.5313 516.5156,848.4531 516.7344,848.4531 C517.2031,848.4531 517.5938,848.8438 517.5938,849.2969 C517.5938,849.6875 517.2656,850.1406 516.6875,850.5469 C515.9375,851.0938 514.7813,851.3906 513.5625,851.3906 C510.6719,851.3906 508.5625,849.5 508.5625,846.9219 L508.5625,845.7969 C508.5625,843.0781 510.5625,841 513.1875,841 C514.0625,841 514.6563,841.1406 515.5938,841.5781 Z "/>
+        <text x="533.75" y="850.0605" fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="25">
+            Cow
+        </text>
+        <line x1="452.5" x2="607.5" y1="861.9063" y2="861.9063" style="stroke:#A80036;stroke-width:1.5"/>
+        <rect width="6" height="6" x="459.5" y="870.8086" fill="none" style="stroke:#C82930;stroke-width:1.0"/>
+        <text x="471.5" y="876.1167" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78">
+            name : String
+        </text>
+        <rect width="6" height="6" x="459.5" y="883.6133" fill="none" style="stroke:#C82930;stroke-width:1.0"/>
+        <text x="471.5" y="888.9214" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="131">
+            udderCapacity : double
+        </text>
+        <rect width="6" height="6" x="459.5" y="896.418" fill="none" style="stroke:#C82930;stroke-width:1.0"/>
+        <text x="471.5" y="901.7261" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116">
+            milkAmount : double
+        </text>
+        <rect width="6" height="6" x="459.5" y="909.2227" fill="none" style="stroke:#C82930;stroke-width:1.0"/>
+        <text x="471.5" y="914.5308" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="93">
+            NAMES : String[]
+        </text>
+        <line x1="452.5" x2="607.5" y1="921.125" y2="921.125" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="462.5" cy="933.0273" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="471.5" y="935.3354" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32">
+            Cow()
+        </text>
+        <ellipse cx="462.5" cy="945.832" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="471.5" y="948.1401" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32">
+            Cow()
+        </text>
+        <ellipse cx="462.5" cy="958.6367" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="471.5" y="960.9448" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74">
+            getCapacity()
+        </text>
+        <ellipse cx="462.5" cy="971.4414" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="471.5" y="973.7495" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54">
+            liveHour()
+        </text>
+        <ellipse cx="462.5" cy="984.2461" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="471.5" y="986.5542" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31">
+            milk()
+        </text>
+        <ellipse cx="462.5" cy="997.0508" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="471.5" y="999.3589" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59">
+            getName()
+        </text>
+        <ellipse cx="462.5" cy="1009.8555" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="471.5" y="1012.1636" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="69">
+            getAmount()
+        </text>
+        <ellipse cx="462.5" cy="1022.6602" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="471.5" y="1024.9683" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53">
+            toString()
+        </text>
+<!--class Farm-->
+        <rect id="Farm" width="166" height="176.0469" x="449" y="339.9063" fill="#FEFECE" filter="url(#f1matdu1bu9ovr)" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="512.25" cy="355.9063" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0"/>
+        <path d="M514.5938,351.5781 L514.7656,351.6563 C514.9844,351.3438 515.1875,351.25 515.4844,351.25 C515.7813,351.25 516.0625,351.3906 516.2188,351.6563 C516.3125,351.8125 516.3281,351.9375 516.3281,352.375 L516.3281,353.7969 C516.3281,354.2188 516.2969,354.4063 516.1875,354.5625 C516.0156,354.7813 515.75,354.9219 515.4844,354.9219 C515.2656,354.9219 515.0313,354.8125 514.8906,354.6719 C514.75,354.5469 514.7188,354.4219 514.6563,354.0156 C514.5625,353.6094 514.3906,353.3906 513.9063,353.1094 C513.4375,352.8594 512.8281,352.7031 512.25,352.7031 C510.5156,352.7031 509.2656,354.0156 509.2656,355.7969 L509.2656,356.8906 C509.2656,358.5938 510.5625,359.6875 512.6094,359.6875 C513.375,359.6875 514.0625,359.5625 514.4844,359.2969 C514.6719,359.2031 514.6719,359.2031 515.125,358.7188 C515.3125,358.5313 515.5156,358.4531 515.7344,358.4531 C516.2031,358.4531 516.5938,358.8438 516.5938,359.2969 C516.5938,359.6875 516.2656,360.1406 515.6875,360.5469 C514.9375,361.0938 513.7813,361.3906 512.5625,361.3906 C509.6719,361.3906 507.5625,359.5 507.5625,356.9219 L507.5625,355.7969 C507.5625,353.0781 509.5625,351 512.1875,351 C513.0625,351 513.6563,351.1406 514.5938,351.5781 Z "/>
+        <text x="532.75" y="360.0605" fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31">
+            Farm
+        </text>
+        <line x1="450" x2="614" y1="371.9063" y2="371.9063" style="stroke:#A80036;stroke-width:1.5"/>
+        <rect width="6" height="6" x="457" y="380.8086" fill="none" style="stroke:#C82930;stroke-width:1.0"/>
+        <text x="469" y="386.1167" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81">
+            owner : String
+        </text>
+        <rect width="6" height="6" x="457" y="393.6133" fill="none" style="stroke:#C82930;stroke-width:1.0"/>
+        <text x="469" y="398.9214" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140">
+            cowsInBarn : List&lt;Cow&gt;
+        </text>
+        <line x1="450" x2="614" y1="405.5156" y2="405.5156" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="460" cy="417.418" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="469" y="419.7261" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37">
+            Farm()
+        </text>
+        <ellipse cx="460" cy="430.2227" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="469" y="432.5308" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112">
+            installMilkingRobot()
+        </text>
+        <ellipse cx="460" cy="443.0273" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="469" y="445.3354" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85">
+            manageCows()
+        </text>
+        <ellipse cx="460" cy="455.832" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="469" y="458.1401" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63">
+            getOwner()
+        </text>
+        <ellipse cx="460" cy="468.6367" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="469" y="470.9448" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54">
+            liveHour()
+        </text>
+        <ellipse cx="460" cy="481.4414" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="469" y="483.7495" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53">
+            addCow()
+        </text>
+        <ellipse cx="460" cy="494.2461" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="469" y="496.5542" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="98">
+            cowListToString()
+        </text>
+        <ellipse cx="460" cy="507.0508" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="469" y="509.3589" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53">
+            toString()
+        </text>
+<!--class Main-->
+        <rect id="Main" width="83" height="73.6094" x="412.5" y="156.9063" fill="#FEFECE" filter="url(#f1matdu1bu9ovr)" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="437.4" cy="172.9063" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0"/>
+        <path d="M439.7438,168.5781 L439.9156,168.6563 C440.1344,168.3438 440.3375,168.25 440.6344,168.25 C440.9313,168.25 441.2125,168.3906 441.3688,168.6563 C441.4625,168.8125 441.4781,168.9375 441.4781,169.375 L441.4781,170.7969 C441.4781,171.2188 441.4469,171.4063 441.3375,171.5625 C441.1656,171.7813 440.9,171.9219 440.6344,171.9219 C440.4156,171.9219 440.1813,171.8125 440.0406,171.6719 C439.9,171.5469 439.8688,171.4219 439.8063,171.0156 C439.7125,170.6094 439.5406,170.3906 439.0563,170.1094 C438.5875,169.8594 437.9781,169.7031 437.4,169.7031 C435.6656,169.7031 434.4156,171.0156 434.4156,172.7969 L434.4156,173.8906 C434.4156,175.5938 435.7125,176.6875 437.7594,176.6875 C438.525,176.6875 439.2125,176.5625 439.6344,176.2969 C439.8219,176.2031 439.8219,176.2031 440.275,175.7188 C440.4625,175.5313 440.6656,175.4531 440.8844,175.4531 C441.3531,175.4531 441.7438,175.8438 441.7438,176.2969 C441.7438,176.6875 441.4156,177.1406 440.8375,177.5469 C440.0875,178.0938 438.9313,178.3906 437.7125,178.3906 C434.8219,178.3906 432.7125,176.5 432.7125,173.9219 L432.7125,172.7969 C432.7125,170.0781 434.7125,168 437.3375,168 C438.2125,168 438.8063,168.1406 439.7438,168.5781 Z "/>
+        <text x="453.6" y="177.0605" fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29">
+            Main
+        </text>
+        <line x1="413.5" x2="494.5" y1="188.9063" y2="188.9063" style="stroke:#A80036;stroke-width:1.5"/>
+        <line x1="413.5" x2="494.5" y1="196.9063" y2="196.9063" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="423.5" cy="208.8086" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="432.5" y="211.1167" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="36">
+            main()
+        </text>
+        <rect width="6" height="6" x="420.5" y="218.6133" fill="#F24D5C" style="stroke:#C82930;stroke-width:1.0"/>
+        <text x="432.5" y="223.9214" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="57">
+            printLine()
+        </text>
+<!--class Milkable-->
+        <rect id="Milkable" width="82" height="60.8047" x="412" y="650.4063" fill="#FEFECE" filter="url(#f1matdu1bu9ovr)" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="427" cy="666.4063" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0"/>
+        <path d="M427.9531,663.1875 L427.9531,669.7031 L429.6719,669.7031 C430.125,669.7031 430.2656,669.7344 430.4375,669.8594 C430.6719,670.0313 430.7813,670.2813 430.7813,670.5625 C430.7813,671.125 430.4219,671.4063 429.6719,671.4063 L424.5313,671.4063 C424.125,671.4063 423.9219,671.3594 423.7656,671.2344 C423.5469,671.0781 423.4063,670.8125 423.4063,670.5625 C423.4063,670.2656 423.5625,669.9844 423.8125,669.8281 C423.9688,669.7188 424.0938,669.7031 424.5313,669.7031 L426.25,669.7031 L426.25,663.1875 L424.5313,663.1875 C424.1094,663.1875 423.9219,663.1563 423.7656,663.0469 C423.5469,662.875 423.4063,662.625 423.4063,662.3438 C423.4063,662.0625 423.5625,661.7656 423.8125,661.6094 C423.9688,661.5156 424.0938,661.5 424.5313,661.5 L429.6719,661.5 C430.125,661.5 430.2656,661.5313 430.4375,661.6406 C430.6719,661.8125 430.7813,662.0781 430.7813,662.3438 C430.7813,662.6406 430.6406,662.9219 430.375,663.0781 C430.25,663.1563 430.0625,663.1875 429.6719,663.1875 Z "/>
+        <text x="441" y="670.5605" fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="50">
+            Milkable
+        </text>
+        <line x1="413" x2="493" y1="682.4063" y2="682.4063" style="stroke:#A80036;stroke-width:1.5"/>
+        <line x1="413" x2="493" y1="690.4063" y2="690.4063" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="423" cy="702.3086" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="432" y="704.6167" fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="31">
+            milk()
+        </text>
+<!--class MilkingRobot-->
+        <rect id="MilkingRobot" width="111" height="99.2188" x="650.5" y="378.4063" fill="#FEFECE" filter="url(#f1matdu1bu9ovr)" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="665.5" cy="394.4063" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0"/>
+        <path d="M667.8438,390.0781 L668.0156,390.1563 C668.2344,389.8438 668.4375,389.75 668.7344,389.75 C669.0313,389.75 669.3125,389.8906 669.4688,390.1563 C669.5625,390.3125 669.5781,390.4375 669.5781,390.875 L669.5781,392.2969 C669.5781,392.7188 669.5469,392.9063 669.4375,393.0625 C669.2656,393.2813 669,393.4219 668.7344,393.4219 C668.5156,393.4219 668.2813,393.3125 668.1406,393.1719 C668,393.0469 667.9688,392.9219 667.9063,392.5156 C667.8125,392.1094 667.6406,391.8906 667.1563,391.6094 C666.6875,391.3594 666.0781,391.2031 665.5,391.2031 C663.7656,391.2031 662.5156,392.5156 662.5156,394.2969 L662.5156,395.3906 C662.5156,397.0938 663.8125,398.1875 665.8594,398.1875 C666.625,398.1875 667.3125,398.0625 667.7344,397.7969 C667.9219,397.7031 667.9219,397.7031 668.375,397.2188 C668.5625,397.0313 668.7656,396.9531 668.9844,396.9531 C669.4531,396.9531 669.8438,397.3438 669.8438,397.7969 C669.8438,398.1875 669.5156,398.6406 668.9375,399.0469 C668.1875,399.5938 667.0313,399.8906 665.8125,399.8906 C662.9219,399.8906 660.8125,398 660.8125,395.4219 L660.8125,394.2969 C660.8125,391.5781 662.8125,389.5 665.4375,389.5 C666.3125,389.5 666.9063,389.6406 667.8438,390.0781 Z "/>
+        <text x="679.5" y="398.5605" fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="79">
+            MilkingRobot
+        </text>
+        <line x1="651.5" x2="760.5" y1="410.4063" y2="410.4063" style="stroke:#A80036;stroke-width:1.5"/>
+        <line x1="651.5" x2="760.5" y1="418.4063" y2="418.4063" style="stroke:#A80036;stroke-width:1.5"/>
+        <ellipse cx="661.5" cy="430.3086" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="670.5" y="432.6167" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78">
+            MilkingRobot()
+        </text>
+        <ellipse cx="661.5" cy="443.1133" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="670.5" y="445.4214" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77">
+            getBulkTank()
+        </text>
+        <ellipse cx="661.5" cy="455.918" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="670.5" y="458.2261" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77">
+            setBulkTank()
+        </text>
+        <ellipse cx="661.5" cy="468.7227" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0"/>
+        <text x="670.5" y="471.0308" fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31">
+            milk()
+        </text>
+
+<!--I cut out POLYGONFILL and LINE x6 here-->
+
+<!--link Barn to BulkTank-->
+        <path id="Barn-BulkTank" fill="none" d="M792.508,271.7023 C796.644,278.5223 800.231,285.6173 803,292.9063 C805.683,299.9693 803.298,302.3563 803,309.9063 C798.552,422.6142 819.601,456.2143 783,562.9063 C779.568,572.9113 775.078,582.8953 769.991,592.5753 " style="stroke:#A80036;stroke-width:1.0"/>
+        <polygon fill="#FFFFFF" points="785.076,260.4963,785.0582,267.7073,791.7077,270.4973,791.7255,263.2862,785.076,260.4963" style="stroke:#A80036;stroke-width:1.0"/>
+        <text x="806" y="432.4731" fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="28">
+            tank
+        </text>
+<!--link Barn to MilkingRobot-->
+        <path id="Barn-MilkingRobot" fill="none" d="M712.493,276.2613 C711.024,310.3602 709.364,348.8563 708.091,378.3982 " style="stroke:#A80036;stroke-width:1.0"/>
+        <polygon fill="#FFFFFF" points="713.067,262.9462,708.8122,268.7684,712.55,274.9351,716.8048,269.113,713.067,262.9462" style="stroke:#A80036;stroke-width:1.0"/>
+        <text x="712" y="305.9731" fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82">
+            milkingRobot
+        </text>
+<!--link Milkable to Cow-->
+        <path id="Milkable-Cow" fill="none" d="M468.304,731.1972 C477.07,759.4303 488.394,795.9023 498.943,829.8773 " style="stroke:#A80036;stroke-width:1.0"/>
+        <polygon fill="none" points="461.533,732.9973,462.288,711.8213,474.904,728.8453,461.533,732.9973" style="stroke:#A80036;stroke-width:1.0"/>
+<!--link Alive to Cow-->
+        <path id="Alive-Cow" fill="none" d="M533.665,240.1073 C526.931,247.8443 519.866,255.7043 513,262.9063 C478.503,299.0912 450.855,294.0243 431,339.9063 C399.933,411.6943 400.377,443.9272 431,515.9063 C450.32,561.3163 490.409,548.0583 511,592.9063 C545.047,667.0643 547.677,760.2563 542.993,829.8353 " style="stroke:#A80036;stroke-width:1.0"/>
+        <polygon fill="none" points="528.547,235.3203,546.853,224.6482,539.198,244.4072,528.547,235.3203" style="stroke:#A80036;stroke-width:1.0"/>
+<!--link BulkTank to Cow-->
+        <path id="BulkTank-Cow" fill="none" d="M632.555,785.3963 C622.11,800.1143 611.383,815.2293 600.986,829.8802 " style="stroke:#A80036;stroke-width:1.0"/>
+        <polygon fill="none" points="626.913,781.2523,644.196,768.9933,638.33,789.3543,626.913,781.2523" style="stroke:#A80036;stroke-width:1.0"/>
+<!--link Alive to Farm-->
+        <path id="Alive-Farm" fill="none" d="M558.906,244.5153 C555.4,259.9573 551.773,277.0833 549,292.9063 C546.348,308.0353 543.941,324.1953 541.826,339.8673 " style="stroke:#A80036;stroke-width:1.0"/>
+        <polygon fill="none" points="552.15,242.6622,563.521,224.7822,565.782,245.8513,552.15,242.6622" style="stroke:#A80036;stroke-width:1.0"/>
+<!--link Barn to Farm-->
+        <path id="Barn-Farm" fill="none" d="M654.672,279.2202 C646.808,289.6333 638.784,300.0683 631,309.9063 C623.24,319.7133 614.992,329.8633 606.698,339.8993 " style="stroke:#A80036;stroke-width:1.0"/>
+        <polygon fill="none" points="649.252,274.7793,666.842,262.9643,660.459,283.1703,649.252,274.7793" style="stroke:#A80036;stroke-width:1.0"/>
+<!--link Farm to Barn-->
+        <path id="Farm-Barn" fill="none" d="M569.678,327.9003 C576.254,315.5773 583.694,303.5753 592,292.9063 C593.227,291.3293 619.017,270.8923 646.76,249.0873 " style="stroke:#A80036;stroke-width:1.0"/>
+        <polygon fill="#FFFFFF" points="563.637,339.7813,569.9221,336.2461,569.0762,329.0848,562.7911,332.6199,563.637,339.7813" style="stroke:#A80036;stroke-width:1.0"/>
+        <text x="593" y="305.9731" fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="29">
+            barn
+        </text>
+<!--link MilkingRobot to BulkTank-->
+        <path id="MilkingRobot-BulkTank" fill="none" d="M706,490.7503 C706,521.4793 706,559.1323 706,592.7313 " style="stroke:#A80036;stroke-width:1.0"/>
+        <polygon fill="#FFFFFF" points="706,477.5993,702,483.5993,706,489.5993,710,483.5993,706,477.5993" style="stroke:#A80036;stroke-width:1.0"/>
+        <text x="707" y="558.9731" fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="67">
+            connected
+        </text>
+        <text x="936" y="1107.1885" fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="0"/>
+        <text x="936" y="1118.8291" fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="0"/>
+        <text x="523" y="1130.4697" fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="413">
+            PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+        </text>
+        <text x="534" y="1142.1104" fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="402">
+            For more information about this tool, please contact philippe.mesmeur@gmail.com
+        </text>
+<!--@startuml title __FARMSIMULATOR's Class Diagram__\n package { package farmsimulator { interface Alive { {abstract} + liveHour() } } } package { package farmsimulator { class Barn { + Barn() + Barn() + getBulkTank() + installMilkingRobot() + takeCareOf() + takeCareOf() + toString() } } } package { package farmsimulator { class BulkTank { - capacity : double - volume : double + BulkTank() + BulkTank() + addToTank() + getFromTank() + howMuchFreeSpace() + getVolume() + getCapacity() + toString() } } } package { package farmsimulator { class Cow { - name : String - udderCapacity : double - milkAmount : double {static} - NAMES : String[] + Cow() + Cow() + getCapacity() + liveHour() + milk() + getName() + getAmount() + toString() } } } package { package farmsimulator { class Farm { - owner : String - cowsInBarn : List<Cow> + Farm() + installMilkingRobot() + manageCows() + getOwner() + liveHour() + addCow() + cowListToString() + toString() } } } package { package farmsimulator { class Main { {static} + main() {static} - printLine() } } } package { package farmsimulator { interface Milkable { {abstract} + milk() } } } package { package farmsimulator { class MilkingRobot { + MilkingRobot() + getBulkTank() + setBulkTank() + milk() } } } Barn o- - BulkTank : tank Barn o- - MilkingRobot : milkingRobot Cow -up-|> Milkable Cow -up-|> Alive Cow -up-|> BulkTank Farm -up-|> Alive Farm -up-|> Barn Farm o- - Barn : barn MilkingRobot o- - BulkTank : connected right footer PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it) For more information about this tool, please contact philippe.mesmeur@gmail.com endfooter @enduml PlantUML version 1.2019.05(Sat Apr 20 16:45:36 UTC 2019) (GPL source distribution) Java Runtime: Java(TM) SE Runtime Environment JVM: Java HotSpot(TM) 64-Bit Server VM Java Version: 1.7.0_25-b15 Operating System: Linux Default Encoding: UTF-8 Language: en Country: US-->
+    </g>
+</svg>
