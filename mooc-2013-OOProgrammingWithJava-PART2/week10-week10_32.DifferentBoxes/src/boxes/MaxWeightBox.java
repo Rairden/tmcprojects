@@ -6,10 +6,10 @@ import java.util.List;
 public class MaxWeightBox extends Box {
 
     private int maxWeight;
-    private List<Thing> maxWeightBox;
+    private List<Thing> boxOfThings;
 
     public MaxWeightBox() {
-        this.maxWeightBox = new ArrayList<>();
+        this.boxOfThings = new ArrayList<>();
     }
 
     public MaxWeightBox(int maxWeight) {
@@ -19,13 +19,17 @@ public class MaxWeightBox extends Box {
 
     @Override
     public void add(Thing thing) {
-        for (Thing thing1 : maxWeightBox) {
-            maxWeightBox.add(thing1);
+        int weightBox = 0;
+        for (Thing t : boxOfThings) {
+            weightBox += t.getWeight();
+        }
+        if (weightBox + thing.getWeight() <= maxWeight) {
+            boxOfThings.add(thing);
         }
     }
 
     @Override
     public boolean isInTheBox(Thing thing) {
-        return false;
+        return boxOfThings.contains(thing);
     }
 }

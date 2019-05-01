@@ -9,9 +9,9 @@ public class Thing {
 
     public Thing(String name, int weight) {
         this.name = name;
-        this.weight = weight;
-
-        if (weight <= 0) {
+        if (weight >= 0) {
+            this.weight = weight;
+        } else {
             throw new IllegalArgumentException("weight cannot be <= 0");
         }
     }
