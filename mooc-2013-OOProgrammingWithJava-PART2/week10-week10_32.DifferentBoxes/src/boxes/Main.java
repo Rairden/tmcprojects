@@ -12,5 +12,14 @@ public class Main {
         System.out.println(coffeeBox.isInTheBox(new Thing("Saludo")));
         System.out.println(coffeeBox.isInTheBox(new Thing("Pirkka")));
         System.out.println(coffeeBox.isInTheBox(new Thing("Kopi Luwak")));
+        System.out.println("--------------");
+
+        OneThingBox box = new OneThingBox();
+        box.add(new Thing("Saludo", 5));
+        box.add(new Thing("Pirkka", 5));
+
+        System.out.println(box.isInTheBox(new Thing("Saludo")));
+        System.out.println(box.isInTheBox(new Thing("Pirkka")));
+
     }
 }
