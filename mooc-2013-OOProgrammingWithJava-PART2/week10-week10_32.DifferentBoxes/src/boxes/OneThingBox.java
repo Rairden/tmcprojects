@@ -8,7 +8,7 @@ public class OneThingBox extends Box {
     private List<Thing> oneThingBox;
 
     public OneThingBox() {
-        this.oneThingBox = new ArrayList<>();
+        this.oneThingBox = new ArrayList<Thing>();
     }
 
     @Override

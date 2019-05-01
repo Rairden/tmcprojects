@@ -8,7 +8,7 @@ public class BlackHoleBox extends Box {
     private List<Thing> blackHoleBox;
 
     public BlackHoleBox() {
-        this.blackHoleBox = new ArrayList<>();
+        this.blackHoleBox = new ArrayList<Thing>();
     }
 
     @Override

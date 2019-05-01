@@ -9,7 +9,7 @@ public class MaxWeightBox extends Box {
     private List<Thing> boxOfThings;
 
     public MaxWeightBox() {
-        this.boxOfThings = new ArrayList<>();
+        this.boxOfThings = new ArrayList<Thing>();
     }
 
     public MaxWeightBox(int maxWeight) {
