@@ -30,7 +30,7 @@ Add an inspection to the constructor of `Thing`, to make sure that the thing's w
 Implement the class `MaxWeightBox` in the package `boxes`; the class inherits `Box`. MaxWeightBox has the constructor `public MaxWeightBox(int maxWeight)`, which determines the box maximum weight. Things can be added to MaxWeightBox if and only if the thing weight does not exceed the box weight.
 
 <pre class="sh_java sh_sourceCode">
-MaxWeightBox coffeeBox =new MaxWeightBox(10);
+MaxWeightBox coffeeBox = new MaxWeightBox(10);
 coffeeBox.add(new Thing("Saludo", 5));
 coffeeBox.add(new Thing("Pirkka", 5));
 coffeeBox.add(new Thing("Kopi Luwak", 5));
