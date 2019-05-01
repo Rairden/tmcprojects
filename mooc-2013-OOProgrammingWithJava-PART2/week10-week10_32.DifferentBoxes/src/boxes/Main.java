@@ -20,6 +20,9 @@ public class Main {
 
         System.out.println(box.isInTheBox(new Thing("Saludo")));
         System.out.println(box.isInTheBox(new Thing("Pirkka")));
+        System.out.println("--------------");
+
+
 
     }
 }
