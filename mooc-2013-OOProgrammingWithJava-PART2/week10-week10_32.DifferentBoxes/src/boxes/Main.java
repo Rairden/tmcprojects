@@ -22,7 +22,12 @@ public class Main {
         System.out.println(box.isInTheBox(new Thing("Pirkka")));
         System.out.println("--------------");
 
+        BlackHoleBox box2 = new BlackHoleBox();
+        box2.add(new Thing("Saludo", 5));
+        box2.add(new Thing("Pirkka", 5));
 
+        System.out.println(box2.isInTheBox(new Thing("Saludo")));
+        System.out.println(box2.isInTheBox(new Thing("Pirkka")));
 
     }
 }

@@ -28,6 +28,7 @@ public class Thing {
         return weight;
     }
 
+    // Only compare name, and ignore weight.
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
