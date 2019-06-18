@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class UserInterface {
 
@@ -35,15 +34,9 @@ public class UserInterface {
                 System.out.println("\nRound " + round + "\n");
                 System.out.println("Jumping order:");
 
-                if (round == 1) {
-                    printJumpOrder(1);
-                    jump(1);
-                    printRoundResults(1);
-                } else {
-                    printJumpOrder(round);
-                    jump(round);
-                    printRoundResults(round);
-                }
+                printJumpOrder();
+                jump(round);
+                printRoundResults(round);
             }
             round++;
         }
@@ -54,35 +47,17 @@ public class UserInterface {
         for (Jump jump : players.values()) {
             jump.addJump();
             jump.addVote(5);
+            jump.appendVotes();
             jump.calcPoints(round);
+            jump.tmpVotes.clear();
         }
     }
 
-    private void printTournamentResults() {
-        System.out.println("\nThanks!\n");
-        System.out.println("Tournament results:");
-        System.out.println("Position    Name");
+    private void printJumpOrder() {
+        List<Jump> list = sortAndListValues(players, false);
 
-        List t = sortAndListValues(players);
-        for (int i = 0; i < t.size(); i++) {
-            System.out.print(i+1 + t.get(i).toString() + "\n");
-        }
-    }
-
-    private void printJumpOrder(int round) {
-        LinkedHashMap<String, Jump> result = players.entrySet().stream()
-                .sorted(Map.Entry.comparingByValue())
-                .collect(
-                        Collectors.toMap(
-                                Map.Entry::getKey, Map.Entry::getValue,
-                                (x, y) -> x,
-                                LinkedHashMap::new
-                        )
-                );
-        int index = 1;
-        for (Map.Entry<String, Jump> entry : result.entrySet()) {
-            System.out.printf("  %d. %s (%d points)\n", index, entry.getKey(), entry.getValue().getPoints());
-            index++;
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print("  " + (i + 1) + "." + list.get(i).printJumpOrder());
         }
         System.out.println();
     }
@@ -90,20 +65,30 @@ public class UserInterface {
     private void printRoundResults(int round) {
         System.out.println("Results of round " + round);
         for (Map.Entry<String, Jump> entry : players.entrySet()) {
-            System.out.printf("  %s\n" +
-                    "    length: %d\n" +
-                    "    judge votes: %s\n", entry.getKey(),
-                    entry.getValue().distance.get(round - 1), entry.getValue().getTmpVotes().toString());
-            entry.getValue().getTmpVotes().clear();
+            System.out.printf("  %s\n    length: %d\n    judge votes: %s\n",
+                    entry.getKey(),
+                    entry.getValue().distance.get(round - 1),
+                    entry.getValue().printVotes(round));
         }
         System.out.println();
     }
 
-    private static <K, V extends Comparable<V>> List<V> sortAndListValues(Map<K,V> map) {
-        List<V> toReturn = new LinkedList<>(map.values());
+    private void printTournamentResults() {
+        System.out.println("\nThanks!\n");
+        System.out.println("Tournament results:");
+        System.out.println("Position    Name");
+
+        List<Jump> list = sortAndListValues(players, true);
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(i+1 + list.get(i).toString());
+        }
+    }
+
+    private static <K, V extends Comparable<V>> List<V> sortAndListValues(Map<K,V> map, final boolean reverse) {
+        List<V> toReturn = new LinkedList<V>(map.values());
         Collections.sort(toReturn, new Comparator<V>() {
             public int compare(V first, V second) {
-                return second.compareTo(first);
+                return reverse ? second.compareTo(first) : first.compareTo(second);
             }
         });
         return toReturn;

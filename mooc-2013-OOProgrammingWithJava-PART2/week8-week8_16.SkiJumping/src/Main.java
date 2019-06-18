@@ -10,8 +10,7 @@ public class Main {
                 "jump\n" +
                 "jump\n" +
                 "quit\n";
-        String input2 = "Arto\n\njump\njump\nquit\n";
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(input);
         UserInterface ui = new UserInterface(scan);
         ui.start();
     }
