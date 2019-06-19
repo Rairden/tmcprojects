@@ -6,17 +6,17 @@
 
 # IntelliJ
 # *.iml
+/**/.idea/workspace.xml
+/**/.idea/misc.xml
+/**/.idea/tasks.xml
+/**/.idea/gradle.xml
+/**/.idea/assetWizardSettings.xml
+/**/.idea/dictionaries/
+/**/.idea/libraries/
+/**/.idea/caches/
 *.properties
 build_errors.txt
 build_log.txt
-workspace.xml
-misc.xml
-tasks.xml
-gradle.xml
-assetWizardSettings.xml
-dictionaries/
-libraries/
-caches/
 .gradle/
 
 # Floobits plugin
@@ -34,7 +34,10 @@ vcs.xml
 
 # TMC - MOOC files
 *.gitkeep
+/**/.gitignore
+dist/
 nbproject/
+nbproject/private
 test/
 
 # plugin for UML diagram creator
