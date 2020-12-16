@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d965ea3-9afc-4074-893f-973545fe83ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week6-096.SumOfArray/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART1/week6-096.SumOfArray/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART2/week10-week10_32.DifferentBoxes/src/boxes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART2/week10-week10_32.DifferentBoxes/src/boxes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART2/week10-week10_32.DifferentBoxes/week10-week10_32.DifferentBoxes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mooc-2013-OOProgrammingWithJava-PART2/week10-week10_32.DifferentBoxes/week10-week10_32.DifferentBoxes.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RjgFy8Dru86vup0qwOqowwtgsb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d965ea3-9afc-4074-893f-973545fe83ae" name="Default Changelist" comment="" />
+      <created>1570185819787</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570185819787</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1127" y="605" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579107768599">
+      <screen x="0" y="0" width="2560" height="1380" />
+    </state>
+    <state x="1127" y="605" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1380/2560.0.2560.1440@0.0.2560.1380" timestamp="1579107768599" />
+    <state x="862" y="371" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1579107766734">
+      <screen x="0" y="0" width="2560" height="1380" />
+    </state>
+    <state x="862" y="371" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.2560.1380/2560.0.2560.1440@0.0.2560.1380" timestamp="1579107766734" />
+  </component>
+</project>

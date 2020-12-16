@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a8bd84bc-9e3b-49f3-a079-d957a6ff838d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../mooc-2013-OOProgrammingWithJava-PART1/week6-096.SumOfArray/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mooc-2013-OOProgrammingWithJava-PART1/week6-096.SumOfArray/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week10-week10_32.DifferentBoxes/src/boxes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week10-week10_32.DifferentBoxes/src/boxes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week10-week10_32.DifferentBoxes/week10-week10_32.DifferentBoxes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../week10-week10_32.DifferentBoxes/week10-week10_32.DifferentBoxes.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/week11-week11_34.FileManager.iml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/tmc_junit_runner.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="126" />
+    <option name="y" value="174" />
+    <option name="width" value="1668" />
+    <option name="height" value="919" />
+  </component>
+  <component name="ProjectId" id="1br2POIIn2FUUlgdGiKhNIzeMd5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../week11-week11_35.TwoDirectionDictionary" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="week11-week11_34.FileManager" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8bd84bc-9e3b-49f3-a079-d957a6ff838d" name="Default Changelist" comment="" />
+      <created>1560221798321</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560221798321</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1065" y="0" width="430" height="1383" key="FileChooserDialogImpl" timestamp="1589375989743">
+      <screen x="0" y="0" width="2560" height="1380" />
+    </state>
+    <state x="1065" y="0" width="430" height="1383" key="FileChooserDialogImpl/0.0.2560.1380/2560.0.2560.1440@0.0.2560.1380" timestamp="1589375989743" />
+    <state width="608" height="1220" key="GridCell.Tab.0.bottom" timestamp="1589384811192">
+      <screen x="0" y="0" width="2560" height="1380" />
+    </state>
+    <state width="608" height="1220" key="GridCell.Tab.0.bottom/0.0.2560.1380/2560.0.2560.1440@0.0.2560.1380" timestamp="1589384811192" />
+    <state width="608" height="1220" key="GridCell.Tab.0.center" timestamp="1589384811192">
+      <screen x="0" y="0" width="2560" height="1380" />
+    </state>
+    <state width="608" height="1220" key="GridCell.Tab.0.center/0.0.2560.1380/2560.0.2560.1440@0.0.2560.1380" timestamp="1589384811192" />
+    <state width="608" height="1220" key="GridCell.Tab.0.left" timestamp="1589384811192">
+      <screen x="0" y="0" width="2560" height="1380" />
+    </state>
+    <state width="608" height="1220" key="GridCell.Tab.0.left/0.0.2560.1380/2560.0.2560.1440@0.0.2560.1380" timestamp="1589384811192" />
+    <state width="608" height="1220" key="GridCell.Tab.0.right" timestamp="1589384811192">
+      <screen x="0" y="0" width="2560" height="1380" />
+    </state>
+    <state width="608" height="1220" key="GridCell.Tab.0.right/0.0.2560.1380/2560.0.2560.1440@0.0.2560.1380" timestamp="1589384811192" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>week11-week11_34.FileManager</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

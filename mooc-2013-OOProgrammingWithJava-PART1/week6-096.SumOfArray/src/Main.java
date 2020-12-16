@@ -6,7 +6,7 @@ public class Main {
         System.out.println(sum(array));
     }
 
-    public static intf sum(int[] array) {
+    public static int sum(int[] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];

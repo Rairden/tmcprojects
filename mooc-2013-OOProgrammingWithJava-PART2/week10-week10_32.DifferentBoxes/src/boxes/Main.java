@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         MaxWeightBox coffeeBox = new MaxWeightBox(10);
-        coffeeBox.add(new Thing("Saludo", 5));
+        coffeeBox.add(new Thing("Saludo", -1));
         coffeeBox.add(new Thing("Pirkka", 5));
         coffeeBox.add(new Thing("Kopi Luwak", 5));
 
